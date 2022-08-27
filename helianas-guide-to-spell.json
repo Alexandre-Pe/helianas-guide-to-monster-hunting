@@ -19,7 +19,7 @@
             }
         ],
         "dateAdded": 1661628906,
-        "dateLastModified": 1661629505
+        "dateLastModified": 1661634505
     },
     "spell": [
         {
@@ -309,6 +309,142 @@
             "savingThrow": [
                 "charisma"
             ]
+        },
+        {
+            "name": "Blinding Radiance",
+            "level": 4,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "sphere",
+                "distance": {
+                    "type": "feet",
+                    "amount": 10
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a strip of magnesium"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1,
+                        "upTo": true
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "Bright light erupts from your form and dazzles those around you For the duration, you emit bright light in a 50-foot radius and dim light for an additional 50 feet Each creature that moves within 10 feet of you for the first time on its turn or that starts its turn there must make a Constitution saving throw On a failure, a creature takes 3d10 radiant damage and is blinded until the start of its next turn On a success, a creature takes half as much damage and isn\u2019t blinded"
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d10 for each slot level above 4th."
+                    ]
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting",
+            "damageInflict": [
+                "radiant"
+            ],
+            "savingThrow": [
+                "constitution"
+            ]
+        },
+        {
+            "name": "Can\u2019t Trip",
+            "level": 0,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1,
+                        "upTo": false
+                    },
+                    "concentration": false
+                }
+            ],
+            "entries": [
+                "Choose a willing creature within range that you can see Until the end of your next turn, that creature is immune to the prone condition If it is already prone and is not restrained, this spell sets it on its feet",
+                "The number of creatures you can simultaneously target with this spell increases by 1 when you reach 5th level (2 creatures), 11th level (3 creatures), and 17th level (4 creatures)."
+            ],
+            "entriesHigherLevel": [],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Tamer",
+                        "source": "HelianasGuidetoMonsterHunting"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting"
         }
     ],
     "roll20Spell": [
@@ -353,6 +489,23 @@
             "data": {
                 "Save": "Charisma"
             }
+        },
+        {
+            "name": "Blinding Radiance",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {
+                "Save": "Constitution",
+                "Damage": "3d10",
+                "Damage Type": "Radiant",
+                "Save Success": "Half damage",
+                "Higher Spell Slot Die": "d10",
+                "Higher Spell Slot Dice": "1"
+            }
+        },
+        {
+            "name": "Can\u2019t Trip",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {}
         }
     ]
 }
