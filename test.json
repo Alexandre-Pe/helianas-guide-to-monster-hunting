@@ -95,20 +95,6 @@
             ],
             "savingThrow": [
                 "dexterity"
-            ],
-            "roll20Spell": [
-                {
-                    "name": "Arcanomagnetic Storm",
-                    "source": "HelianasGuidetoMonsterHunting",
-                    "data": {
-                        "Save": "Dexterity",
-                        "Damage": "4d8",
-                        "Damage Type": "lightning",
-                        "Save Success": "Half damage",
-                        "Higher Spell Slot Die": "d8",
-                        "Higher Spell Slot Dice": "1"
-                    }
-                }
             ]
         },
         {
@@ -182,20 +168,6 @@
             ],
             "savingThrow": [
                 "dexterity"
-            ],
-            "roll20Spell": [
-                {
-                    "name": "Acid Rain",
-                    "source": "HelianasGuidetoMonsterHunting",
-                    "data": {
-                        "Save": "Dexterity",
-                        "Damage": "4d6",
-                        "Damage Type": "Acid",
-                        "Save Success": "Half damage",
-                        "Higher Spell Slot Die": "d6",
-                        "Higher Spell Slot Dice": "1"
-                    }
-                }
             ]
         },
         {
@@ -279,20 +251,44 @@
             ],
             "savingThrow": [
                 "strength"
-            ],
-            "roll20Spell": [
-                {
-                    "name": "Arcanomagnetic Repulsion",
-                    "source": "HelianasGuidetoMonsterHunting",
-                    "data": {
-                        "Save": "Strength",
-                        "Damage": "1d6",
-                        "Damage Type": "Force",
-                        "Higher Spell Slot Die": "d6",
-                        "Higher Spell Slot Dice": "1"
-                    }
-                }
             ]
+        }
+    ],
+    "roll20Spell": [
+        {
+            "name": "Arcanomagnetic Storm",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {
+                "Save": "Dexterity",
+                "Damage": "4d8",
+                "Damage Type": "lightning",
+                "Save Success": "Half damage",
+                "Higher Spell Slot Die": "d8",
+                "Higher Spell Slot Dice": "1"
+            }
+        },
+        {
+            "name": "Arcanomagnetic Repulsion",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {
+                "Save": "Strength",
+                "Damage": "1d6",
+                "Damage Type": "Force",
+                "Higher Spell Slot Die": "d6",
+                "Higher Spell Slot Dice": "1"
+            }
+        },
+        {
+            "name": "Acid Rain",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {
+                "Save": "Dexterity",
+                "Damage": "4d6",
+                "Damage Type": "Acid",
+                "Save Success": "Half damage",
+                "Higher Spell Slot Die": "d6",
+                "Higher Spell Slot Dice": "1"
+            }
         }
     ]
 }
