@@ -1,0 +1,26 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "HelianasGuidetoMonsterHunting",
+				"abbreviation": "HGtMH",
+				"full": "Heliana's Guide to Monster Hunting",
+				"url": "",
+				"authors": [
+					"Max Wartelle",
+					"Mohammed Bellafquih",
+					"Jess Jackdaw"
+				],
+				"convertedBy": [
+					"Riften"
+				],
+				"version": "1.0",
+				"targetSchema": "1.0"
+			}
+		],
+		"dateAdded": 1661457862,
+		"dateLastModified": 1661457862
+	},
+	"spell": [],
+    "roll20Spell": []
+}

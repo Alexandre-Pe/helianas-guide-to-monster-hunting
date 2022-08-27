@@ -1,4 +1,5 @@
 import json
+from time import time
 
 def fuse(sp):
     if sp == '':
@@ -154,3 +155,17 @@ while input("\nContinuer ? (o/n): ") == 'o':
     spell.append(s)
     roll20Spell.append(r)
 
+h = time()
+name = "helianas-guide-to-spell.json"
+try:
+    with open(name, 'r') as f:
+        data = json.load(f)
+except:
+    with open("base.json", 'r') as f:
+        data = json.load(f)
+    data["_meta"]["dateAdded"] = round(h)
+data["_meta"]["dateLastModified"] = round(h)
+data["spell"] += spell
+data["roll20Spell"] += roll20Spell
+with open(name, 'w') as f:
+    json.dump(data, f, indent=4)
