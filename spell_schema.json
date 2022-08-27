@@ -1,0 +1,116 @@
+{
+    "_meta": {
+		"sources": [
+			{
+				"json": "HelianasGuidetoMonsterHunting",
+				"abbreviation": "HGtMH",
+				"full": "Heliana's Guide to Monster Hunting",
+				"url": "",
+				"authors": [
+					"Max Wartelle",
+					"Mohammed Bellafquih",
+					"Jess Jackdaw"
+				],
+				"convertedBy": [
+					"Riften"
+				],
+				"version": "1.0",
+				"targetSchema": "1.0"
+			}
+		],
+		"spellSchools": {
+			"BM": {
+				"full": "Biomancy",
+				"short": "Bio.",
+				"color": "93c572"
+			}
+        },
+		"dateAdded": 1661457862,
+		"dateLastModified": 1661457862
+	},
+	"spell": [
+        {
+            "name": "",
+            "level": -1,
+            "school": "BM",
+            "meta": {
+                "ritual": false
+            },
+            "time": [
+                {
+                    "number": 0,
+                    "unit": ""
+                }
+            ],
+            "range": {
+                "type": "sphere",
+                "distance": {
+                    "type": "",
+                    "amount": -1
+                }
+
+            },
+            "components": {
+                "v": false,
+                "s": false,
+                "m": ""
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "",
+                        "amount": -1,
+                        "upTo": false
+                    },
+                    "concentration": false
+                }
+            ],
+            "entries": [
+                ""
+            ],
+            "entriesHigherLevel": [
+                ""
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "",
+                        "source": ""
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting",
+            "damageInflict": [
+                "acid"
+            ],
+            "savingThrow": [
+                "charisma"
+            ],
+            "abilityCheck": [
+                "charisma"
+            ],
+            "spellAttack": [
+                "M"
+            ]
+        }
+    ],
+    "roll20Spell": [
+        {
+            "name": "",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {
+                "Save": "",
+                "Damage": "",
+                "Damage Type": "",
+                "Healing": "",
+                "Spell Attack": "",
+                "Save Success": "",
+                "Higher Spell Slot Die": "",
+                "Higher Spell Slot Dice": "",
+                "Add Casting Modifier": "",
+                "data-Cantrip Scaling": ""
+            }
+        }
+    ]
+}
