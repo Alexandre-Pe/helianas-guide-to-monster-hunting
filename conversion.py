@@ -151,7 +151,7 @@ def convert():
 
 spell, roll20Spell = [], []
 while input("\nContinuer ? (o/n): ") == 'o':
-    s = r = convert()
+    s, r = convert()
     spell.append(s)
     roll20Spell.append(r)
 
