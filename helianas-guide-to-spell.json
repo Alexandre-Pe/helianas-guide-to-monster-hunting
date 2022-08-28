@@ -26,7 +26,7 @@
             }
         },
         "dateAdded": 1661628906,
-        "dateLastModified": 1661724371
+        "dateLastModified": 1661725396
     },
     "spell": [
         {
@@ -3516,6 +3516,201 @@
             },
             "source": "HelianasGuidetoMonsterHunting",
             "entriesHigherLevel": []
+        },
+        {
+            "name": "Riptide",
+            "level": 2,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 300
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "concentration": true,
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1,
+                        "upTo": true
+                    }
+                }
+            ],
+            "entries": [
+                "Choose one creature you can see within range that is in at least 2 feet of water and choose a direction Turbulent currents wrap around the creature For the duration, the target must make a Strength saving throw at the start of each of its turns On a failure, it is dragged 30 feet in the direction you chose, and its swimming speed is reduced to 0 feet until the start of its next turn On a success, the creature can move normally until the start of its next turn",
+                "As a bonus action on your turn, you can change the direction of the underwater currents The spell ends early if the creature is ever out of the spell\u2019s range, or is no longer in water at least 2 feet deep"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting",
+            "savingThrow": [
+                "strength"
+            ],
+            "entriesHigherLevel": []
+        },
+        {
+            "name": "Shackles of Pain",
+            "level": 4,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a pair of manacles"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "concentration": true,
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1,
+                        "upTo": true
+                    }
+                }
+            ],
+            "entries": [
+                "You link the vitality of a willing creature within range\u2014the source\u2014to the psyche of another creature within range\u2014the target The target must succeed on a Charisma saving throw or become linked to the source for 1 minute Each time the source takes damage, the target takes psychic damage equal to half the damage the source took If you yourself are the source, the creature takes this damage immediately before you make a Constitution saving throw to maintain your concentration Whenever the target takes damage in this way, it can repeat the saving throw, ending the effect on a success"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting",
+            "savingThrow": [
+                "charisma"
+            ],
+            "entriesHigherLevel": []
+        },
+        {
+            "name": "Shielding Word",
+            "level": 2,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "reaction",
+                    "condition": "which you take when a creature within range that you can see is hit by an attack by an attacker you can see or fails a Strength or Dexterity saving throw"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true,
+                "s": false
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "concentration": false,
+                    "duration": {
+                        "type": "round",
+                        "amount": 1,
+                        "upTo": false
+                    }
+                }
+            ],
+            "entries": [
+                "With a word, you coat a creature in a shimmering shield that absorbs the energy of incoming blows The creature gains 15 temporary hit points the instant before it takes the triggering damage These hit points last until the start of the creature\u2019s next turn"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Tamer",
+                        "source": "HelianasGuidetoMonsterHunting"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting",
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 3rd level or higher, you may choose to either increase the range of the spell by 30 feet or increase the number of temporary hit points gained by 5, for each slot level above 2nd."
+                    ]
+                }
+            ]
         }
     ],
     "roll20Spell": [
@@ -3952,6 +4147,25 @@
         },
         {
             "name": "Power Word Shield",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {}
+        },
+        {
+            "name": "Riptide",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {
+                "Save": "Strength"
+            }
+        },
+        {
+            "name": "Shackles of Pain",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {
+                "Save": "Charisma"
+            }
+        },
+        {
+            "name": "Shielding Word",
             "source": "HelianasGuidetoMonsterHunting",
             "data": {}
         }
