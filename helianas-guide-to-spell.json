@@ -26,7 +26,7 @@
             }
         },
         "dateAdded": 1661628906,
-        "dateLastModified": 1661723182
+        "dateLastModified": 1661724371
     },
     "spell": [
         {
@@ -2983,6 +2983,539 @@
                     ]
                 }
             ]
+        },
+        {
+            "name": "Mireball",
+            "level": 3,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 150
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a tiny ball of guano and mud"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "concentration": false,
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1,
+                        "upTo": false
+                    }
+                }
+            ],
+            "entries": [
+                "A blob of gloopy mud splunks from your pointed finger to a point you choose within range where it splooges with a wet burp into an explosion of sludge Each creature in a 15-foot-radius sphere centred on that point must make a Strength saving throw On a failed save a target takes {@damage 3d10} bludgeoning damage and is knocked {@condition prone} On a successful one, it takes half as much damage and is not knocked {@condition prone}",
+                "In addition, all surfaces within the area become covered in unpredictably slick and sticky patches of mud for the duration. The first time a creature moves through the muddy the area on its turn it must succeed on a Dexterity saving throw against your spell save DC or fall {@condition prone} A creature moving through the area at half speed doesn\u2019t need to make the saving throw"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting",
+            "damageInflict": [
+                "bludgeoning"
+            ],
+            "savingThrow": [
+                "strength"
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@scaledamage  3d10|3-9|1d10} for each slot level above 3rd."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Mortiferous Pulse",
+            "level": 2,
+            "school": "BM",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "line",
+                "distance": {
+                    "type": "feet",
+                    "amount": 50
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a dead animal"
+            },
+            "duration": [
+                {
+                    "type": "instant",
+                    "concentration": false
+                }
+            ],
+            "entries": [
+                "You summon a bolt of negative energy to stimulate and transmit necrotic pathogens into those that stand before you, decaying their internal viscera Each creature in a 5-foot-wide, 50-foot-long line extending from you must make a Dexterity saving throw, taking {@damage 3d8} necrotic damage on a failed save, or half as much damage on a successful one"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting",
+            "damageInflict": [
+                "necrotic"
+            ],
+            "savingThrow": [
+                "dexterity"
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@scaledamage  3d8|2-9|1d8} for each slot level above 2nd."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Peppermint Plate",
+            "level": 1,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self",
+                    "amount": 0
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "well-chewed peppermint chewing gum"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "concentration": true,
+                    "duration": {
+                        "type": "hour",
+                        "amount": 1,
+                        "upTo": true
+                    }
+                }
+            ],
+            "entries": [
+                "A protective layer of hot, hard peppermint icing coats you For the duration, you gain a +1 bonus to AC and if a creature hits you with a melee attack, the creature takes {@damage 1d4} fire damage. This damage can trigger no more than once per turn"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Tamer",
+                        "source": "HelianasGuidetoMonsterHunting"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting",
+            "damageInflict": [
+                "fire"
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the fire damage increases by {@scaledamage  1d4|1-9|1d4} for each slot level above 1st."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Primal Scent",
+            "level": 0,
+            "school": "D",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "concentration": true,
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1,
+                        "upTo": true
+                    }
+                }
+            ],
+            "entries": [
+                "You inhale deeply, magically enhancing the scents that surround you You have advantage on the next ability check you make that relies on smell, and you can treat a roll of 4 or lower as a 5",
+                "When you reach higher levels, this spell gives you an increasingly astute ability to identify the source of the scents around you When you reach 5th level, whenever you make an ability check that relies on smell, you can treat a {@dice d20} roll of 7 or lower as an 8 At 11th level, a roll of 10 or lower is treated as an 11, and at 17th level, a roll of 13 or lower is treated as a 14"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Tamer",
+                        "source": "HelianasGuidetoMonsterHunting"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting",
+            "entriesHigherLevel": []
+        },
+        {
+            "name": "Pins & Needles",
+            "level": 0,
+            "school": "BM",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant",
+                    "concentration": false
+                }
+            ],
+            "entries": [
+                "509509Appendix B | SpellsYou momentarily shut down a small part of the nervous system of a creature you can see within range, before overstimulating it and causing crippling pain The creature must succeed on a Constitution saving throw or take {@damage 1d8} psychic damage If the target fails its saving throw by 5 or more, it has disadvantage on the next attack roll it makes before the end of its next turn as it temporarily loses full control of a part of its body",
+                "This spell\u2019s damage increases by {@damage 1d8} when you reach 5th level {@damage 2d8} 11th level {@damage 3d8} and 17th level {@damage 4d8}"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting",
+            "damageInflict": [
+                "psychic"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "entriesHigherLevel": []
+        },
+        {
+            "name": "Preserve",
+            "level": 2,
+            "school": "BM",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "some ether"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "concentration": false,
+                    "duration": {
+                        "type": "hour",
+                        "amount": 24,
+                        "upTo": false
+                    }
+                }
+            ],
+            "entries": [
+                "With a flare of brilliant octarine light, each creature within a 10-foot-radius sphere centred on a point you can see within range must succeed on a Charisma saving throw or become soulbound for the duration, its magical essence tied to its physical (or incorporeal) form If a creature dies while soulbound, its magic is bound to its components for 24 hours allowing harvesting to start at any time within this period (see page 87 for the rules on harvesting). Once harvesting starts on a corpse under the effect of this spell, the spell ends for that corpse Creatures possessing robust or more powerful essence (typically, those of CR 7 or higher) automatically succeed on this saving throw"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Tamer",
+                        "source": "HelianasGuidetoMonsterHunting"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting",
+            "savingThrow": [
+                "charisma"
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 4th level or higher, the strength of the essence possessed by creatures that allows them to automatically succeed on the saving throw increases by one tier for each slot level above 2nd This impacts creatures with potent or more powerful essence (typically CR 12) at 4th level, mythic (typically CR 18) at 6th level, and deific (typically CR 25) at 8th level.."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Protection",
+            "level": 2,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a miniature silver shield worth 10 gp, which the spell consumes"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "concentration": true,
+                    "duration": {
+                        "type": "hour",
+                        "amount": 1,
+                        "upTo": true
+                    }
+                }
+            ],
+            "entries": [
+                "You trace a warding sigil in the air, sending it to slowly circle a willing creature you can see for the next hour Immediately before the target next takes damage, except psychic damage, the ward triggers Until the end of the target\u2019s next turn, it has resistance to all damage excluding psychic, including the triggering damage The warding sigil then disappears, and the spell ends on the target"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Tamer",
+                        "source": "HelianasGuidetoMonsterHunting"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting",
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 3rd level or higher, you may target one additional creature for each slot level above 2nd."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Power Word Shield",
+            "level": 7,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "reaction",
+                    "condition": "which you take when a creature you can see is the target of an attack or spell"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": false
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "concentration": false,
+                    "duration": {
+                        "type": "round",
+                        "amount": 1,
+                        "upTo": false
+                    }
+                }
+            ],
+            "entries": [
+                "With a word, a translucent shield bubbles out from a creature you can see within range Until the end of its next turn, it is immune to all damage types except psychic, it has advantage on all saving throws, and all other power word spells have no effect on it. If the creature is {@condition poisoned} that condition is removed, and if the creature is aflame, the fires are extinguished."
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting",
+            "entriesHigherLevel": []
         }
     ],
     "roll20Spell": [
@@ -3353,6 +3886,72 @@
         },
         {
             "name": "Mechamagic",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {}
+        },
+        {
+            "name": "Mireball",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {
+                "Save": "Strength",
+                "Damage": "3d10",
+                "Damage Type": "Bludgeoning",
+                "Save Success": "Half damage",
+                "Higher Spell Slot Die": "d10",
+                "Higher Spell Slot Dice": "1"
+            }
+        },
+        {
+            "name": "Mortiferous Pulse",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {
+                "Save": "Dexterity",
+                "Damage": "3d8",
+                "Damage Type": "Necrotic",
+                "Save Success": "Half damage",
+                "Higher Spell Slot Die": "d8",
+                "Higher Spell Slot Dice": "1"
+            }
+        },
+        {
+            "name": "Peppermint Plate",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {
+                "Damage": "1d4",
+                "Damage Type": "Fire",
+                "Higher Spell Slot Die": "d4",
+                "Higher Spell Slot Dice": "1"
+            }
+        },
+        {
+            "name": "Pins & Needles",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {}
+        },
+        {
+            "name": "Pins & Needles",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {
+                "Save": "Constitution",
+                "Damage": "1d8",
+                "Damage Type": "Psychic",
+                "data-Cantrip Scaling": "dice"
+            }
+        },
+        {
+            "name": "Preserve",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {
+                "Save": "Charisma"
+            }
+        },
+        {
+            "name": "Protection",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {}
+        },
+        {
+            "name": "Power Word Shield",
             "source": "HelianasGuidetoMonsterHunting",
             "data": {}
         }
