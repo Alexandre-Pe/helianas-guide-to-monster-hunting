@@ -26,7 +26,7 @@
             }
         },
         "dateAdded": 1661628906,
-        "dateLastModified": 1661710892
+        "dateLastModified": 1661721998
     },
     "spell": [
         {
@@ -1131,6 +1131,1351 @@
                     ]
                 }
             ]
+        },
+        {
+            "name": "Dreamwalk",
+            "level": 2,
+            "school": "E",
+            "meta": {
+                "ritual": true
+            },
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a tiny dreamcatcher"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "concentration": false,
+                    "duration": {
+                        "type": "hour",
+                        "amount": 24,
+                        "upTo": false
+                    }
+                }
+            ],
+            "entries": [
+                "Choose up to ten willing creatures you can see within range For the duration, they gain the ability to lucidly dream whenever they sleep While lucid dreaming, a creature always knows if the {@spell dream} spell is being used to target it In addition, when you cast this spell, each creature affected by it can choose to instantly fall asleep, even if that creature has a trait that normally prevents it from being magically put to sleep (such as elves\u2019 Fey Ancestry)"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting",
+            "entriesHigherLevel": []
+        },
+        {
+            "name": "Eelskin",
+            "level": 2,
+            "school": "BM",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "touch",
+                    "amount": 0
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "some jellied eel"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "concentration": true,
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1,
+                        "upTo": true
+                    }
+                }
+            ],
+            "entries": [
+                "You cause the skin of a willing creature you touch to produce a slimy, electrified mucous. The creature\u2019s unarmed strikes and natural weapon attacks become magical for the duration of the spell. The first time the creature hits with an unarmed strike or an attack using a natural weapon on its turn, it deals an additional {@damage 1d8} lightning damage as the stored lightning discharges",
+                {
+                    "type": "entries",
+                    "name": "Slimy",
+                    "entries": [
+                        "For the duration, the creature has advantage on checks and saves made to avoid being {@condition grappled} or restrained, and disadvantage on any attempts you make to grapple another creature"
+                    ]
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Tamer",
+                        "source": "HelianasGuidetoMonsterHunting"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting",
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8 per two slot levels above 2nd."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Endoleech",
+            "level": 2,
+            "school": "BM",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "touch",
+                    "amount": 0
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "red, yellow, and blue pigment"
+            },
+            "duration": [
+                {
+                    "type": "instant",
+                    "concentration": false
+                }
+            ],
+            "entries": [
+                "You touch a creature, absorbing the energy from its body and bolstering your metabolism Make a melee spell attack against a creature you can reach On a hit, the target takes {@damage 5d6} cold damage and can\u2019t take reactions until the end of its next turn In addition, until the end of its next turn, its speed is reduced by 15 feet and your speed is increased by 15 feet"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting",
+            "damageInflict": [
+                "cold"
+            ],
+            "spellAttack": [
+                "M"
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@scaledamage  5d6|2-9|1d6} for each slot level above 2nd."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Endure",
+            "level": 5,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a gem-encrusted cockroach worth 250 gp, which the spell consumes"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "concentration": false,
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1,
+                        "upTo": false
+                    }
+                }
+            ],
+            "entries": [
+                "Choose a willing creature you can see within range; it ceases to heed the pained calls of its body, needing neither food nor water to exist. An affected creature ignores the effects of exhaustion, the {@condition poisoned} condition, and cannot be incapacitated, stunned, paralysed, or fall unconscious. Each time an affected creature takes damage that would reduce its hit points to 0, it makes a death saving throw instead If the creature fails 3 death saving throws, it dies",
+                "When the spell ends, the creature gains a level of {@condition exhaustion} for each death saving throw it failed If the creature is resurrected after dying from these failed death saving throws, it does not regain consciousness for a duration equal to the time for which this spell affected it When it wakes, it gains 3 levels of {@condition exhaustion}",
+                "If the creature is still alive when the spell ends, it falls {@condition unconscious} for a duration equal to the time for which this spell affected it. Whilst {@condition unconscious} in this way, the creature can not be awakened by any means short of a {@spell wish} spell"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Tamer",
+                        "source": "HelianasGuidetoMonsterHunting"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting",
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 6th level or higher, you can increase the duration to 10 minutes (6th level), 1 hour (7th level), 8 hours (8th level) or 1 day (9th level).."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Enrage",
+            "level": 3,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 120
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a red handkerchief"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "concentration": true,
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1,
+                        "upTo": true
+                    }
+                }
+            ],
+            "entries": [
+                "You attempt to create violent emotions in a group of people Each humanoid in a 20-foot-radius sphere centred on a point you choose within range must make a Charisma saving throw; a creature can choose to fail this saving throw if it wishes A creature that fails this saving throw becomes enraged for the duration",
+                "While enraged, a target becomes hostile towards all creatures An enraged creature that is concentrating on a spell must succeed on a DC 10 Constitution saving throw at the start of each of its turns or lose concentration on the spell",
+                "As an action, you can force an enraged creature to use its reaction to make one melee weapon attack against one randomly determined creature within the enraged creature\u2019s reach If the enraged creature was friendly towards the target of its attack before this spell was cast, the enraged creature can repeat the saving throw immediately after making the attack, ending the effect on itself on a success.",
+                "An enraged creature can repeat the saving throw whenever it takes damage, ending the effect on itself on a success When the spell ends, the creature reverts to its previous disposition again, unless the GM rules otherwise"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting",
+            "savingThrow": [
+                "charisma"
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 3rd level or higher and use an action to force an enraged creature to make a melee weapon attack, you can force one additional enraged creature to make a melee weapon attack for each slot level above 3rd."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Ferocious Strike",
+            "level": 0,
+            "school": "BM",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self",
+                    "amount": 0
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant",
+                    "concentration": false
+                }
+            ],
+            "entries": [
+                "With a pulse of adrenaline, a tremendous ferocity comes upon you Make one weapon attack against a target within your reach or range If this attack hits, the target takes additional {@damage 1d4} damage of the weapon\u2019s damage type",
+                "This spell\u2019s damage increases by {@damage 1d4} when you reach 5th level ({@damage 2d4}) 11th level ({@damage 3d4}) and 17th level ({@damage 4d4})."
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Tamer",
+                        "source": "HelianasGuidetoMonsterHunting"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting",
+            "spellAttack": [
+                "M"
+            ],
+            "entriesHigherLevel": []
+        },
+        {
+            "name": "Feverskin",
+            "level": 5,
+            "school": "BM",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "touch",
+                    "amount": 0
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a red hot chilli pepper, which the spell consumes"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "concentration": true,
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1,
+                        "upTo": true
+                    }
+                }
+            ],
+            "entries": [
+                "You eat a chilli pepper, your metabolism increases, and your skin begins to burn to the touch Make a melee spell attack against a creature within your reach On a hit, the target takes {@damage 6d6} fire damage. Until the spell ends, you can use an action on each of your subsequent turns to make this attack again",
+                "For the duration, your walking speed increases by 15 feet, and you gain {@damage 2d6} temporary hit points at the start of each of your turns"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Tamer",
+                        "source": "HelianasGuidetoMonsterHunting"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting",
+            "damageInflict": [
+                "fire"
+            ],
+            "spellAttack": [
+                "M"
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 6th level or higher, the damage increases by {@scaledamage  6d6|5-9|1d6} for each slot level above 5th."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Firther\u2019s Shadow",
+            "level": 3,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 90
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "concentration": true,
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1,
+                        "upTo": true
+                    }
+                }
+            ],
+            "entries": [
+                "You warp and distort the memories of a creature you can see within range, bringing forth hideous and disturbing mental images The creature must make an Intelligence saving throw On a failed save, the creature takes {@damage 4d10} psychic damage and you learn something about the creature (roll a {@dice d6} and consult the following list):",
+                "On a successful save, the creature takes half as much damage and you don\u00e2\u20ac\u2122t learn anything A creature with an Intelligence score of 4 or lower automatically succeeds on the saving throw.",
+                "If a creature fails the initial saving throw then, on each of your turns for the duration, you can use your action to force the creature to make an Intelligence saving throw On a failure, the creature takes {@damage 4d6} psychic damage and you learn something about the creature (roll a {@dice d6} and consult the table above). On a success, the creature takes half as much damage, you don\u00e2\u20ac\u2122t learn anything, and the spell ends The spell also ends if the target is ever outside the spell\u00e2\u20ac\u2122s range.",
+                {
+                    "type": "entries",
+                    "name": "1",
+                    "entries": [
+                        "The creature\u2019s name"
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "2",
+                    "entries": [
+                        "Something the creature fears"
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "3",
+                    "entries": [
+                        "Something the creature desires"
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "4",
+                    "entries": [
+                        "The creature\u2019s condition immunities"
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "5",
+                    "entries": [
+                        "The creature\u2019s damage vulnerabilities, resistances, and immunities"
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "6",
+                    "entries": [
+                        "The creature\u2019s skill and saving throw proficiencies"
+                    ]
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting",
+            "damageInflict": [
+                "psychic"
+            ],
+            "savingThrow": [
+                "intelligence"
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 4th level or higher, the initial and ongoing damage increases by {@scaledamage  4d10|3-9|1d10} and {@scaledamage  4d10|3-9|1d6,} respectively, for each slot level above 3rd."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Fixit",
+            "level": 1,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "minute"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "touch",
+                    "amount": 0
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "adhesive tape with ducks drawn on it"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "concentration": false,
+                    "duration": {
+                        "type": "minute",
+                        "amount": 10,
+                        "upTo": false
+                    }
+                }
+            ],
+            "entries": [
+                "You imbue a broken item no larger than 20 feet in any dimension with pure belief For the duration, the item is whole once more In addition, if you were familiar with the item\u2019s magical function (GM\u2019s discretion) and its rarity was no higher than common, the item regains its magical properties for the duration"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting",
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 3rd level or higher, the rarity of the item that can regain its magical properties increases to uncommon (3rd level), rare (5th level), very rare (7th level), or legendary (9th level)."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Flare",
+            "level": 0,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a strip of magnesium"
+            },
+            "duration": [
+                {
+                    "type": "instant",
+                    "concentration": false
+                }
+            ],
+            "entries": [
+                "You launch a pulse of radiant energy at a target within range Make a ranged spell attack against the target On a hit, the target takes {@damage 1d8} radiant damage On a critical hit, the target is covered in glittering mystical light, granting advantage on attack rolls against the target until the end of your next turn",
+                "Alternatively, you can launch the pulse at a point in the air within range where it slowly falls towards the ground. Until the end of your next turn, the flare sheds bright light in a 20-foot radius and dim light for an additional 20 feet",
+                "This spell\u2019s damage increases by {@damage 1d8}, and the radius of the bright and dim light increases by 10 feet, when you reach 5th level ({@damage 2d8}, 30 feet), 11th level ({@damage 3d8}, 40 feet), and 17th level ({@damage 4d8}, 50 feet)."
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting",
+            "damageInflict": [
+                "radiant"
+            ],
+            "spellAttack": [
+                "R"
+            ],
+            "entriesHigherLevel": []
+        },
+        {
+            "name": "Flipperform",
+            "level": 1,
+            "school": "BM",
+            "meta": {
+                "ritual": true
+            },
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a fish\u2019s fin"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "concentration": false,
+                    "duration": {
+                        "type": "hour",
+                        "amount": 1,
+                        "upTo": false
+                    }
+                }
+            ],
+            "entries": [
+                "You change the morphology of a willing creature within range. It grows webbed fingers and gains a swimming speed equal to its walking speed"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Tamer",
+                        "source": "HelianasGuidetoMonsterHunting"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting",
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, you can affect one additional creature for each slot level above 1st In addition, the duration of the spell doubles for each slot level above 1st."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Fungal Infection",
+            "level": 4,
+            "school": "BM",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 90
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a mushroom"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "concentration": true,
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1,
+                        "upTo": true
+                    }
+                }
+            ],
+            "entries": [
+                "With an exhalation, fungal spores waft their way towards a point within range Each creature in a 15-foot-radius sphere centred on that point must succeed on a Constitution saving throw or become cursed until the spell ends",
+                "An affected creature can repeat the saving throw at the end of each of its turns (after the effects of this spell have triggered), ending the effect on itself on a success.",
+                "When you cast the spell, choose one of the following fungi to grow on the cursed creatures:",
+                {
+                    "type": "entries",
+                    "name": "Amanita Rotgut",
+                    "entries": [
+                        "The creature immediately takes {@damage 2d6} poison damage and becomes {@condition poisoned} While {@condition poisoned} in this way, the creature takes {@damage 2d6} poison damage at the end of each of its subsequent turns"
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Necrotising Zygomycosis",
+                    "entries": [
+                        "The creature immediately takes {@damage 2d8} necrotic damage, and takes {@damage 2d8} necrotic damage at the start of each of its turns"
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Psilocybin Quickitrippiae",
+                    "entries": [
+                        "The creature begins \u2018tripping\u2019 It must roll a {@dice d4} at the start of each of its turns On a 1 the creature doesn\u2019t move or take actions this turn"
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Paralysing Mucorales",
+                    "entries": [
+                        "At the end of each of the creature\u2019s turns, it becomes {@condition stunned} until the start of its next turn If the creature failed its previous saving throw against this spell by 5 or more, it is paralysed instead"
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Raging Henbane",
+                    "entries": [
+                        "The creature becomes {@condition charmed} by you and must use its reaction at the start of each of its turns to make one weapon attack against a randomly determined creature within its reach/range other than you"
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Veiled Lady",
+                    "entries": [
+                        "The creature\u2019s vision darkens to a pinhole; the creature has disadvantage on Dexterity saving throws, and ranged attacks have advantage against the creature"
+                    ]
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting",
+            "damageInflict": [
+                "poison"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 5th level or higher, the damage of Amanita Rotgut and Necrotising Zygomycosis increases by {@scaledamage  2d6|4-9|1d6} and {@scaledamage  2d8|4-9|1d8}, respectively, for each slot level above 4th When you cast this spell using a spell slot of 6th level or higher, you can choose two different fungi to grow on affected targets instead of one."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Gravity Repulsion",
+            "level": 4,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "sphere",
+                "distance": {
+                    "type": "feet",
+                    "amount": 20
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "concentration": true,
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1,
+                        "upTo": true
+                    }
+                }
+            ],
+            "entries": [
+                "You emit waves of gravitational energy, distorting the trajectories of incoming projectiles and making movement difficult. For the duration, ranged weapon attacks made against you have disadvantage In addition, the area within 20 feet of you is difficult terrain for creatures of your choice that you can see",
+                {
+                    "type": "entries",
+                    "name": "Gravity Pulse",
+                    "entries": [
+                        "When you cast this spell and as a bonus action on your subsequent turns, you can create a gravity pulse, forcing one Huge or smaller creature of your choice that you can see within 20 feet of you to make a Strength saving throw On a failure the creature is pushed 10 feet in a direction of your choice and falls {@condition prone} taking {@damage 3d6} force damage"
+                    ]
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting",
+            "damageInflict": [
+                "force"
+            ],
+            "savingThrow": [
+                "strength"
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 5th level or higher, the damage increases by {@scaledamage  3d6|4-9|1d6} the radius of the difficult terrain increases by 5 feet, and the range gravity pulse increases by 5 feet for each slot level above 4th."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Gravity Smash",
+            "level": 5,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 120
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "concentration": true,
+                    "duration": {
+                        "type": "round",
+                        "amount": 1,
+                        "upTo": true
+                    }
+                }
+            ],
+            "entries": [
+                "You strike the ground, choosing a point you can see within range to begin accumulating gravity A 40-foot-radius, 100-foot-high cylinder centred on that point becomes difficult terrain until the start of your next turn When the spell ends, the gravity reaches a critical magnitude, smashing all creatures in the cylinder downwards; each creature in the area must make a Strength saving throw If the spell ends before the start of your next turn, then, on a failed saving throw, a creature takes {@damage 4d10} force damage and is knocked {@condition prone} If the spell ends at the start of your next turn, this spell deals {@damage 8d10} force damage instead On a successful save, a creature takes half as much damage and isn\u2019t knocked {@condition prone}"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting",
+            "damageInflict": [
+                "force"
+            ],
+            "savingThrow": [
+                "strength"
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "hen you cast this spell using a spell slot of 6th level or higher, both damage values increase by {@scaledamage  4d10|5-9|1d10} for each slot level above 5th."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Howl",
+            "level": 0,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "sphere",
+                "distance": {
+                    "type": "feet",
+                    "amount": 1000
+                }
+            },
+            "components": {
+                "v": true,
+                "s": false
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "concentration": false,
+                    "duration": {
+                        "type": "round",
+                        "amount": 1,
+                        "upTo": false
+                    }
+                }
+            ],
+            "entries": [
+                "You utter a bestial, magically-augmented howl that can be heard for 1000 feet The howl can manifest as any animal call you\u2019ve heard, such as the screech of a hawk or trumpet of an elephant Choose one creature with whom you are familiar as the recipient: if it can hear your howl, it understands your meaning and can respond in a likewise manner",
+                "Creatures other than your recipient that hear the howl and that are under the effects of the {@spell comprehend languages} spell or similar magic, or that can understand beasts, can understand the howl\u2019s meaning Otherwise, the howl is unintelligible to creatures that can hear it"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Tamer",
+                        "source": "HelianasGuidetoMonsterHunting"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting",
+            "entriesHigherLevel": []
+        },
+        {
+            "name": "Humperdink\u2019s Halitosis",
+            "level": 1,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "cone",
+                "distance": {
+                    "type": "feet",
+                    "amount": 15
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "concentration": true,
+                    "duration": {
+                        "type": "round",
+                        "amount": 1,
+                        "upTo": true
+                    }
+                }
+            ],
+            "entries": [
+                "You belch forward acidic fumes, afflicting those in a 15-foot cone before you The fumes spread around corners All creatures in the area must make a Constitution saving throw, taking {@damage 3d4} acid damage on a failure or half as much damage on a success",
+                "The fumes linger until the end of your next turn or until dispersed by a moderate or stronger wind Any creature ending its turn in the area must make a Constitution saving throw, taking {@damage 3d4} acid damage, taking half as much damage on a success"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting",
+            "damageInflict": [
+                "acid"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@scaledamage  3d4|1-9|1d4} for each slot level above 1st."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Incorporeality",
+            "level": 5,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "touch",
+                    "amount": 0
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "concentration": true,
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1,
+                        "upTo": true
+                    }
+                }
+            ],
+            "entries": [
+                "You touch a willing creature, causing it, and everything it is wearing and carrying, to become translucent At the start of each of the target\u2019s turns for the duration, it can choose to become incorporeal (no action required). When it does so, it has advantage on Stealth checks; it gains resistance to nonmagical bludgeoning, piercing, and slashing damage; and it can move through other creatures and objects as if they were difficult terrain until the end of its turn. If the target ends its turn inside an object, it is shunted to the nearest unoccupied space, taking {@damage 1d10} force damage for every 5 feet it is shunted"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Tamer",
+                        "source": "HelianasGuidetoMonsterHunting"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting",
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot level of 7th level or higher, you can choose to increase the spell\u2019s duration, or the number of targets, for each slot level above 6th If you choose duration, the duration increases in increments to 10 minutes (7th level), 1 hour (8th level), or 8 hours (9th level). If you choose to increase the number of targets, the number increases by 1 for each slot level."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Inequality",
+            "level": 2,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "drop of blood and water, mixed"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "concentration": true,
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1,
+                        "upTo": true
+                    }
+                }
+            ],
+            "entries": [
+                "You twist the fates of two creatures you can see, both of whom must be within range Choose one target to favour and one to disfavour The disfavoured target must succeed on a Charisma saving throw or the following effects occur:",
+                {
+                    "type": "list",
+                    "items": [
+                        "Whenever the favoured target makes an attack roll or saving throw before the spell ends, the favoured target can roll a {@dice d4} and add the number rolled to the attack or saving throw",
+                        "Whenever the disfavoured target makes an attack roll or saving throw before the spell ends, the disfavoured target must roll a {@dice d4} and subtract the number rolled from the attack or saving throw",
+                        "The disfavoured target\u2019s speed is halved, whilst the favoured target\u2019s speed increases by half"
+                    ]
+                },
+                "These effects end for the pair if either of the target pair is knocked {@condition unconscious} killed, or the spell ends While under the influence of this spell, a favoured target can\u2019t benefit from the {@spell bless} spell, and a disfavoured target can\u2019t be afflicted by the {@spell bane} spell"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Tamer",
+                        "source": "HelianasGuidetoMonsterHunting"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting",
+            "savingThrow": [
+                "charisma"
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 4th level or higher, you can link two other creatures, favouring one, and disfavouring the other, for each two slot levels above 2nd."
+                    ]
+                }
+            ]
         }
     ],
     "roll20Spell": [
@@ -1271,6 +2616,162 @@
                 "Spell Attack": "Melee",
                 "Higher Spell Slot Die": "d10",
                 "Higher Spell Slot Dice": "1"
+            }
+        },
+        {
+            "name": "Dreamwalk",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {}
+        },
+        {
+            "name": "Eelskin",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {}
+        },
+        {
+            "name": "Endoleech",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {
+                "Damage": "5d6",
+                "Damage Type": "Cold",
+                "Spell Attack": "Melee",
+                "Higher Spell Slot Die": "d6",
+                "Higher Spell Slot Dice": "1"
+            }
+        },
+        {
+            "name": "Endure",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {}
+        },
+        {
+            "name": "Enrage",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {
+                "Save": "Charisma"
+            }
+        },
+        {
+            "name": "Ferocious Strike",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {
+                "Damage": "1d4",
+                "Spell Attack": "Melee",
+                "data-Cantrip Scaling": "dice"
+            }
+        },
+        {
+            "name": "Feverskin",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {
+                "Damage": "6d6",
+                "Damage Type": "Fire",
+                "Spell Attack": "Melee",
+                "Higher Spell Slot Die": "d6",
+                "Higher Spell Slot Dice": "1"
+            }
+        },
+        {
+            "name": "Firther\u2019s Shadow",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {
+                "Save": "Intelligence",
+                "Damage": "4d10",
+                "Damage Type": "Psychic",
+                "Save Success": "Half damage",
+                "Higher Spell Slot Die": "d10",
+                "Higher Spell Slot Dice": "1"
+            }
+        },
+        {
+            "name": "Fixit",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {}
+        },
+        {
+            "name": "Flare",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {
+                "Damage": "1d8",
+                "Damage Type": "Radiant",
+                "Spell Attack": "Ranged",
+                "data-Cantrip Scaling": "dice"
+            }
+        },
+        {
+            "name": "Flipperform",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {}
+        },
+        {
+            "name": "Fungal Infection",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {
+                "Save": "Constitution",
+                "Damage": "2d6",
+                "Damage Type": "Poison",
+                "Higher Spell Slot Die": "d6",
+                "Higher Spell Slot Dice": "1",
+                "Secondary Damage": "2d8",
+                "Secondary Damage Type": "Necrotic",
+                "Secondary Higher Spell Slot Die": "d8",
+                "Secondary Higher Spell Slot Dice": "1"
+            }
+        },
+        {
+            "name": "Gravity Repulsion",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {
+                "Save": "Strength",
+                "Damage": "3d6",
+                "Damage Type": "Force",
+                "Higher Spell Slot Die": "d6",
+                "Higher Spell Slot Dice": "1"
+            }
+        },
+        {
+            "name": "Gravity Smash",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {
+                "Save": "Strength",
+                "Damage": "4d10",
+                "Damage Type": "Force",
+                "Save Success": "Half damage",
+                "Higher Spell Slot Die": "d10",
+                "Higher Spell Slot Dice": "1",
+                "Secondary Damage": "8d10",
+                "Secondary Damage Type": "Force",
+                "Secondary Higher Spell Slot Die": "d10",
+                "Secondary Higher Spell Slot Dice": "1"
+            }
+        },
+        {
+            "name": "Howl",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {}
+        },
+        {
+            "name": "Humperdink\u2019s Halitosis",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {
+                "Save": "Constitution",
+                "Damage": "3d4",
+                "Damage Type": "Acid",
+                "Save Success": "Half damage",
+                "Higher Spell Slot Die": "d4",
+                "Higher Spell Slot Dice": "1"
+            }
+        },
+        {
+            "name": "Incorporeality",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {}
+        },
+        {
+            "name": "Inequality",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {
+                "Save": "Charisma"
             }
         }
     ]
