@@ -26,7 +26,7 @@
             }
         },
         "dateAdded": 1661628906,
-        "dateLastModified": 1661725396
+        "dateLastModified": 1661726143
     },
     "spell": [
         {
@@ -3711,6 +3711,313 @@
                     ]
                 }
             ]
+        },
+        {
+            "name": "Smokescreen",
+            "level": 0,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "cylinder",
+                "distance": {
+                    "type": "feet",
+                    "amount": 5
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a puffball mushroom"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "concentration": true,
+                    "duration": {
+                        "type": "round",
+                        "amount": 1,
+                        "upTo": true
+                    }
+                }
+            ],
+            "entries": [
+                "You spew a thick cloud of dense black smoke that forms a 5-foot-diameter, 10-foot-high cylinder centred on you that lasts until the start of your next turn The smoke heavily obscures its area When you cast the spell, you can choose whether the cloud remains in the location where you cast it or moves with you, centred on you",
+                "When you reach higher levels, the size of the cloud you can create with this spell increases When you reach 5th level, the cloud has a maximum diameter of 15 feet and a height of 20 feet; at 11th level this increases to 25 feet and 30 feet; and at 17th level this increases to 35 feet and 40 feet You choose how big the cloud is in each dimension up to this maximum each time that you cast it"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Tamer",
+                        "source": "HelianasGuidetoMonsterHunting"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting",
+            "entriesHigherLevel": []
+        },
+        {
+            "name": "Spark",
+            "level": 0,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant",
+                    "concentration": false
+                }
+            ],
+            "entries": [
+                "A spark of bright light arcs from you to a creature within range Make a ranged spell attack against the target On a hit, the target takes {@damage 1d8} lightning damage On a critical hit, the target is also {@condition blinded} until the end of its next turn",
+                "The spell creates more than one spark when you reach higher levels: two sparks at 5th level, three sparks at 11th level, and four sparks at 17th level You can direct the sparks at the same target or at different ones Make a separate attack roll for each spark"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting",
+            "damageInflict": [
+                "lightning"
+            ],
+            "spellAttack": [
+                "R"
+            ],
+            "entriesHigherLevel": []
+        },
+        {
+            "name": "Spore Cloud",
+            "level": 0,
+            "school": "BM",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "sphere",
+                "distance": {
+                    "type": "feet",
+                    "amount": 5
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a toadstool"
+            },
+            "duration": [
+                {
+                    "type": "instant",
+                    "concentration": false
+                }
+            ],
+            "entries": [
+                "You produce a cloud of virulent spores Each creature within 5 feet of you, other than you, must succeed on a Constitution saving throw or take {@damage 1d4} poison damage A creature that fails the saving throw by 5 or more is {@condition poisoned} until the end of its next turn",
+                "The spell\u2019s damage increases by {@damage 1d6} when you reach 5th level {@damage 2d4} 11th level {@damage 3d4} and 17th level {@damage 4d4}"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting",
+            "damageInflict": [
+                "poison"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "entriesHigherLevel": []
+        },
+        {
+            "name": "Stalker\u2019s Eye",
+            "level": 0,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "touch",
+                    "amount": 0
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "small magnifying lens"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "concentration": true,
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1,
+                        "upTo": true
+                    }
+                }
+            ],
+            "entries": [
+                "A willing creature you touch gains a preternatural ability to perceive the weaknesses in a creature\u2019s defences. The first time the creature makes an attack while under the effect of this spell, it makes the attack with advantage. After it makes an attack, the spell ends",
+                "This spell augments the creature\u2019s ability to strike at vital points when you reach certain levels When you reach 5th level, the augmented attack scores a critical hit on a roll of 19 or 20 At 11th level, this range is increased to 18 to 20, and at 17th level, this range becomes 17 to 20"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Tamer",
+                        "source": "HelianasGuidetoMonsterHunting"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting",
+            "entriesHigherLevel": []
+        },
+        {
+            "name": "Stench",
+            "level": 3,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 90
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a skunk\u2019s tail"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "concentration": true,
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1,
+                        "upTo": true
+                    }
+                }
+            ],
+            "entries": [
+                "Emanating from a point within range, a noxious, 20-foot-radius sphere of colourless fumes creates a choking, eye-watering miasma that penetrates through creatures\u2019 skin",
+                "When a creature enters the spell\u2019s area for the first time on its turn or starts its turn there, it must make a Constitution saving throw It takes {@damage 3d6} poison damage and becomes {@condition poisoned} until the end of its next turn on a failure, or takes half as much damage and is not {@condition poisoned} on a success Whilst {@condition poisoned} in this way, a creature has disadvantage on saving throws made to maintain its concentration"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting",
+            "damageInflict": [
+                "poison"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@scaledamage  3d6|3-9|1d6} for each slot level above 3rd."
+                    ]
+                }
+            ]
         }
     ],
     "roll20Spell": [
@@ -4168,6 +4475,47 @@
             "name": "Shielding Word",
             "source": "HelianasGuidetoMonsterHunting",
             "data": {}
+        },
+        {
+            "name": "Smokescreen",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {}
+        },
+        {
+            "name": "Spark",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {
+                "Damage": "1d8",
+                "Damage Type": "Lightning",
+                "Spell Attack": "Ranged"
+            }
+        },
+        {
+            "name": "Spore Cloud",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {
+                "Save": "Constitution",
+                "Damage": "1d4",
+                "Damage Type": "Poison",
+                "data-Cantrip Scaling": "dice"
+            }
+        },
+        {
+            "name": "Stalker\u2019s Eye",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {}
+        },
+        {
+            "name": "Stench",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {
+                "Save": "Constitution",
+                "Damage": "3d6",
+                "Damage Type": "Poison",
+                "Save Success": "Half damage",
+                "Higher Spell Slot Die": "d6",
+                "Higher Spell Slot Dice": "1"
+            }
         }
     ]
 }
