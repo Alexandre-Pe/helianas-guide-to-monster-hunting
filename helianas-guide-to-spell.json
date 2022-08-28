@@ -26,7 +26,7 @@
             }
         },
         "dateAdded": 1661628906,
-        "dateLastModified": 1661727304
+        "dateLastModified": 1661728124
     },
     "spell": [
         {
@@ -4498,6 +4498,340 @@
                     ]
                 }
             ]
+        },
+        {
+            "name": "Water Whip",
+            "level": 0,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant",
+                    "concentration": false
+                }
+            ],
+            "entries": [
+                "Choose a source of water that you can see within range that has a volume of at least 1 gallon Make a melee spell attack against a creature within 30 feet of the source of water On a hit, the target takes {@damage 1d6} slashing damage and, if the creature is Large or smaller, you can force it to make a Strength saving throw, pulling it up to 10 feet towards the body of water on a failure",
+                "The spell\u2019s damage and distance it can pull a target increases when you reach 5th level {@damage 2d6} and 15 feet), 11th level {@damage 3d6} and 20 feet), and 17th level {@damage 4d6} and 25 feet)"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting",
+            "damageInflict": [
+                "slashing"
+            ],
+            "savingThrow": [
+                "strength"
+            ],
+            "spellAttack": [
+                "M"
+            ],
+            "entriesHigherLevel": []
+        },
+        {
+            "name": "Weavebend",
+            "level": 4,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "reaction",
+                    "condition": "which you take when you see a creature within range casting a spell"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": false,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant",
+                    "concentration": false
+                }
+            ],
+            "entries": [
+                "You attempt to redirect a spell cast by a creature you can see If the creature is casting a spell of 3rd level or lower, you can redirect the spell If the spell involves a ranged spell attack, you can cause the ranged spell attack to target a different target within 10 feet of its original target. If the spell has an area of effect, you can shift the area of effect up to 10 feet in any direction If the creature is casting a spell of 4th level or higher, make an ability check using your spellcasting ability The DC equals 10 + the spell\u2019s level On a success, the creature\u2019s spell is redirected as described"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting",
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 5th level or higher, the spell is automatically redirected if its level is less than the level of the spell slot you used."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Weave Entanglement",
+            "level": 6,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 90
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a piece of felt"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "concentration": true,
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1,
+                        "upTo": true
+                    }
+                }
+            ],
+            "entries": [
+                "You imperceptibly tangle the threads of the Weave in a 20-foot-radius sphere centred on a point you can see within range Whenever a creature attempts to cast a spell of 1st level or higher in this area, it must make an ability check with its spellcasting ability against your spell save DC On a success, the spell is cast as normal On a failure, the spellcaster casts the spell and produces an additional effect. Roll a {@dice d10} and consult the following table to determine the additional effect",
+                {
+                    "type": "list",
+                    "items": [
+                        {
+                            "type": "entries",
+                            "name": "1",
+                            "entries": [
+                                "The spellcaster casts {@spell gravity smash|HelianasGuidetoMonsterHunting}"
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "2",
+                            "entries": [
+                                "The spellcaster casts {@spell phantasmal killer}"
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "3",
+                            "entries": [
+                                "The spellcaster casts {@spell confusion}"
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "4",
+                            "entries": [
+                                "The spellcaster casts {@spell fireball}"
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "5",
+                            "entries": [
+                                "The spellcaster casts {@spell zippit!|HelianasGuidetoMonsterHunting}"
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "6",
+                            "entries": [
+                                "The spellcaster casts {@spell web}"
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "7",
+                            "entries": [
+                                "The spellcaster casts {@spell darkness}"
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "8",
+                            "entries": [
+                                "The spellcaster casts {@spell silence}"
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "9",
+                            "entries": [
+                                "The spellcaster regains {@damage 2d10} hit points."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "10",
+                            "entries": [
+                                "The spellcaster doesn\u2019t expend a spell slot to cast its spell."
+                            ]
+                        }
+                    ]
+                },
+                "Any additional spell cast this way targets or is centred on the spellcaster, who has no control over the spell\u2019s effects. The DC for any saving throws equals the spellcaster\u2019s spell save DC In the case of concentration spells, no concentration is required At initiative count 20 of each round, roll a {@dice d20} for each ongoing additional effect. On a roll of 11 or higher, that effect ends"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting",
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 7th level or higher, you increase the radius of the area affected by 10 feet for each slot level above 6th."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Zippit!",
+            "level": 3,
+            "school": "BM",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "reaction",
+                    "condition": "which you take when a\ncreature within range vocalises"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "concentration": true,
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1,
+                        "upTo": true
+                    }
+                }
+            ],
+            "entries": [
+                "In response to a creature vocalizing, you make a sharp sound and hold a finger up in an attempt to interrupt them The target must succeed on a Constitution saving throw or become silenced as its mouth is fused shut for the duration If you silence a target that is casting a spell with verbal components, the target\u2019s spell slot isn\u2019t expended, but its action is wasted",
+                "At the end of each of its turns, the target can make a Strength saving throw it tries to tear open its mouth On a success, the target takes {@damage 1d8} slashing damage and is no longer silenced Alternatively, as an action, the target can use a bladed implement to cut open its mouth, taking {@damage 1d8} slashing damage and ending the silence"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting",
+            "damageInflict": [
+                "slashing"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@scaledamage  1d8|3-9|1d8} for each slot level above 3rd."
+                    ]
+                }
+            ]
         }
     ],
     "roll20Spell": [
@@ -5052,6 +5386,40 @@
             "source": "HelianasGuidetoMonsterHunting",
             "data": {
                 "Save": "Variable"
+            }
+        },
+        {
+            "name": "Water Whip",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {
+                "Save": "Strength",
+                "Damage": "1d6",
+                "Damage Type": "Slashing",
+                "Spell Attack": "Melee",
+                "data-Cantrip Scaling": "dice"
+            }
+        },
+        {
+            "name": "Weavebend",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {}
+        },
+        {
+            "name": "Weave Entanglement",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {
+                "Save": "Spellcasting"
+            }
+        },
+        {
+            "name": "Zippit!",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {
+                "Save": "Constitution",
+                "Damage": "1d8",
+                "Damage Type": "Slashing",
+                "Higher Spell Slot Die": "d8",
+                "Higher Spell Slot Dice": "1"
             }
         }
     ]
