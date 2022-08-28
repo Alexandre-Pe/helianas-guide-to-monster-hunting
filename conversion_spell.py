@@ -54,13 +54,17 @@ def convert():
     }]
 
     print("\nRange infos")
-    spell["range"] = {
+    range = {
         "type": input('type parmi "special", "point", line", "cube", "cone", "radius", "sphere", "hemisphere", "cylinder": ').strip(),
         "distance": {
-            "type": input("type distance (feet, miles, self, plan, sight, ...): "),
-            "amount": int(input('amount distance: ').strip())
+            "type": input("type distance (feet, miles, self, plan, sight, ...): ")
         }
     }
+    i = input('amount distance: ').strip()
+    if i != '':
+        range["distance"]["amount"] = int(i)
+
+    spell["range"] = range
 
     print("\nComponents infos")
     spell["components"] = {
@@ -73,17 +77,19 @@ def convert():
         spell["components"].pop("m")
 
     print("\nDuration infos")
-    spell["duration"] = [
-        {
+    duration = {
             "type": input('type parmi "timed", "instant", "permanent", "special": ').strip(),
-            "duration": {
+            "concentration": input('concentration ? (True/False): ').strip().lower() == "true"
+        }
+
+    if duration["type"] == "timed":
+        duration["duration"] = {
                 "type": input('unité de temps: ').strip(),
                 "amount": int(input('quantité unité: ').strip()),
                 "upTo": input('upTo ? (True/False): ').strip().lower() == "true"
             },
-            "concentration": input('concentration ? (True/False): ').strip().lower() == "true"
-        }
-    ]
+
+    spell["duration"] = duration
 
     ## Première partie de la description
     i = input("\nDescription: ").strip()
@@ -138,7 +144,7 @@ def convert():
 
     if "Damage Type" in roll20Spell["data"].keys():
         spell["damageInflict"] = [roll20Spell["data"]["Damage Type"].lower()]
-    if "Save" in roll20Spell["data"].keys():
+    if "Save" in roll20Spell["data"].keys() and roll20Spell["data"]["Save"] in ["Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma"]:
         spell["savingThrow"] = [roll20Spell["data"]["Save"].lower()]
     if "Spell Attack" in roll20Spell["data"].keys():
         spell["spellAttack"] = [roll20Spell["data"]["Spell Attack"][0].capitalize()]

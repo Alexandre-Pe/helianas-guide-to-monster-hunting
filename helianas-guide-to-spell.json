@@ -18,8 +18,15 @@
                 "targetSchema": "1.0"
             }
         ],
+        "spellSchools": {
+            "BM": {
+                "full": "Biomancy",
+                "short": "Bio",
+                "color": "93c572"
+            }
+        },
         "dateAdded": 1661628906,
-        "dateLastModified": 1661634505
+        "dateLastModified": 1661707837
     },
     "spell": [
         {
@@ -445,6 +452,458 @@
                 ]
             },
             "source": "HelianasGuidetoMonsterHunting"
+        },
+        {
+            "name": "Can\u2019trip",
+            "level": 0,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1,
+                        "upTo": false
+                    },
+                    "concentration": false
+                }
+            ],
+            "entries": [
+                "You temporarily tangle the Weave around a creature within range that you can see Until the start of your next turn, each time the creature tries to cast a cantrip whilst this spell affects it, it must succeed on a spellcasting ability check against your spell save DC waste its action (but not its spell slot). The spell ends if the target moves out of the spell\u2019s range",
+                "The maximum level of spell inhibited by this cantrip increases when you reach 5th level (1st-level spells), 11th level (2nd-level spells), and 17th level (3rd-level spells)."
+            ],
+            "entriesHigherLevel": [],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting"
+        },
+        {
+            "name": "Cannotrip",
+            "level": 1,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1,
+                        "upTo": true
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "Choose a creature you can see within range Each time the target tries to cast a spell of equal or lower level than this spell, it must succeed on a spellcasting ability check against your spell save DC or waste its action (but not its spell slot)."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, you inhibit spells 1 spell level higher for each slot level above 1st."
+                    ]
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting"
+        },
+        {
+            "name": "Chameleon Skin",
+            "level": 1,
+            "school": "BM",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "touch"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "red, yellow, and blue pigment"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 10,
+                        "upTo": true
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You imbue a creature you touch with pigment so that its skin, and anything it wears or carries, slowly shifts hues to match its surroundings For the duration, the target can take the Hide action as a bonus action on each of its turns, even when only lightly obscured",
+                "If the target did not move during its last turn, creatures have disadvantage on any Wisdom (Perception) checks made to see the target Creatures who do not rely on sight, such as those with tremorsense, are immune to this effect."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st."
+                    ]
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Tamer",
+                        "source": "HelianasGuidetoMonsterHunting"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting"
+        },
+        {
+            "name": "Concussion",
+            "level": 0,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant",
+                    "concentration": false
+                }
+            ],
+            "entries": [
+                "With a thdoom that can be heard 100 feet away, you cause a sudden increase in the air pressure surrounding a creature you can see within range The target must succeed on a Constitution saving throw or take 1d8 thunder damage and become deafened until the start of your next turn",
+                "This spell\u2019s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)"
+            ],
+            "entriesHigherLevel": [],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting",
+            "damageInflict": [
+                "thunder"
+            ],
+            "savingThrow": [
+                "constitution"
+            ]
+        },
+        {
+            "name": "Conjure Anomaly",
+            "level": 5,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "minute"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 90
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "an aberration component"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "concentration": true,
+                    "duration": {
+                        "type": "hour",
+                        "amount": 1,
+                        "upTo": true
+                    }
+                }
+            ],
+            "entries": [
+                "You call forth an aberration at random from the Anomalies, a distant and bizarre plane Choose an unoccupied space within range An aberration of challenge rating 5 or lower (GM\u2019s choice) appears in the space The aberration disappears when it drops to 0 hit points or when the spell ends",
+                "The aberration is friendly to you and your companions for the duration Roll initiative for the aberration, which has its own turns It obeys any verbal commands that you issue to it (no action required by you). If you don\u2019t issue any commands to the aberration, it defends itself from hostile creatures, but otherwise takes no actions",
+                "If your concentration is broken, the aberration doesn\u2019t disappear Instead, you lose control of the aberration, it becomes hostile towards you and your companions, and it might attack An uncontrolled aberration can\u2019t be dismissed by you, and it disappears 1 hour after you summoned it."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 6th level or higher, the challenge rating increases by 1 for each slot level above 5th."
+                    ]
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting"
+        },
+        {
+            "name": "Corrupting Ichor",
+            "level": 1,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": false,
+                "s": true,
+                "m": "some phlegm"
+            },
+            "duration": [
+                {
+                    "type": "instant",
+                    "concentration": false
+                }
+            ],
+            "entries": [
+                "You spit a globule of phlegm at one creature within range Make a ranged spell attack against the target On a hit, the target takes 2d8 necrotic damage In addition, until it uses its action to wipe off the phlegm, it takes 1d4 necrotic damage at the start of each of its turns and any hit points regained are reduced by half"
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the damage at the end of the target\u2019s next turn increases by 1d8 for each slot level above 1st."
+                    ]
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting",
+            "damageInflict": [
+                "necrotic"
+            ],
+            "spellAttack": [
+                "R"
+            ]
+        },
+        {
+            "name": "Daydream",
+            "level": 1,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a tiny, four-panelled window"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "concentration": true,
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1,
+                        "upTo": true
+                    }
+                }
+            ],
+            "entries": [
+                "You float some mildly distracting thoughts into the mind of a humanoid you can see within range The target must succeed on a Wisdom saving throw or have disadvantage on Wisdom (Perception) checks (taking a -5 penalty to its passive Perception as a result of this disadvantage) until the spell ends. A creature immune to being charmed is unaffected by this spell.",
+                "A creature that succeeds on the saving throw by 5 or more is aware that an attempt was made to influence it with magic Otherwise, the creature remains unaware of the magic that affected it."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st, or you can extend the range of the spell by 30 feet for each slot level above 1st."
+                    ]
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting",
+            "savingThrow": [
+                "wisdom"
+            ]
         }
     ],
     "roll20Spell": [
@@ -506,6 +965,58 @@
             "name": "Can\u2019t Trip",
             "source": "HelianasGuidetoMonsterHunting",
             "data": {}
+        },
+        {
+            "name": "Can\u2019trip",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {
+                "Save": "Spellcasting"
+            }
+        },
+        {
+            "name": "Cannotrip",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {
+                "Save": "Spellcasting"
+            }
+        },
+        {
+            "name": "Chameleon Skin",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {}
+        },
+        {
+            "name": "Concussion",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {
+                "Save": "Constitution",
+                "Damage": "1d8",
+                "Damage Type": "Thunder",
+                "data-Cantrip Scaling": "dice"
+            }
+        },
+        {
+            "name": "Conjure Anomaly",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {}
+        },
+        {
+            "name": "Corrupting Ichor",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {
+                "Damage": "2d8",
+                "Damage Type": "Necrotic",
+                "Spell Attack": "Ranged",
+                "Higher Spell Slot Die": "d8",
+                "Higher Spell Slot Dice": "1"
+            }
+        },
+        {
+            "name": "Daydream",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {
+                "Save": "Wisdom"
+            }
         }
     ]
 }
