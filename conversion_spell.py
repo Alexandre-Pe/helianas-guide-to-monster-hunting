@@ -11,6 +11,8 @@ def fuse(sp):
         else:
             content += ' ' + s
     return content
+    
+# @spell 
 
 def fuse_table(sp):
     if sp == ['']:
@@ -30,6 +32,18 @@ def class_list(string):
         return [{"name": c, "source": "PHB"} for c in cls] + [({"name": "Tamer", "source": "HelianasGuidetoMonsterHunting"})]
     return [{"name": c, "source": "PHB"} for c in cls]
 
+ponct = [',',';','?','.',':', '(', ')', '-', '_', '!', '%']
+def strip(ListeParasite, Texte):
+    for s in ListeParasite:
+        Texte=Texte.replace(s, '')
+    return Texte
+
+def stripListe(ListeParasite, ListeTexte):
+    L = []
+    for Texte in ListeTexte:
+        L.append(strip(ListeParasite, Texte))
+    return L
+
 def add_fancy(string):
     conditions = ['blinded', 'charmed', 'deafened', 'exhaustion', 'frightened', 'grappled', 'incapicitated',
         'invisible', 'paralyzed', 'petrified', 'poisoned', 'prone', 'restrained', 'stunned', 'unconscious']
@@ -37,6 +51,7 @@ def add_fancy(string):
 
     L  = string.split(" ")
     for i, w in enumerate(L):
+        w = strip(ponct, w)
         if w in conditions:
             L[i] = '{@condition ' + w + '}'
         elif w in dice:
@@ -55,6 +70,7 @@ def add_fancy_higher(string, level, damage):
 
     L  = string.split(" ")
     for i, w in enumerate(L):
+        w = strip(ponct, w)
         if w in conditions:
             L[i] = '{@condition ' + w + '}'
         elif w in dice:
@@ -168,7 +184,10 @@ def convert():
     }
     data_field = ["Save", "Damage", "Damage Type", "Healing", 
         "Save Success", "Spell Attack", "Higher Spell Slot Die", 
-        "Higher Spell Slot Dice", "Add Casting Modifier", "data-Cantrip Scaling"]
+        "Higher Spell Slot Dice", "Add Casting Modifier",
+        "Secondary Damage", "Secondary Damage Type",
+        "Secondary Higher Spell Slot Die", "Secondary Higher Spell Slot Dice",
+        "Secondary Add Casting Modifier", "data-Cantrip Scaling"]
     for field in data_field:
         i = input(f'{field}: ').strip()
         if i != '':
@@ -176,6 +195,8 @@ def convert():
 
     if "Damage Type" in roll20Spell["data"].keys():
         spell["damageInflict"] = [roll20Spell["data"]["Damage Type"].lower()]
+        if "Secondary Damage Type" in roll20Spell["data"].keys():
+            spell["damageInflict"].append(roll20Spell["data"]["Secondary Damage Type"].lower())
     if "Save" in roll20Spell["data"].keys() and roll20Spell["data"]["Save"] in ["Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma"]:
         spell["savingThrow"] = [roll20Spell["data"]["Save"].lower()]
     if "Spell Attack" in roll20Spell["data"].keys():
