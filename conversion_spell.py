@@ -30,6 +30,43 @@ def class_list(string):
         return [{"name": c, "source": "PHB"} for c in cls] + [({"name": "Tamer", "source": "HelianasGuidetoMonsterHunting"})]
     return [{"name": c, "source": "PHB"} for c in cls]
 
+def add_fancy(string):
+    conditions = ['blinded', 'charmed', 'deafened', 'exhaustion', 'frightened', 'grappled', 'incapicitated',
+        'invisible', 'paralyzed', 'petrified', 'poisoned', 'prone', 'restrained', 'stunned', 'unconscious']
+    dice = ["d4", "d6", "d8", "d10", "d12", "d20", "d100"]
+
+    L  = string.split(" ")
+    for i, w in enumerate(L):
+        if w in conditions:
+            L[i] = '{@condition ' + w + '}'
+        elif w in dice:
+            L[i] = '{@dice ' + w + '}'
+        else:
+            for d in dice:
+                if d in w:
+                    L[i] = '{@damage ' + w + '}'
+                    break
+    return ' '.join(L)
+
+def add_fancy_higher(string, level, damage):
+    conditions = ['blinded', 'charmed', 'deafened', 'exhaustion', 'frightened', 'grappled', 'incapicitated',
+        'invisible', 'paralyzed', 'petrified', 'poisoned', 'prone', 'restrained', 'stunned', 'unconscious']
+    dice = ["d4", "d6", "d8", "d10", "d12", "d20", "d100"]
+
+    L  = string.split(" ")
+    for i, w in enumerate(L):
+        if w in conditions:
+            L[i] = '{@condition ' + w + '}'
+        elif w in dice:
+            L[i] = '{@dice ' + w + '}'
+        else:
+            for d in dice:
+                if d in w:
+                    L[i] = '{@scaledamage  ' + f'{damage}|{level}-9|{w}' + '}'
+                    break
+    return ' '.join(L)
+
+
 def convert():
     spell = dict()
     data_field = ["name", "level", "school"] 
@@ -87,15 +124,15 @@ def convert():
                 "type": input('unité de temps: ').strip(),
                 "amount": int(input('quantité unité: ').strip()),
                 "upTo": input('upTo ? (True/False): ').strip().lower() == "true"
-            },
+            }
 
-    spell["duration"] = duration
+    spell["duration"] = [duration]
 
     ## Première partie de la description
     i = input("\nDescription: ").strip()
     entries = []
     while i != '':
-        entries.append(fuse(i.split('\n')))
+        entries.append(add_fancy(fuse(i.split('\n'))))
         i = input("Suite description (vide si finie): ").strip()
 
     ## Abilité spéciale s'il y en a une
@@ -105,22 +142,17 @@ def convert():
         entries.append({
             "type": "entries",
 			"name": i,
-			"entries": [text_ability]
+			"entries": [add_fancy(text_ability)]
         })
         i = input("Nom Abilité spéciale suivante(vide si finie): ").strip()
     spell["entries"] = entries
 
     ## À plus haut niveau s'il y a
-    i = input("\nAt higher levels (vide si absent): ").strip()
+    ahl = input("\nAt higher levels (vide si absent): ").strip()
     entriesHigherLevel = []
-    if i != '':
-        ahl = fuse(i.split('\n')) + '.'
-        entriesHigherLevel.append({
-            "type": "entries",
-			"name": "At Higher Levels",
-			"entries": [ahl]
-        })
-    spell["entriesHigherLevel"] = entriesHigherLevel
+    if ahl != '':
+        ahl = fuse(ahl.split('\n')) + '.'
+
 
     spell["classes"] = {
         "fromClassList": class_list(input("\nListe des classes: ").strip())
@@ -148,6 +180,16 @@ def convert():
         spell["savingThrow"] = [roll20Spell["data"]["Save"].lower()]
     if "Spell Attack" in roll20Spell["data"].keys():
         spell["spellAttack"] = [roll20Spell["data"]["Spell Attack"][0].capitalize()]
+
+    if ahl != '':
+        if "Damage" in roll20Spell["data"].keys():
+            ahl = add_fancy_higher(ahl, spell["level"], roll20Spell["data"]["Damage"])
+        entriesHigherLevel.append({
+            "type": "entries",
+			"name": "At Higher Levels",
+			"entries": [ahl]
+        })
+    spell["entriesHigherLevel"] = entriesHigherLevel
     
     i = input("ability check: ")
     if i != '':
