@@ -26,7 +26,7 @@
             }
         },
         "dateAdded": 1661628906,
-        "dateLastModified": 1661726143
+        "dateLastModified": 1661727304
     },
     "spell": [
         {
@@ -4018,6 +4018,486 @@
                     ]
                 }
             ]
+        },
+        {
+            "name": "Sugar Rush",
+            "level": 2,
+            "school": "BM",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "some candy"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "concentration": true,
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1,
+                        "upTo": true
+                    }
+                }
+            ],
+            "entries": [
+                "Choose a willing creature that you can see within range Until the spell ends, the target\u2019s speed is increased by 15 feet, and it gains a +1 bonus to AC As a bonus action on each of its turns, it can take the Dash, Disengage, Hide, or Use an Object action.",
+                "When the spell ends, or if an affected creature does not spend movement up to its walking speed by the end of its turn, it then develops a stomach ache and is {@condition poisoned} until the end of its next turn"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Tamer",
+                        "source": "HelianasGuidetoMonsterHunting"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting",
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 3rd-level or higher, you can target one additional creature for each slot level above 2nd."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Swarm",
+            "level": 0,
+            "school": "BM",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 90
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a spider sac"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "concentration": false,
+                    "duration": {
+                        "type": "round",
+                        "amount": 1,
+                        "upTo": false
+                    }
+                }
+            ],
+            "entries": [
+                "Choose a target within range; a cloud of miniscule poisonous spiders floats on gossamer strands towards it The target must succeed on a Dexterity saving throw to avoid the spiders or become {@condition poisoned} until the end of its next turn",
+                "This spell deals poison damage on a failed saving throw when you reach certain levels When you reach 5th level, a creature takes {@damage 1d10} poison damage; at 11th level this increases to {@damage 2d10} and at 17th level this increases to {@damage 3d10}"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting",
+            "damageInflict": [
+                "poison"
+            ],
+            "savingThrow": [
+                "dexterity"
+            ],
+            "entriesHigherLevel": []
+        },
+        {
+            "name": "Switcheroo",
+            "level": 3,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 90
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant",
+                    "concentration": false
+                }
+            ],
+            "entries": [
+                "You attempt to switch places with a Large or smaller target within range that you can see The target must succeed on a Charisma saving throw or instantly teleport to your space whilst you teleport to the one it previously occupied",
+                "A creature automatically succeeds on this saving throw if there is not enough space to accommodate either of the teleporting creatures A willing creature may choose to fail the saving throw"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Tamer",
+                        "source": "HelianasGuidetoMonsterHunting"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting",
+            "savingThrow": [
+                "charisma"
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 4th level or higher, the range of this spell increases by 30 feet for each slot level above 3rd The maximum size of creature you can target increases to Huge when cast at 6th level or higher, and to Gargantuan when cast at 9th level."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Tentacle Lash",
+            "level": 4,
+            "school": "BM",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self",
+                    "amount": 0
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a miniature plunger"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "concentration": true,
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1,
+                        "upTo": true
+                    }
+                }
+            ],
+            "entries": [
+                "One of your arms elongates into a long, wet, suckered tentacle When you cast this spell, and as an action on each of your turns, you can make a melee spell attack against a creature within 30 feet of you On a hit, the target takes {@damage 5d8} bludgeoning damage and it must make a Strength saving throw if it is Huge or smaller On a failure, you can choose one of the following effects:",
+                {
+                    "type": "list",
+                    "items": [
+                        "The target is knocked prone.",
+                        "The target is shoved 5 feet in a direction of your choice.",
+                        "You disarm the target; you take one item the target is holding and return it to your person."
+                    ]
+                },
+                "The tentacle also serves as an appendage that can be used like a grappling hook or rope (GM\u2019s discretion)."
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting",
+            "damageInflict": [
+                "bludgeoning"
+            ],
+            "savingThrow": [
+                "strength"
+            ],
+            "spellAttack": [
+                "M"
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 5th level or higher, the damage increases by {@scaledamage  5d8|4-9|1d8} for each slot level above 4th."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "The Bends",
+            "level": 3,
+            "school": "BM",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 90
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant",
+                    "concentration": false
+                }
+            ],
+            "entries": [
+                "You assault the internal chemistry of a creature you can see within range, causing bubbles of nitrogen to precipitate in its blood, forcing it to make a Constitution saving throw On a failed save, the target takes {@damage 5d8} poison damage and is {@condition poisoned} for 1 minute On a successful save, the target takes half as much damage and isn\u2019t {@condition poisoned} If the target is completely submerged in water, increase the damage dice from {@dice d8}s to {@dice d10}s",
+                "The target can repeat the saving throw at the end of each of its turns, ending the effect on a success"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting",
+            "damageInflict": [
+                "poison"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@scaledamage  5d8|3-9|1d8} for each slot level above 3rd."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Totem Arrows",
+            "level": 4,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "touch",
+                    "amount": 0
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a quiver containing at least one piece of ammunition"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "concentration": true,
+                    "duration": {
+                        "type": "hour",
+                        "amount": 1,
+                        "upTo": true
+                    }
+                }
+            ],
+            "entries": [
+                "You touch a quiver containing arrows or bolts, imbuing the ammunition currently in it with the spirit of a creature, plant, or fungus For the duration, any creature hit (or in the case of \u2018Hawk\u2019, targeted) by one of the pieces of ammunition is subject to the effect of the spirit currently imbuing the quiver (see below), in addition to the attack\u2019s normal effects. As a bonus action, you can change which spirit imbues the quiver",
+                {
+                    "type": "list",
+                    "items": [
+                        {
+                            "type": "entries",
+                            "name": "Cat",
+                            "entries": [
+                                "he target takes an additional {@damage 1d6} slashing damage If the attack roll was made with advantage, the additional damage is increased to {@damage 2d6}"
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Elk",
+                            "entries": [
+                                "The target takes an additional {@damage 1d6} bludgeoning damage and must succeed on a Strength saving throw or be knocked {@condition prone} or shoved 5 feet in a direction of your choice (you choose when the target is hit)"
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Hawk",
+                            "entries": [
+                                "The attack ignores half and three-quarters cover"
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Hogweed",
+                            "entries": [
+                                "The target must succeed on a Constitution saving throw or become {@condition blinded} until the end of its next turn"
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Psilocybin",
+                            "entries": [
+                                "The target must succeed on a Wisdom saving throw or begin \u2018tripping\u2019 for the spell\u2019s duration Whilst tripping, the creature must roll a {@dice d4} at the start of each of its turns On a 1, the target is incapacitated until the end of its turn and the effect ends. On a 2-4 the target behaves as normal, and the effect continues"
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Roc",
+                            "entries": [
+                                "The target must succeed on a Strength saving throw or its speed becomes 0 and it is lifted 20 feet into the air until the end of its next turn, when it begins falling If there isn\u2019t enough room to be lifted 20 feet, the creature is lifted to the maximum possible height"
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Snake",
+                            "entries": [
+                                "The target takes an additional {@damage 1d6} poison damage and must succeed on a Constitution saving throw or become {@condition poisoned} for the spell\u2019s duration It can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success"
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Spider",
+                            "entries": [
+                                "The target must succeed on a Dexterity saving throw or become {@condition restrained} until the end of its next turn The target can use its action to make a Strength (Athletics) or Dexterity (Acrobatics) check against your spell save DC, ending the effect on itself on a success"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "PHB"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting",
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 5th level or higher, the duration of this spell is concentration, up to 8 hours."
+                    ]
+                }
+            ]
         }
     ],
     "roll20Spell": [
@@ -4515,6 +4995,63 @@
                 "Save Success": "Half damage",
                 "Higher Spell Slot Die": "d6",
                 "Higher Spell Slot Dice": "1"
+            }
+        },
+        {
+            "name": "Sugar Rush",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {}
+        },
+        {
+            "name": "Swarm",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {
+                "Save": "Dexterity",
+                "Damage": "0d10",
+                "Damage Type": "Poison",
+                "data-Cantrip Scaling": "dice"
+            }
+        },
+        {
+            "name": "Switcheroo",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {
+                "Save": "Charisma"
+            }
+        },
+        {
+            "name": "Tentacle Lash",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {
+                "Save": "Strength",
+                "Damage": "5d8",
+                "Damage Type": "Bludgeoning",
+                "Spell Attack": "Melee",
+                "Higher Spell Slot Die": "d8",
+                "Higher Spell Slot Dice": "1"
+            }
+        },
+        {
+            "name": "The Bends",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {
+                "Save": "Constitution",
+                "Damage": "5d8",
+                "Damage Type": "Poison",
+                "Save Success": "Half damage",
+                "Higher Spell Slot Die": "d8",
+                "Higher Spell Slot Dice": "1",
+                "Secondary Damage": "5d10",
+                "Secondary Damage Type": "Poison",
+                "Secondary Higher Spell Slot Die": "d10",
+                "Secondary Higher Spell Slot Dice": "1"
+            }
+        },
+        {
+            "name": "Totem Arrows",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {
+                "Save": "Variable"
             }
         }
     ]
