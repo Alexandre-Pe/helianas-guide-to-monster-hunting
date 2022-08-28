@@ -26,7 +26,7 @@
             }
         },
         "dateAdded": 1661628906,
-        "dateLastModified": 1661707837
+        "dateLastModified": 1661710892
     },
     "spell": [
         {
@@ -904,6 +904,233 @@
             "savingThrow": [
                 "wisdom"
             ]
+        },
+        {
+            "name": "Depth Charge",
+            "level": 3,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 90
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "some metamorphic rock"
+            },
+            "duration": [
+                {
+                    "type": "instant",
+                    "concentration": false
+                }
+            ],
+            "entries": [
+                "With a boom that can be heard 300 feet away (or 1000 feet in a liquid), a pulse of thunder ripples out from a point you choose within range Each creature in a 20-foot-radius sphere centred on that point must make a Constitution saving throw A target takes {@damage 7d6} thunder damage on a failed save, or half as much damage on a successful one This damage increases to {@damage 9d6} if the affected creature is submerged in a liquid."
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting",
+            "damageInflict": [
+                "thunder"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@scaledamage  7d6|3-9|1d6} for each slot level above 3rd."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Food Coma",
+            "level": 3,
+            "school": "E",
+            "meta": {
+                "ritual": true
+            },
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "minute"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "touch",
+                    "amount": 0
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a turkey drumstick and a cranberry-coloured ruby worth at least 50 gp, both of which the spell consumes"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "concentration": false,
+                    "duration": {
+                        "type": "hour",
+                        "amount": 1,
+                        "upTo": false
+                    }
+                }
+            ],
+            "entries": [
+                "You crush a ruby into dust, sprinkling it over a turkey drumstick, which wafts with an alluring aroma. A willing creature that entirely consumes the meat of this drumstick falls asleep and is {@condition unconscious} for 1 hour, drowning out the sound of relatives asking whether they have a boyfriend yet or when they expect to have babies",
+                "You can only be woken early by taking damage or by a {@spell greater restoration} or {@spell wish} spell At the end of the hour, you wake feeling refreshed and have all of your hit points restored If you are woken prematurely, the spell ends with no effect and you are grumpy."
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Tamer",
+                        "source": "HelianasGuidetoMonsterHunting"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting",
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 4th level or higher, you may enchant an additional turkey drumstick (and hence affect one additional creature) for each slot level above 3rd.."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Frogskin",
+            "level": 4,
+            "school": "BM",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self",
+                    "amount": 0
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "some frogspawn"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "concentration": true,
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1,
+                        "upTo": true
+                    }
+                }
+            ],
+            "entries": [
+                "You morph your skin and clothing into that of a slimy, poisonous frog Make a melee spell attack against a creature within your reach On a hit, the target takes {@damage 3d10} poison damage and is {@condition poisoned} until the end of your next turn Until the spell ends, you can use an action on each of your subsequent turns to make this attack again",
+                {
+                    "type": "entries",
+                    "name": "Slimy",
+                    "entries": [
+                        "For the duration, you have advantage on checks and saves made to avoid being {@condition grappled} or {@condition restrained}, and disadvantage on any attempts you make to grapple a target Each creature grappling you, or that you are grappling, must make a Constitution saving throw at the start of each of its turns, taking {@damage 3d10} poison damage on a failure, or half as much damage on a success"
+                    ]
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Tamer",
+                        "source": "HelianasGuidetoMonsterHunting"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting",
+            "damageInflict": [
+                "poison"
+            ],
+            "spellAttack": [
+                "M"
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 5th level or higher, both damages increase by {@scaledamage  3d10|4-9|1d10} for each slot level above 4th."
+                    ]
+                }
+            ]
         }
     ],
     "roll20Spell": [
@@ -1016,6 +1243,34 @@
             "source": "HelianasGuidetoMonsterHunting",
             "data": {
                 "Save": "Wisdom"
+            }
+        },
+        {
+            "name": "Depth Charge",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {
+                "Save": "Constitution",
+                "Damage": "7d6",
+                "Damage Type": "Thunder",
+                "Save Success": "Half damage",
+                "Higher Spell Slot Die": "d6",
+                "Higher Spell Slot Dice": "1"
+            }
+        },
+        {
+            "name": "Food Coma",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {}
+        },
+        {
+            "name": "Frogskin",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {
+                "Damage": "3d10",
+                "Damage Type": "Poison",
+                "Spell Attack": "Melee",
+                "Higher Spell Slot Die": "d10",
+                "Higher Spell Slot Dice": "1"
             }
         }
     ]
