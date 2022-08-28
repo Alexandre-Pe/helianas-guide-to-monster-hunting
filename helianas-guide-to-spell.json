@@ -21,12 +21,12 @@
         "spellSchools": {
             "BM": {
                 "full": "Biomancy",
-                "short": "Bio",
+                "short": "Bio.",
                 "color": "93c572"
             }
         },
         "dateAdded": 1661628906,
-        "dateLastModified": 1661721998
+        "dateLastModified": 1661723182
     },
     "spell": [
         {
@@ -2436,9 +2436,9 @@
                 {
                     "type": "list",
                     "items": [
-                        "Whenever the favoured target makes an attack roll or saving throw before the spell ends, the favoured target can roll a {@dice d4} and add the number rolled to the attack or saving throw",
-                        "Whenever the disfavoured target makes an attack roll or saving throw before the spell ends, the disfavoured target must roll a {@dice d4} and subtract the number rolled from the attack or saving throw",
-                        "The disfavoured target\u2019s speed is halved, whilst the favoured target\u2019s speed increases by half"
+                        "Whenever the favoured target makes an attack roll or saving throw before the spell ends, the favoured target can roll a {@dice d4} and add the number rolled to the attack or saving throw.",
+                        "Whenever the disfavoured target makes an attack roll or saving throw before the spell ends, the disfavoured target must roll a {@dice d4} and subtract the number rolled from the attack or saving throw.",
+                        "The disfavoured target\u2019s speed is halved, whilst the favoured target\u2019s speed increases by half."
                     ]
                 },
                 "These effects end for the pair if either of the target pair is knocked {@condition unconscious} killed, or the spell ends While under the influence of this spell, a favoured target can\u2019t benefit from the {@spell bless} spell, and a disfavoured target can\u2019t be afflicted by the {@spell bane} spell"
@@ -2473,6 +2473,513 @@
                     "name": "At Higher Levels",
                     "entries": [
                         "When you cast this spell using a spell slot of 4th level or higher, you can link two other creatures, favouring one, and disfavouring the other, for each two slot levels above 2nd."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Influenza",
+            "level": 3,
+            "school": "BM",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "cone",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "some pollen"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "concentration": true,
+                    "duration": {
+                        "type": "mniute",
+                        "amount": 1,
+                        "upTo": true
+                    }
+                }
+            ],
+            "entries": [
+                "With a mighty sneeze that can be heard up to 300 feet away, you blast forth a 30-foot cone of phlegm, bad breath, and viral pathogens Each creature in the area must make a Dexterity saving throw On a failed save, a creature takes {@damage 3d6} poison damage and is {@condition poisoned} for the duration On a successful save, the creature takes half as much damage and isn\u2019t {@condition poisoned} A {@condition poisoned} creature can make a Constitution saving throw at the end of each of its turns, ending the effect on itself on a success",
+                "Whilst {@condition poisoned} in this way, a creature must roll a {@dice d12} at the start of each of its turns On a 3 or lower, it is racked by a coughing fit and becomes incapacitated until the start of its next turn Each creature within 5 feet of a creature when it becomes incapacitated in this way must succeed on a Constitution saving throw or also become {@condition poisoned} in this way for the spell\u2019s duration"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting",
+            "damageInflict": [
+                "poison"
+            ],
+            "savingThrow": [
+                "dexterity"
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@scaledamage  3d6|3-9|1d6} and the value a {@condition poisoned} creature must roll on the {@dice d12} to cause a coughing fit increases by 1 for each slot level above 3rd."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Initiative",
+            "level": 1,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "reaction"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a coffee bean"
+            },
+            "duration": [
+                {
+                    "type": "instant",
+                    "concentration": false
+                }
+            ],
+            "entries": [
+                "As a reaction when initiative is rolled, choose a willing creature you can see within range; it begins to subtly jitter as its pupils dilate. If the target is surprised, it is no longer surprised, and takes its turn on the first round as normal If the target is not surprised, it gains advantage on the initiative roll that prompted this spell"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Tamer",
+                        "source": "HelianasGuidetoMonsterHunting"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting",
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher you may target one additional creature for each spell slot above 1st."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Lungburst",
+            "level": 6,
+            "school": "BM",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 90
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant",
+                    "concentration": false
+                }
+            ],
+            "entries": [
+                "You cause rapid and unpredictable changes in the internal air pressure of a creature you can see, rupturing its breathing apparatus The creature must make a Constitution saving throw A creature that is holding its breath makes this saving throw with disadvantage On a failure, a creature takes {@damage 7d6} thunder damage, {@damage 7d6} necrotic damage, and immediately begins suffocating. On a success, a creature takes half as much damage and does not begin suffocating. A creature suffocating in this way can repeat the saving throw at the end of each of its turns, stopping suffocating on a success",
+                "A creature that does not need to breathe is immune to the effects of this spell. A {@spell greater restoration}, {@spell heal}, or {@spell wish} spell can restore a creature\u2019s ability to breathe, and end its suffocation"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting",
+            "damageInflict": [
+                "thunder",
+                "necrotic"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 7th level or higher, the thunder and necrotic damage both increase by {@scaledamage  7d6|6-9|1d6} for each slot level above 6th."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Magnetite Shard",
+            "level": 3,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 90
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a piece of magnetite"
+            },
+            "duration": [
+                {
+                    "type": "instant",
+                    "concentration": false
+                }
+            ],
+            "entries": [
+                "You fling a supercooled piece of magnetite at a point you can see within range, where it detonates in an explosion of icy, metallic shards Each creature in a 20-foot-radius sphere centred on that point must make a Dexterity saving throw, taking {@damage 4d6} cold damage and {@damage 3d6} piercing damage on a failure, or half as much damage on a success Creatures made of a ferrous material or wearing ferrous armour have disadvantage on this saving throw"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting",
+            "damageInflict": [
+                "cold",
+                "piercing"
+            ],
+            "savingThrow": [
+                "dexterity"
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 4th level or higher, the cold damage increases by {@scaledamage  4d6|3-9|1d6} per slot level above 3rd."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Magnetobolt",
+            "level": 0,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 90
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant",
+                    "concentration": false
+                }
+            ],
+            "entries": [
+                "A near-invisible pulse of arcanomagnetic energy shoots towards a creature within range Make a ranged spell attack against the target On a hit, the target takes {@damage 1d6} force damage and must succeed on a Strength saving throw or be knocked {@condition prone} A creature made of ferrous metal or wearing ferrous armour has disadvantage on this saving throw",
+                "This spell\u2019s damage increases by {@damage 1d6} when you reach 5th level {@damage 2d6} 11th level {@damage 3d6} and 17th level {@damage 4d6}"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting",
+            "damageInflict": [
+                "force"
+            ],
+            "savingThrow": [
+                "strength"
+            ],
+            "spellAttack": [
+                "R"
+            ],
+            "entriesHigherLevel": []
+        },
+        {
+            "name": "Mass Leech",
+            "level": 3,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "sphere",
+                "distance": {
+                    "type": "feet",
+                    "amount": 20
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a live leech that has fed on humanoid blood in the past 24 hours"
+            },
+            "duration": [
+                {
+                    "type": "instant",
+                    "concentration": false
+                }
+            ],
+            "entries": [
+                "You drain the life force of those around you, turning their limbs heavy and their bones cold Each creature of your choice within 20 feet of you must make a Constitution saving throw A target takes {@damage 2d8} necrotic damage on a failure, or half as much damage on a success The caster regains hit points equal to half the total amount of necrotic damage dealt to Small or larger creatures by this casting of this spell"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Tamer",
+                        "source": "HelianasGuidetoMonsterHunting"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting",
+            "damageInflict": [
+                "necrotic"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@scaledamage  2d8|3-9|1d8} for each slot level above 3rd."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Mechamagic",
+            "level": 4,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "touch",
+                    "amount": 0
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "adhesive tape with gorillas drawn on it"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "concentration": false,
+                    "duration": {
+                        "type": "hour",
+                        "amount": 1,
+                        "upTo": false
+                    }
+                }
+            ],
+            "entries": [
+                "You touch one item, instilling it with levels of belief worthy of a kobold and granting it one of the following properties, based on the item type, for the duration. The spell ends if you cast it again",
+                {
+                    "type": "list",
+                    "items": [
+                        {
+                            "type": "entries",
+                            "name": "Armour",
+                            "entries": [
+                                "A creature wearing this armour gains {@damage 1d4} temporary hit points at the start of each of its turns"
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Belt",
+                            "entries": [
+                                "A creature wearing this belt gains a flying speed of 30 feet"
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Boots",
+                            "entries": [
+                                "A creature wearing these boots has its walking speed increased by 10 feet and its jump distance tripled"
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Cloak",
+                            "entries": [
+                                "A creature wearing this cloak has advantage on Stealth checks it makes to hide and can hide while only lightly obscured"
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Gloves",
+                            "entries": [
+                                "A creature wearing these gloves gains a climbing speed equal to its walking speed and can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check Additionally, it has advantage on any ability checks it makes related to grappling"
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Headwear",
+                            "entries": [
+                                "A creature wearing this headwear doesn\u2019t need to breathe, has advantage on saving throws against being {@condition poisoned} and has resistance to poison damage"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            },
+            "source": "HelianasGuidetoMonsterHunting",
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 5th level or higher, you can target one additional item for each slot level above 4th."
                     ]
                 }
             ]
@@ -2773,6 +3280,81 @@
             "data": {
                 "Save": "Charisma"
             }
+        },
+        {
+            "name": "Influenza",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {
+                "Save": "Dexterity",
+                "Damage": "3d6",
+                "Damage Type": "Poison",
+                "Save Success": "Half damage",
+                "Higher Spell Slot Die": "d6",
+                "Higher Spell Slot Dice": "1"
+            }
+        },
+        {
+            "name": "Initiative",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {}
+        },
+        {
+            "name": "Lungburst",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {
+                "Save": "Constitution",
+                "Damage": "7d6",
+                "Damage Type": "Thunder",
+                "Save Success": "Half damage",
+                "Higher Spell Slot Die": "d6",
+                "Higher Spell Slot Dice": "1",
+                "Secondary Damage": "7d6",
+                "Secondary Damage Type": "Necrotic",
+                "Secondary Higher Spell Slot Die": "d6",
+                "Secondary Higher Spell Slot Dice": "1"
+            }
+        },
+        {
+            "name": "Magnetite Shard",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {
+                "Save": "Dexterity",
+                "Damage": "4d6",
+                "Damage Type": "Cold",
+                "Save Success": "Half damage",
+                "Higher Spell Slot Die": "d6",
+                "Higher Spell Slot Dice": "1",
+                "Secondary Damage": "3d6",
+                "Secondary Damage Type": "Piercing"
+            }
+        },
+        {
+            "name": "Magnetobolt",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {
+                "Save": "Strength",
+                "Damage": "1d6",
+                "Damage Type": "Force",
+                "Spell Attack": "Ranged",
+                "data-Cantrip Scaling": "dice"
+            }
+        },
+        {
+            "name": "Mass Leech",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {
+                "Save": "Constitution",
+                "Damage": "2d8",
+                "Damage Type": "Necrotic",
+                "Save Success": "Half damage",
+                "Higher Spell Slot Die": "d8",
+                "Higher Spell Slot Dice": "1"
+            }
+        },
+        {
+            "name": "Mechamagic",
+            "source": "HelianasGuidetoMonsterHunting",
+            "data": {}
         }
     ]
 }
