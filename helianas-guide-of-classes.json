@@ -1,0 +1,657 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "json": "HelianasGuidetoMonsterHunting",
+                "abbreviation": "HGtMH",
+                "full": "Heliana's Guide to Monster Hunting",
+                "url": "",
+                "authors": [
+                    "Max Wartelle",
+                    "Mohammed Bellafquih",
+                    "Jess Jackdaw"
+                ],
+                "convertedBy": [
+                    "Riften"
+                ],
+                "version": "1.0",
+                "targetSchema": "1.0"
+            }
+        ],
+        "dateAdded": 1661798750,
+        "dateLastModified": 1661798750
+    },
+    "class": [
+        {
+            "name": "Tamer",
+            "source": "HelianasGuidetoMonsterHunting",
+            "classFeatures": [
+                "Pocket Familiar|Tamer|HelianasGuidetoMonsterHunting|1",
+                "Monster Trainer|Tamer|HelianasGuidetoMonsterHunting|1",
+                "Soul Bond|Tamer|HelianasGuidetoMonsterHunting|1",
+                "Tame Creature|Tamer|HelianasGuidetoMonsterHunting|1"
+            ],
+            "hd": {
+                "number": 1,
+                "faces": 8
+            },
+            "proficiency": [
+                "con",
+                "cha"
+            ],
+            "startingProficiencies": {
+                "armor": [
+                    "light",
+                    "medium",
+                    "{@item shield|phb|shields}"
+                ],
+                "weapons": [
+                    "simple",
+                    "{@item net|phb}"
+                ],
+                "tools": [
+                    "One type of artisan’s tools or one musical instrument of your choice"
+                ],
+                "skills": [
+                    {
+                        "choose": {
+                            "from": [
+                                "animal handling",
+                                "insight",
+                                "medicine",
+                                "nature",
+                                "perception",
+                                "persuasion"
+                            ],
+                            "count": 2
+                        }
+                    }
+                ]
+            },
+			"startingEquipment": {
+				"default": [
+					"(a) {@item scale armor|phb} or (b) {@item leather armor|phb}",
+                    "A {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}, a {@item net|phb} and a {@item shield|phb}",
+                    "A {@item light crossbow|phb} and {@item crossbow Bolts (20)|phb|20 bolts}",
+					"(a) a {@item dungeoneer's pack|phb} or (b) an {@item explorer's pack|phb}"
+				],
+                "additionalFromBackground": true,
+                "goldAlternative": "{@dice 5d4*10}"
+			},
+            "multiclassing": {
+                "requirements": {
+                    "int": 13,
+                    "or": [
+                        {
+                            "cha": 13
+                        },
+                        {
+                            "wis": 13
+                        }
+                    ]
+                },
+                "proficienciesGained": {
+                    "armor": [
+                        "light",
+                        "{@item shield|phb|shields}"
+                    ],
+                    "weapons": [
+                        "simple",
+                        "{@item net|phb}"
+                    ]
+                }
+            },
+            "casterProgression": "1/2",
+            "spellcastingAbility": "int",
+            "cantripProgression": [
+                0,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                3,
+                3,
+                3,
+                3,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4
+            ],
+            "spellsKnownProgression": [
+                0,
+                2,
+                3,
+                3,
+                4,
+                4,
+                5,
+                5,
+                6,
+                6,
+                7,
+                7,
+                8,
+                8,
+                9,
+                9,
+                10,
+                10,
+                11,
+                11
+            ],
+            "classTableGroups": [
+                {
+                    "title": "–Spell Slots per Spell Level–",
+                    "colLabels": [
+                        "1st",
+                        "2nd", 
+                        "3rd",
+                        "4th",
+                        "5th"
+                    ],
+                    "rows": [
+                        [
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            2,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            3,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            3,
+                            0,
+                            0,
+                            0,
+                            0
+                            
+                        ],
+                        [
+                            4,
+                            2,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            2,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            2,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            2,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            1,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            1,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            2,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            2,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            3,
+                            1
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            3,
+                            1
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            3,
+                            2
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            3,
+                            2
+                        ]
+                    ]
+                }
+            ]
+        }
+    ],
+    "classFeature": [
+        {
+            "name": "Pocket Familiar",
+            "source": "HelianasGuidetoMonsterHunting",
+            "className": "Tamer",
+            "classSource": "HelianasGuidetoMonsterHunting",
+            "level": 1,
+            "entries": [
+                "You become bonded to a companion that accompanies you on your adventures and is trained to fight alongside you Choose a Small or smaller creature with a challenge rating of 1/2 or lower that isn’t a humanoid, giant, or swarm When a creature becomes your companion, it has a maximum number of hit points equal to the average of its Hit Dice, as indicated in its statistics, and it can’t cast spells Work with your GM to find a companion that suits your campaign world This companion obeys your commands and is friendly to you and your allies.",
+                {
+                    "type": "entries",
+                    "name": "Vessel",
+                    "entries": [
+                        "When not summoned, your companion exists inside a magical vessel of your own design, such as a painted animal skull, bejewelled egg, or crystal sphere While in this vessel, the companion has full cover from all attacks and other effects, is unaffected by area of effects that originate from outside the vessel, and exists in stasis; it doesn’t need to eat, drink, sleep, or breath, and it is immune to poison and disease, although a poison or disease already in its system is suspended, not neutralised A companion at 0 hit points is instantly stabilised when it enters its vessel.",
+                        "If a vessel is broken, or a companion is released from its vessel for any other reason, the creature within it ceases to be a tamer’s companion It acts according to its own wishes and retains any improvements it gained while a companion.",
+                        {
+                            "type": "inset",
+                            "style": "text-center",
+                            "name": "Home Planes",
+                            "entries": [
+                                "Some magical effects, like the {@spell banishment} spell, have the ability to permanently banish a creature back to its home plane. When a creature becomes your companion, its home plane becomes the demiplane within its vessel. If the companion becomes permanently banished by such a spell, it simply reappears in this vessel."
+                            ]
+                        },
+                        "As an action, you can summon your companion from this vessel, causing it to appear in an unoccupied space that you can see within 30 feet of you, or any unoccupied space within 5 feet of you You can dismiss a companion within 30 feet of you as a bonus action or action, drawing it back into its vessel To summon or dismiss a companion, you must be holding its vessel in hand You can only have one companion summoned at a time.",
+                        {
+                            "type": "inset",
+                            "style": "text-center",
+                            "name": "Dominated Companions",
+                            "entries": [
+                                "A companion that is controlled by another creature, such as by the {@spell dominate monster} spell, can try to resist being recalled into its vessel. When you try to recall such a creature into its vessel, it can make acan make a Charisma saving throw against yourtamer spell save DC. On a failed saving throw, it is recalled, while on a success, it is not."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Combat",
+                    "entries": [
+                        "In combat, your companion shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the Dodge action, unless you take a bonus action or action on your turn to command it to take a different action That action can be one in its statistics or some other action If you are incapacitated, the companion can take any action of its choice, not just Dodge. Your companion can’t take the Multiattack action until you reach 5th level in this class, even if it would otherwise be able to."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Rest",
+                    "entries": [
+                        "A companion gains the benefits of a long rest when its tamer finish a long rest; if it has at least 1 hit point, it regains all its hit points when you finish a long rest Unlike other creatures, a companion can’t spend its own Hit Dice to recover hit points at the end of a short rest See the {@classFeature Soul Bond|Tamer|HelianasGuidetoMonsterHunting|1} feature for details on recovering hit points."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Items",
+                    "entries": [
+                        "Armour, barding, and weapons can be equipped to enhance your companion A companion can wear or carry any equipment that their size and body shape permits However, your companion must be proficient with the armour or weapon to make full use of it If your companion wears armour that it lacks proficiency with, it has disadvantage on any ability check, saving throw, or attack roll that involves Strength or Dexterity. A companion that is not proficient with a weapon type does not add its proficiency bonus to attack rolls made with that weapon type."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Items Bonding",
+                    "entries": [
+                        "Over the course of an hour, you can bond a companion to one object that it can wear or carry that is not any sort of container or storage When a companion is recalled, all items it is wearing or carrying that it is not bonded to are dropped in the space from which it was recalled A companion can be bonded to up to 3 items at any one time Companions can’t attune to magic items, unless they have a specific ability that allows them to do so."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Companion Barding",
+                    "entries": [
+                        "You can purchase armour for your companion Any type of armour can be purchased as barding The cost and weight is doubled for each size category above Medium, and halved for each size category below Small In addition, the cost is further doubled if the companion is not humanoid in shape.",
+                        {
+                            "type": "table",
+                            "caption": "Companion Barding Cost",
+                            "colLabels": [
+                                "Size",
+                                "Humanoid Shape Cost",
+                                "Abstract Shape Cost"
+                            ],
+                            "colStyles": [
+                                "col-2 text-center",
+                                "col-5 text-left",
+                                "col-5 text-left"
+                            ],
+                            "rows": [
+                                [
+                                    "Tiny",
+                                    "0.5x",
+                                    "1x"
+                                ],
+                                [
+                                    "Small",
+                                    "1x",
+                                    "2x"
+                                ],
+                                [
+                                    "Medium",
+                                    "1x",
+                                    "2x"
+                                ],
+                                [
+                                    "Large",
+                                    "2x",
+                                    "4x"
+                                ],
+                                [
+                                    "Huge",
+                                    "4x",
+                                    "8x"
+                                ]
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Soul Bond",
+            "source": "HelianasGuidetoMonsterHunting",
+            "className": "Tamer",
+            "classSource": "HelianasGuidetoMonsterHunting",
+            "level": 1,
+            "entries": [
+                "Companions make death saving throws, die, and can be revived like any player character A companion that has been stabilised remains {@condition unconscious} until it regains hit points, or until you finish a long rest Companions that are stable and have 0 hit points when you finish a long rest regain half their maximum hit points.",
+                "Instead, you have a pool of healing power equal to five times your tamer level that replenishes when you finish a long rest. Whenever you finish a short rest, you can choose to draw power from that pool, restoring a total number of hit points amongst your companions up to the maximum amount remaining in your pool."
+            ]
+        },
+        {
+            "name": "Monster Trainer",
+            "source": "HelianasGuidetoMonsterHunting",
+            "className": "Tamer",
+            "classSource": "HelianasGuidetoMonsterHunting",
+            "level": 1,
+            "entries": [
+                "As you gain levels in this class, your companions become more powerful Your companions use your proficiency bonus instead of their own, potentially increasing their attack, saving throw, and skill modifiers, and their saving throw DCs",
+                {
+                    "type": "entries",
+                    "name": "Training",
+                    "entries": [
+                        "Whenever you gain an Ability Score Improvement from gaining a level in the tamer class, you pass on your hardened resolve to all your companions, causing them to gain one additional Hit Dice Increase your companion’s hit point maximum by rolling this Hit Dice and adding your companion’s Constitution modifier (minimum of 0)."
+                    ]
+                },
+                "Whenever you gain a level beyond 1st in this class, each companion to which you are bonded gains one of the following improvements The familiars in Chapter 8 have unique improvements that can be taken instead of these.",
+                "Any newly gained companions receive these additional hit dice and improvements as if you had them since your 1st level in tamer.",
+                {
+                    "type": "table",
+                    "caption": "Companion Improvement Training Table",
+                    "colLabels": [
+                        "Improvement",
+                        "Effect"
+                    ],
+                    "colStyles": [
+                        "col-3 text-center",
+                        "col-9 text-left"
+                    ],
+                    "rows": [
+                        [
+                            "Speed Training", 
+                            "Increase one existing speed by 15 feet up to a maximum of 150% of the creature’s base speed, rounded up to the nearest 5-foot increment*."
+                        ],
+                        [
+                            "Toughen Up",
+                            "Your companion gains an additional Hit Die, increasing its hit point maximum. Increase your companion’s hit point maximum by rolling this Hit Dice and adding your companion’s Constitution modifier (minimum of 0)."
+                        ],
+                        [
+                            "Ability Boost",
+                            "Increase one of your companion's ability scores by 1, to a maximum of 20."
+                        ],
+                        [
+                            "Go For the Throat",
+                            "Your companion gains a +1 bonus to its attack and damage rolls made with its natural weapons or unarmed strikes**."
+                        ],
+                        [
+                            "Survival Instincts",
+                            "Your companion gains proficiency in one saving throw."
+                        ],
+                        [
+                            "War Training",
+                            "Your companion gains proficiency with one armour type or two weapons***."
+                        ]
+                    ],
+                    "footnotes": [
+                        "*E.g., a base speed of 30 feet can be increased to 45 feet maximum, a base speed of 25 feet can be increased to 40 feet, and a base speed of 20 feet to 30 feet.",
+                        "** Your companions can each benefit from this feature once. When you reach 5th level in this class, your companions can each benefit from this feature twice. When you reach 9th level in this class, your companions can each benefit from this feature three times. This improvement does not affect attacks made with weapons.",
+                        "*** Your companion can’t gain proficiency in medium and heavy armour until it has gained proficiency in the prerequisite lighter armour types. For example, to gain proficiency in heavy armour, you must take this improvement 3 times: light, then medium, then heavy."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Tame Creature",
+            "source": "HelianasGuidetoMonsterHunting",
+            "className": "Tamer",
+            "classSource": "HelianasGuidetoMonsterHunting",
+            "level": 1,
+            "entries": [
+                "There’s one way to defeat deadlier foes: have deadlier friends As you explore, you will encounter new creatures which you may wish to make your companions You can tame a Small or smaller creature of CR 1/2 or lower, as described below As you gain levels in this class, the size and challenge rating of creatures you can tame increases, as shown in the {@table Tamer Companion Summary|HelianasGuidetoMonsterHunting} table."
+            ]
+        },
+        {
+            "name": "",
+            "source": "HelianasGuidetoMonsterHunting",
+            "className": "Tamer",
+            "classSource": "HelianasGuidetoMonsterHunting",
+            "level": 0,
+            "entries": [
+                ""
+            ]
+        },
+        {
+            "name": "",
+            "source": "HelianasGuidetoMonsterHunting",
+            "className": "Tamer",
+            "classSource": "HelianasGuidetoMonsterHunting",
+            "level": 0,
+            "entries": [
+                ""
+            ]
+        }
+    ],
+    "table": [
+        {
+            "name": "Tamer Companion Summary",
+            "source": "HelianasGuidetoMonsterHunting",
+            "colLabels": [
+                "Tamer Level",
+                "Maximum # of Bonded Companions",
+                "Maximum Companion Size",
+                "Maximum Companion CR"
+            ],
+            "rows": [
+                [
+                    1,
+                    1,
+                    "Small",
+                    "1/2"
+                ],
+                [
+                    2,
+                    1,
+                    "Small",
+                    "1/2"
+                ],
+                [
+                    3,
+                    2,
+                    "Small",
+                    "1/2"
+                ],
+                [
+                    4,
+                    2,
+                    "Medium",
+                    1
+                ],
+                [
+                    5,
+                    2,
+                    "Medium",
+                    1
+                ],
+                [
+                    6,
+                    2,
+                    "Medium",
+                    1
+                ],
+                [
+                    7,
+                    3,
+                    "Medium",
+                    2
+                ],
+                [
+                    8,
+                    3,
+                    "Medium",
+                    2
+                ],
+                [
+                    9,
+                    3,
+                    "Medium",
+                    2
+                ],
+                [
+                    10,
+                    3,
+                    "Large",
+                    3
+                ],
+                [
+                    11,
+                    4,
+                    "Large",
+                    3
+                ],
+                [
+                    12,
+                    4,
+                    "Large",
+                    3
+                ],
+                [
+                    13,
+                    4,
+                    "Large",
+                    4
+                ],
+                [
+                    14,
+                    4,
+                    "Large",
+                    4
+                ],
+                [
+                    15,
+                    5,
+                    "Large",
+                    4
+                ],
+                [
+                    16,
+                    5,
+                    "Huge",
+                    5
+                ],
+                [
+                    17,
+                    5,
+                    "Huge",
+                    5
+                ],
+                [
+                    18,
+                    5,
+                    "Huge",
+                    5
+                ],
+                [
+                    19,
+                    6,
+                    "Huge",
+                    6
+                ],
+                [
+                    20,
+                    6,
+                    "Huge",
+                    6
+                ]
+            ]
+        }
+    ]
+}
