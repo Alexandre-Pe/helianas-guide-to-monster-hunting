@@ -1050,9 +1050,10 @@
             "shortName": "Leader",
 			"subclassFeatures": [
                 "Leader|Tamer|HelianasGuidetoMonsterHunting|Leader|HelianasGuidetoMonsterHunting|3",
-                "Companion Surge|Tamer|HelianasGuidetoMonsterHunting|Leader|HelianasGuidetoMonsterHunting|7",
+                "Companion Surge I|Tamer|HelianasGuidetoMonsterHunting|Leader|HelianasGuidetoMonsterHunting|7",
                 "Leader’s Fortitude|Tamer|HelianasGuidetoMonsterHunting|Leader|HelianasGuidetoMonsterHunting|10",
-                "Combo|Tamer|HelianasGuidetoMonsterHunting|Leader|HelianasGuidetoMonsterHunting|14"
+                "Combo|Tamer|HelianasGuidetoMonsterHunting|Leader|HelianasGuidetoMonsterHunting|14",
+                "Companion Surge II|Tamer|HelianasGuidetoMonsterHunting|Leader|HelianasGuidetoMonsterHunting|18"
             ]
         }
     ],
@@ -1136,7 +1137,7 @@
             ]
         },
         {
-            "name": "Companion Surge",
+            "name": "Companion Surge I",
             "source": "HelianasGuidetoMonsterHunting",
             "className": "Tamer",
             "classSource": "HelianasGuidetoMonsterHunting",
@@ -1145,7 +1146,20 @@
             "level": 7,
             "entries": [
                 "You can push your companion beyond its normal limits for a moment When you use an action or bonus action to command your companion, you can extol it to exert greater effort. On your companion’s turn, it can take one additional action of your choice.",
-                "Once your companion has benefited from your use of this feature, you must finish a short or long rest before that same companion can benefit from it again Starting at 18th level, your companions can benefit from Action Surge twice before a rest, but only once on the same turn."
+                "Once your companion has benefited from your use of this feature, you must finish a short or long rest before that same companion can benefit from it again."
+            ]
+        },
+        {
+            "name": "Companion Surge II",
+            "source": "HelianasGuidetoMonsterHunting",
+            "className": "Tamer",
+            "classSource": "HelianasGuidetoMonsterHunting",
+            "subclassShortName": "Leader",
+            "subclassSource": "HelianasGuidetoMonsterHunting",
+            "level": 18,
+            "entries": [
+                "You can push your companion beyond its normal limits for a moment When you use an action or bonus action to command your companion, you can extol it to exert greater effort. On your companion’s turn, it can take one additional action of your choice.",
+                "Your companions can now benefit from Action Surge twice before a rest, but only once on the same turn."
             ]
         },
         {
