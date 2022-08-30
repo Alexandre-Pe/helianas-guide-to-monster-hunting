@@ -952,16 +952,26 @@
                     "items": [
                         {
                             "type": "entries",
-                            "name": "Aggressive",
                             "entries": [
-                                "The creature has disadvantage on attack rolls it makes against creatures other than your companion."
+                                {
+                                    "type": "entries",
+                                    "name": "Aggressive",
+                                    "entries": [
+                                        "The creature has disadvantage on attack rolls it makes against creatures other than your companion."
+                                    ]
+                                }
                             ]
                         },
                         {
                             "type": "entries",
-                            "name": "Cautious",
                             "entries": [
-                                "The creature has disadvantage on attack rolls against your companion if there is another creature hostile towards the attacker within 5 feet of the attacker."
+                                {
+                                    "type": "entries",
+                                    "name": "Cautious",
+                                    "entries": [
+                                        "The creature has disadvantage on attack rolls against your companion if there is another creature hostile towards the attacker within 5 feet of the attacker."
+                                    ]
+                                }
                             ]
                         }
                     ]
@@ -1012,16 +1022,26 @@
                     "items": [
                         {
                             "type": "entries",
-                            "name": "Provoking Poise",
                             "entries": [
-                                "For the next minute, your companion draws the attention of nearby creatures While within 15 feet of your companion, any creature that is hostile towards your companion and that can see it has disadvantage on attack rolls it makes against creatures other than your companion."
+                                {
+                                    "type": "entries",
+                                    "name": "Provoking Poise",
+                                    "entries": [
+                                        "For the next minute, your companion draws the attention of nearby creatures While within 15 feet of your companion, any creature that is hostile towards your companion and that can see it has disadvantage on attack rolls it makes against creatures other than your companion."
+                                    ]
+                                }
                             ]
                         },
                         {
                             "type": "entries",
-                            "name": "Shrinking Violet",
                             "entries": [
-                                "For the next minute, your companion appears small and unassuming, making little noise Any creature that is hostile toward your companion has disadvantage on attack rolls against your companion if there is another creature hostile towards the attacker within 15 feet of the attacker."
+                                {
+                                    "type": "entries",
+                                    "name": "Shrinking Violet",
+                                    "entries": [
+                                        "For the next minute, your companion appears small and unassuming, making little noise Any creature that is hostile toward your companion has disadvantage on attack rolls against your companion if there is another creature hostile towards the attacker within 15 feet of the attacker."
+                                    ]
+                                }
                             ]
                         }
                     ]
@@ -1322,30 +1342,50 @@
                     "items": [
                         {
                             "type": "entries",
-                            "name": "Acid: Caustic Mist",
                             "entries": [
-                                "Your companion disperses an acidic vapour into a 20-foot cube originating from it that lasts for 1 minute, or until dispersed by a wind of moderate or greater speed (at least 10 miles per hour). Each other creature that starts its turn in the area must make a Constitution saving throw, taking {@damage 4d4} acid damage on a failure, or half as much damage on a success."
+                                {
+                                    "type": "entries",
+                                    "name": "Acid: Caustic Mist",
+                                    "entries": [
+                                        "Your companion disperses an acidic vapour into a 20-foot cube originating from it that lasts for 1 minute, or until dispersed by a wind of moderate or greater speed (at least 10 miles per hour). Each other creature that starts its turn in the area must make a Constitution saving throw, taking {@damage 4d4} acid damage on a failure, or half as much damage on a success."
+                                    ]
+                                }
                             ]
                         },
                         {
                             "type": "entries",
-                            "name": "Cold: Snap Freeze",
                             "entries": [
-                                "Your companion absorbs the heat in a 10-foot-radius sphere around it Each other creature in the area must make a Constitution saving throw On a failed save, a creature takes {@damage 4d8} cold damage and its speed is halved until the end of its next turn On a successful save, it takes half as much damage and its speed isn’t affected."
+                                {
+                                    "type": "entries",
+                                    "name": "Cold: Snap Freeze",
+                                    "entries": [
+                                        "Your companion absorbs the heat in a 10-foot-radius sphere around it Each other creature in the area must make a Constitution saving throw On a failed save, a creature takes {@damage 4d8} cold damage and its speed is halved until the end of its next turn On a successful save, it takes half as much damage and its speed isn’t affected."
+                                    ]
+                                }
                             ]
                         },
                         {
                             "type": "entries",
-                            "name": "Fire: Flametongue",
                             "entries": [
-                                "Your companion unleashes a raging inferno in a 25-foot cone Each creature in the area must make a Dexterity saving throw, taking {@damage 6d6} fire damage on a failure, or half as much damage on a success. The fire ignites any flammable objects in the area that aren’t being worn or carried."
+                                {
+                                    "type": "entries",
+                                    "name": "Fire: Flametongue",
+                                    "entries": [
+                                        "Your companion unleashes a raging inferno in a 25-foot cone Each creature in the area must make a Dexterity saving throw, taking {@damage 6d6} fire damage on a failure, or half as much damage on a success. The fire ignites any flammable objects in the area that aren’t being worn or carried."
+                                    ]
+                                }
                             ]
                         },
                         {
                             "type": "entries",
-                            "name": "Lightning: Sparkstep",
                             "entries": [
-                                "Your companion discharges lightning in a 10-foot-radius sphere Each other creature in the area must make a Dexterity saving throw On a failure, a creature takes {@damage 4d6} lightning damage and it can’t take reactions until the start of its next turn On a success, it takes half as much damage and can take reactions as normal. After the saving throws are resolved, your companion can immediately fly up to 30 feet as part of this action."
+                                {
+                                    "type": "entries",
+                                    "name": "Lightning: Sparkstep",
+                                    "entries": [
+                                        "Your companion discharges lightning in a 10-foot-radius sphere Each other creature in the area must make a Dexterity saving throw On a failure, a creature takes {@damage 4d6} lightning damage and it can’t take reactions until the start of its next turn On a success, it takes half as much damage and can take reactions as normal. After the saving throws are resolved, your companion can immediately fly up to 30 feet as part of this action."
+                                    ]
+                                }
                             ]
                         }
                     ]
@@ -1665,16 +1705,26 @@
                         },
                         {
                             "type": "entries",
-                            "name": "Poison Web",
                             "entries": [
-                                "Your companion launches an unfurling web of sticky silk in a 20-foot cube originating from it All surfaces in the area become lined with webbing for the next minute Each creature that touches one of these surfaces for the first time on its turn or starts its turn doing so must succeed on a Dexterity saving throw or become {@condition restrained} for the duration, or until it breaks free A creature {@condition restrained} by the webs takes {@damage 2d4} poison damage when it becomes {@condition restrained} and at the start of each of its turns A creature can use its action to make a Strength check against your tamer spell save DC, freeing itself or another creature {@condition restrained} by this web on a success."
+                                {
+                                    "type": "entries",
+                                    "name": "Poison Web",
+                                    "entries": [
+                                        "Your companion launches an unfurling web of sticky silk in a 20-foot cube originating from it All surfaces in the area become lined with webbing for the next minute Each creature that touches one of these surfaces for the first time on its turn or starts its turn doing so must succeed on a Dexterity saving throw or become {@condition restrained} for the duration, or until it breaks free A creature {@condition restrained} by the webs takes {@damage 2d4} poison damage when it becomes {@condition restrained} and at the start of each of its turns A creature can use its action to make a Strength check against your tamer spell save DC, freeing itself or another creature {@condition restrained} by this web on a success."
+                                    ]
+                                }
                             ]
                         },
                         {
                             "type": "entries",
-                            "name": "Sirenshriek",
                             "entries": [
-                                "Each other creature in a 15-foot-radius sphere centred on your companion must make an Intelligence saving throw as your companion lets forth a brain-curdling mental shriek On a failure, a creature takes {@damage 3d8} psychic damage and, if it is concentrating on a spell, loses its concentration On a success, a creature takes half as much damage and makes saving throws to maintain its concentration as normal."
+                                {
+                                    "type": "entries",
+                                    "name": "Sirenshriek",
+                                    "entries": [
+                                        "Each other creature in a 15-foot-radius sphere centred on your companion must make an Intelligence saving throw as your companion lets forth a brain-curdling mental shriek On a failure, a creature takes {@damage 3d8} psychic damage and, if it is concentrating on a spell, loses its concentration On a success, a creature takes half as much damage and makes saving throws to maintain its concentration as normal."
+                                    ]
+                                }
                             ]
                         }
                     ]
