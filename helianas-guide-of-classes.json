@@ -840,6 +840,46 @@
             ]
         },
         {
+            "name": "Training Paradigm Feature",
+            "source": "HelianasGuidetoMonsterHunting",
+            "className": "Tamer",
+            "classSource": "HelianasGuidetoMonsterHunting",
+            "level": 7,
+            "entries": [
+                "At 7th level, you gain one feature granted by your Training Paradigm."
+            ]
+        },
+        {
+            "name": "Training Paradigm Feature",
+            "source": "HelianasGuidetoMonsterHunting",
+            "className": "Tamer",
+            "classSource": "HelianasGuidetoMonsterHunting",
+            "level": 10,
+            "entries": [
+                "At 10th level, you gain one feature granted by your Training Paradigm."
+            ]
+        },
+        {
+            "name": "Training Paradigm Feature",
+            "source": "HelianasGuidetoMonsterHunting",
+            "className": "Tamer",
+            "classSource": "HelianasGuidetoMonsterHunting",
+            "level": 14,
+            "entries": [
+                "At 14th level, you gain one feature granted by your Training Paradigm."
+            ]
+        },
+        {
+            "name": "Training Paradigm Feature",
+            "source": "HelianasGuidetoMonsterHunting",
+            "className": "Tamer",
+            "classSource": "HelianasGuidetoMonsterHunting",
+            "level": 18,
+            "entries": [
+                "At 18th level, you gain one feature granted by your Training Paradigm"
+            ]
+        },
+        {
             "name": "Ability Score Improvement",
             "source": "HelianasGuidetoMonsterHunting",
             "className": "Tamer",
@@ -1001,6 +1041,21 @@
             ]
         }
     ],
+    "subclass": [
+        {
+            "name": "Leader",
+            "source": "HelianasGuidetoMonsterHunting",
+            "className": "Tamer",
+            "classSource": "HelianasGuidetoMonsterHunting",
+            "shortName": "Leader",
+			"subclassFeatures": [
+                "Leader|Tamer|HelianasGuidetoMonsterHunting|Leader|HelianasGuidetoMonsterHunting|3",
+                "Companion Surge|Tamer|HelianasGuidetoMonsterHunting|Leader|HelianasGuidetoMonsterHunting|7",
+                "Leader’s Fortitude|Tamer|HelianasGuidetoMonsterHunting|Leader|HelianasGuidetoMonsterHunting|10",
+                "Combo|Tamer|HelianasGuidetoMonsterHunting|Leader|HelianasGuidetoMonsterHunting|14"
+            ]
+        }
+    ],
     "subclassFeature": [
         {
             "name": "Leader",
@@ -1014,10 +1069,10 @@
                 "Whether it be through a non-stop litany of encouraging aphorisms, exaggerated movements, and hands signals, or through a calm, telepathic reinforcement, a leader exhorts their companions to ever greater feats of brilliance Leaders believe that with the right support and teamwork, no task is impossible for their menagerie of companions Whether you swear by positive reinforcement, craft meticulous pre-fight gameplans, or ruthlessly punish mistakes, communication and motivation are your watchwords.",
                 {
                     "type": "refSubclassFeature",
-					"subclassFeature": "Inspire|Action Surge|Leader’s Fortitude|Combo"
+					"subclassFeature": "Inspire|Tamer|HelianasGuidetoMonsterHunting|Leader|HelianasGuidetoMonsterHunting|3"
                 },{
                     "type": "refSubclassFeature",
-					"subclassFeature": "Leader Spells|Action Surge|Leader’s Fortitude|Combo"
+					"subclassFeature": "Leader Spells|Tamer|HelianasGuidetoMonsterHunting|Leader|HelianasGuidetoMonsterHunting|3"
                 }
             ]
         },
@@ -1081,13 +1136,13 @@
             ]
         },
         {
-            "name": "Action Surge",
+            "name": "Companion Surge",
             "source": "HelianasGuidetoMonsterHunting",
             "className": "Tamer",
             "classSource": "HelianasGuidetoMonsterHunting",
             "subclassShortName": "Leader",
             "subclassSource": "HelianasGuidetoMonsterHunting",
-            "level": 6,
+            "level": 7,
             "entries": [
                 "You can push your companion beyond its normal limits for a moment When you use an action or bonus action to command your companion, you can extol it to exert greater effort. On your companion’s turn, it can take one additional action of your choice.",
                 "Once your companion has benefited from your use of this feature, you must finish a short or long rest before that same companion can benefit from it again Starting at 18th level, your companions can benefit from Action Surge twice before a rest, but only once on the same turn."
