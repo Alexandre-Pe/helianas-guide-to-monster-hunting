@@ -1643,19 +1643,24 @@
                             "type": "entries",
                             "entries": [
                                 {
-                                "type": "entries",
-                                "name": "Compelling Plumage",
-                                "entries": [
-                                    "Each creature in a 25foot cone that can see your companion must succeed on a Wisdom saving throw or be {@condition charmed} by your companion’s dazzling display of colour for the next minute While {@condition charmed} in this way, the creature is incapacitated and has a speed of 0. The effect ends for an affected creature if it takes any damage, if someone else uses an action to shake the creature out of its stupor, or if the companion moves out of the creature’s line of sight or is ever more than 25 feet away from the creature."
+                                    "type": "entries",
+                                    "name": "Compelling Plumage",
+                                    "entries": [
+                                        "Each creature in a 25foot cone that can see your companion must succeed on a Wisdom saving throw or be {@condition charmed} by your companion’s dazzling display of colour for the next minute While {@condition charmed} in this way, the creature is incapacitated and has a speed of 0. The effect ends for an affected creature if it takes any damage, if someone else uses an action to shake the creature out of its stupor, or if the companion moves out of the creature’s line of sight or is ever more than 25 feet away from the creature."
                                     ]
                                 }
                             ]
                         },
                         {
                             "type": "entries",
-                            "name": "Phosphoburst",
                             "entries": [
-                                "Each other creature in a 10-foot-radius sphere centred on your companion must make a Constitution saving throw against the dizzying burst of light your companion emits On a failure, a creature takes {@damage 2d10} radiant damage and is {@condition blinded} until the end of its next turn On a success, a creature takes half as much damage and isn’t {@condition blinded}."
+                                {
+                                    "type": "entries",
+                                    "name": "Phosphoburst",
+                                    "entries": [
+                                        "Each other creature in a 10-foot-radius sphere centred on your companion must make a Constitution saving throw against the dizzying burst of light your companion emits On a failure, a creature takes {@damage 2d10} radiant damage and is {@condition blinded} until the end of its next turn On a success, a creature takes half as much damage and isn’t {@condition blinded}."
+                                    ]
+                                }
                             ]
                         },
                         {
