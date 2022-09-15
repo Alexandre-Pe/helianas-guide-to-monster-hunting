@@ -218,6 +218,7 @@ def convert():
 
     return spell, roll20Spell
 
+
 spell, roll20Spell = [], []
 while input("\nContinuer ? (o/n): ") == 'o':
     s, r = convert()
@@ -236,5 +237,70 @@ except:
 data["_meta"]["dateLastModified"] = round(h)
 data["spell"] += spell
 data["roll20Spell"] += roll20Spell
+with open(name, 'w') as f:
+    json.dump(data, f, indent=4)
+
+
+name = "helianas-guide-to-spell.json"
+with open(name, 'r') as f:
+    data = json.load(f)
+h = time()
+data["_meta"]["dateLastModified"] = round(h)
+for i, r20 in enumerate(data["roll20Spell"]):
+    print(r20["name"])
+    assert r20["name"] == data["spell"][i]["name"]
+    foundryData = {
+        "target.value": 6,
+        "target.units": "m",
+        "target.type": "sphere"
+    }
+    foundryFlags = {}
+    K = r20["data"].keys()
+    if "Damage" in K:
+        foundryData["damage.parts"] = [
+            r20["data"]["Damage"]
+        ]
+        if "Damage Type" in K:
+            foundryData["damage.parts"].append(r20["data"]["Damage Type"].lower())
+    if "Secondary Damage" in K:
+        foundryData["damage.parts"] += [
+            r20["data"]["Secondary Damage"]
+        ]
+        if "Secondary Damage Type" in K:
+            foundryData["damage.parts"].append(r20["data"]["Secondary Damage Type"].lower())
+    if "Save Success" in K:
+        foundryFlags["midiProperties.halfdam"] = True
+        foundryData["actionType"] = "save"
+    elif "spellAttack" in data["spell"][i].keys():
+        foundryData["actionType"] = data["spell"][i]["spellAttack"][0].lower() + "sak"
+    else:
+        foundryData["actionType"] = "util"
+    if "Higher Spell Slot Die" in K:
+        foundryData["scaling.mode"] = "level"
+        foundryData["scaling.formula"] = r20["data"]["Higher Spell Slot Die"]
+    elif "data-Cantrip Scaling" in K:
+        foundryData["scaling.mode"] = "cantrip"
+        foundryData["scaling.formula"] = r20["data"]["Damage"]
+    data["spell"][i]["foundryData"] = foundryData
+    if foundryFlags != {}:
+        data["spell"][i]["foundryFlags"] = foundryFlags
+        
+with open(name, 'w') as f:
+    json.dump(data, f, indent=4)
+
+    
+name = "helianas-guide-to-spell.json"
+with open(name, 'r') as f:
+    data = json.load(f)
+h = time()
+data["_meta"]["dateLastModified"] = round(h)
+
+for s in data["spell"]:
+    print(s["name"])
+    if "damage.parts" in s["foundryData"].keys():
+        for i, d in enumerate(s["foundryData"].pop("damage.parts")):
+            for j, t in enumerate(d):
+                s["foundryData"][f"damage.parts.{i}.{j}"] = t
+        
 with open(name, 'w') as f:
     json.dump(data, f, indent=4)

@@ -26,7 +26,7 @@
             }
         },
         "dateAdded": 1661628906,
-        "dateLastModified": 1661728124
+        "dateLastModified": 1663178845
     },
     "spell": [
         {
@@ -102,7 +102,20 @@
             ],
             "savingThrow": [
                 "dexterity"
-            ]
+            ],
+            "foundryData": {
+                "target.value": 3,
+                "target.units": "m",
+                "target.type": "cube",
+                "actionType": "save",
+                "scaling.mode": "level",
+                "scaling.formula": "d8",
+                "damage.parts.0.0": "4d8",
+                "damage.parts.0.1": "lightning"
+            },
+            "foundryFlags": {
+                "midiProperties.halfdam": true
+            }
         },
         {
             "name": "Acid Rain",
@@ -175,7 +188,20 @@
             ],
             "savingThrow": [
                 "dexterity"
-            ]
+            ],
+            "foundryData": {
+                "target.value": 6,
+                "target.units": "m",
+                "target.type": "cylinder",
+                "actionType": "save",
+                "scaling.mode": "level",
+                "scaling.formula": "d6",
+                "damage.parts.0.0": "4d6",
+                "damage.parts.0.1": "acid"
+            },
+            "foundryFlags": {
+                "midiProperties.halfdam": true
+            }
         },
         {
             "name": "Arcanomagnetic Repulsion",
@@ -258,7 +284,17 @@
             ],
             "savingThrow": [
                 "strength"
-            ]
+            ],
+            "foundryData": {
+                "target.value": 6,
+                "target.units": "m",
+                "target.type": "sphere",
+                "actionType": "util",
+                "scaling.mode": "level",
+                "scaling.formula": "d6",
+                "damage.parts.0.0": "1d6",
+                "damage.parts.0.1": "force"
+            }
         },
         {
             "name": "Aura of Impurity",
@@ -315,7 +351,13 @@
             "source": "HelianasGuidetoMonsterHunting",
             "savingThrow": [
                 "charisma"
-            ]
+            ],
+            "foundryData": {
+                "target.value": 9,
+                "target.units": "m",
+                "target.type": "sphere",
+                "actionType": "util"
+            }
         },
         {
             "name": "Blinding Radiance",
@@ -388,7 +430,20 @@
             ],
             "savingThrow": [
                 "constitution"
-            ]
+            ],
+            "foundryData": {
+                "target.value": 3,
+                "target.units": "m",
+                "target.type": "sphere",
+                "actionType": "save",
+                "scaling.mode": "level",
+                "scaling.formula": "d10",
+                "damage.parts.0.0": "3d10",
+                "damage.parts.0.1": "radiant"
+            },
+            "foundryFlags": {
+                "midiProperties.halfdam": true
+            }
         },
         {
             "name": "Can\u2019t Trip",
@@ -451,7 +506,13 @@
                     }
                 ]
             },
-            "source": "HelianasGuidetoMonsterHunting"
+            "source": "HelianasGuidetoMonsterHunting",
+            "foundryData": {
+                "target.value": 1,
+                "target.units": "",
+                "target.type": "creature",
+                "actionType": "util"
+            }
         },
         {
             "name": "Can\u2019trip",
@@ -510,7 +571,10 @@
                     }
                 ]
             },
-            "source": "HelianasGuidetoMonsterHunting"
+            "source": "HelianasGuidetoMonsterHunting",
+            "foundryData": {
+                "actionType": "util"
+            }
         },
         {
             "name": "Cannotrip",
@@ -576,7 +640,13 @@
                     }
                 ]
             },
-            "source": "HelianasGuidetoMonsterHunting"
+            "source": "HelianasGuidetoMonsterHunting",
+            "foundryData": {
+                "target.value": 1,
+                "target.units": "m",
+                "target.type": "creature",
+                "actionType": "util"
+            }
         },
         {
             "name": "Chameleon Skin",
@@ -647,7 +717,10 @@
                     }
                 ]
             },
-            "source": "HelianasGuidetoMonsterHunting"
+            "source": "HelianasGuidetoMonsterHunting",
+            "foundryData": {
+                "actionType": "util"
+            }
         },
         {
             "name": "Concussion",
@@ -707,7 +780,17 @@
             ],
             "savingThrow": [
                 "constitution"
-            ]
+            ],
+            "foundryData": {
+                "target.value": 1,
+                "target.units": "",
+                "target.type": "creature",
+                "actionType": "util",
+                "scaling.mode": "cantrip",
+                "scaling.formula": "1d8",
+                "damage.parts.0.0": "1d8",
+                "damage.parts.0.1": "thunder"
+            }
         },
         {
             "name": "Conjure Anomaly",
@@ -768,7 +851,10 @@
                     }
                 ]
             },
-            "source": "HelianasGuidetoMonsterHunting"
+            "source": "HelianasGuidetoMonsterHunting",
+            "foundryData": {
+                "actionType": "util"
+            }
         },
         {
             "name": "Corrupting Ichor",
@@ -836,7 +922,17 @@
             ],
             "spellAttack": [
                 "R"
-            ]
+            ],
+            "foundryData": {
+                "target.value": 1,
+                "target.units": "",
+                "target.type": "creature",
+                "actionType": "rsak",
+                "scaling.mode": "level",
+                "scaling.formula": "d8",
+                "damage.parts.0.0": "2d8",
+                "damage.parts.0.1": "necrotic"
+            }
         },
         {
             "name": "Daydream",
@@ -903,7 +999,13 @@
             "source": "HelianasGuidetoMonsterHunting",
             "savingThrow": [
                 "wisdom"
-            ]
+            ],
+            "foundryData": {
+                "target.value": 1,
+                "target.units": "",
+                "target.type": "creature",
+                "actionType": "util"
+            }
         },
         {
             "name": "Depth Charge",
@@ -971,7 +1073,20 @@
                         "When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@scaledamage  7d6|3-9|1d6} for each slot level above 3rd."
                     ]
                 }
-            ]
+            ],
+            "foundryData": {
+                "target.value": 6,
+                "target.units": "m",
+                "target.type": "sphere",
+                "actionType": "save",
+                "scaling.mode": "level",
+                "scaling.formula": "d6",
+                "damage.parts.0.0": "7d6",
+                "damage.parts.0.1": "thunder"
+            },
+            "foundryFlags": {
+                "midiProperties.halfdam": true
+            }
         },
         {
             "name": "Food Coma",
@@ -1046,7 +1161,10 @@
                         "When you cast this spell using a spell slot of 4th level or higher, you may enchant an additional turkey drumstick (and hence affect one additional creature) for each slot level above 3rd.."
                     ]
                 }
-            ]
+            ],
+            "foundryData": {
+                "actionType": "util"
+            }
         },
         {
             "name": "Frogskin",
@@ -1130,7 +1248,17 @@
                         "When you cast this spell using a spell slot of 5th level or higher, both damages increase by {@scaledamage  3d10|4-9|1d10} for each slot level above 4th."
                     ]
                 }
-            ]
+            ],
+            "foundryData": {
+                "target.value": 1,
+                "target.units": "",
+                "target.type": "creature",
+                "actionType": "msak",
+                "scaling.mode": "level",
+                "scaling.formula": "d10",
+                "damage.parts.0.0": "3d10",
+                "damage.parts.0.1": "poison"
+            }
         },
         {
             "name": "Dreamwalk",
@@ -1196,7 +1324,10 @@
                 ]
             },
             "source": "HelianasGuidetoMonsterHunting",
-            "entriesHigherLevel": []
+            "entriesHigherLevel": [],
+            "foundryData": {
+                "actionType": "util"
+            }
         },
         {
             "name": "Eelskin",
@@ -1274,7 +1405,10 @@
                         "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8 per two slot levels above 2nd."
                     ]
                 }
-            ]
+            ],
+            "foundryData": {
+                "actionType": "util"
+            }
         },
         {
             "name": "Endoleech",
@@ -1342,7 +1476,17 @@
                         "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@scaledamage  5d6|2-9|1d6} for each slot level above 2nd."
                     ]
                 }
-            ]
+            ],
+            "foundryData": {
+                "target.value": 1,
+                "target.units": "",
+                "target.type": "creature",
+                "actionType": "msak",
+                "scaling.mode": "level",
+                "scaling.formula": "d6",
+                "damage.parts.0.0": "5d6",
+                "damage.parts.0.1": "cold"
+            }
         },
         {
             "name": "Endure",
@@ -1419,7 +1563,13 @@
                         "When you cast this spell using a spell slot of 6th level or higher, you can increase the duration to 10 minutes (6th level), 1 hour (7th level), 8 hours (8th level) or 1 day (9th level).."
                     ]
                 }
-            ]
+            ],
+            "foundryData": {
+                "target.value": 1,
+                "target.units": "",
+                "target.type": "creature",
+                "actionType": "util"
+            }
         },
         {
             "name": "Enrage",
@@ -1488,7 +1638,13 @@
                         "When you cast this spell using a spell slot of 3rd level or higher and use an action to force an enraged creature to make a melee weapon attack, you can force one additional enraged creature to make a melee weapon attack for each slot level above 3rd."
                     ]
                 }
-            ]
+            ],
+            "foundryData": {
+                "target.value": 6,
+                "target.units": "m",
+                "target.type": "sphere",
+                "actionType": "save"
+            }
         },
         {
             "name": "Ferocious Strike",
@@ -1549,7 +1705,16 @@
             "spellAttack": [
                 "M"
             ],
-            "entriesHigherLevel": []
+            "entriesHigherLevel": [],
+            "foundryData": {
+                "target.value": 1,
+                "target.units": "",
+                "target.type": "creature",
+                "actionType": "mwak",
+                "scaling.mode": "cantrip",
+                "scaling.formula": "1d4",
+                "damage.parts.0.0": "1d4"
+            }
         },
         {
             "name": "Feverskin",
@@ -1631,7 +1796,17 @@
                         "When you cast this spell using a spell slot of 6th level or higher, the damage increases by {@scaledamage  6d6|5-9|1d6} for each slot level above 5th."
                     ]
                 }
-            ]
+            ],
+            "foundryData": {
+                "target.value": 1,
+                "target.units": "",
+                "target.type": "creature",
+                "actionType": "msak",
+                "scaling.mode": "level",
+                "scaling.formula": "d6",
+                "damage.parts.0.0": "6d6",
+                "damage.parts.0.1": "fire"
+            }
         },
         {
             "name": "Firther\u2019s Shadow",
@@ -1743,7 +1918,20 @@
                         "When you cast this spell using a spell slot of 4th level or higher, the initial and ongoing damage increases by {@scaledamage  4d10|3-9|1d10} and {@scaledamage  4d10|3-9|1d6,} respectively, for each slot level above 3rd."
                     ]
                 }
-            ]
+            ],
+            "foundryData": {
+                "target.value": 1,
+                "target.units": "",
+                "target.type": "creature",
+                "actionType": "save",
+                "scaling.mode": "level",
+                "scaling.formula": "d10",
+                "damage.parts.0.0": "4d10",
+                "damage.parts.0.1": "psychic"
+            },
+            "foundryFlags": {
+                "midiProperties.halfdam": true
+            }
         },
         {
             "name": "Fixit",
@@ -1810,7 +1998,10 @@
                         "When you cast this spell using a spell slot of 3rd level or higher, the rarity of the item that can regain its magical properties increases to uncommon (3rd level), rare (5th level), very rare (7th level), or legendary (9th level)."
                     ]
                 }
-            ]
+            ],
+            "foundryData": {
+                "actionType": "util"
+            }
         },
         {
             "name": "Flare",
@@ -1868,7 +2059,17 @@
             "spellAttack": [
                 "R"
             ],
-            "entriesHigherLevel": []
+            "entriesHigherLevel": [],
+            "foundryData": {
+                "target.value": 1,
+                "target.units": "",
+                "target.type": "creature",
+                "actionType": "rsak",
+                "scaling.mode": "cantrip",
+                "scaling.formula": "1d8",
+                "damage.parts.0.0": "1d8",
+                "damage.parts.0.1": "radiant"
+            }
         },
         {
             "name": "Flipperform",
@@ -1942,7 +2143,10 @@
                         "When you cast this spell using a spell slot of 2nd level or higher, you can affect one additional creature for each slot level above 1st In addition, the duration of the spell doubles for each slot level above 1st."
                     ]
                 }
-            ]
+            ],
+            "foundryData": {
+                "actionType": "util"
+            }
         },
         {
             "name": "Fungal Infection",
@@ -2055,7 +2259,13 @@
                         "When you cast this spell using a spell slot of 5th level or higher, the damage of Amanita Rotgut and Necrotising Zygomycosis increases by {@scaledamage  2d6|4-9|1d6} and {@scaledamage  2d8|4-9|1d8}, respectively, for each slot level above 4th When you cast this spell using a spell slot of 6th level or higher, you can choose two different fungi to grow on affected targets instead of one."
                     ]
                 }
-            ]
+            ],
+            "foundryData": {
+                "target.value": 4.5,
+                "target.units": "m",
+                "target.type": "sphere",
+                "actionType": "save"
+            }
         },
         {
             "name": "Gravity Repulsion",
@@ -2130,7 +2340,17 @@
                         "When you cast this spell using a spell slot of 5th level or higher, the damage increases by {@scaledamage  3d6|4-9|1d6} the radius of the difficult terrain increases by 5 feet, and the range gravity pulse increases by 5 feet for each slot level above 4th."
                     ]
                 }
-            ]
+            ],
+            "foundryData": {
+                "target.value": 1,
+                "target.units": "",
+                "target.type": "creature",
+                "actionType": "save",
+                "scaling.mode": "level",
+                "scaling.formula": "d6",
+                "damage.parts.0.0": "3d6",
+                "damage.parts.0.1": "force"
+            }
         },
         {
             "name": "Gravity Smash",
@@ -2198,7 +2418,21 @@
                         "hen you cast this spell using a spell slot of 6th level or higher, both damage values increase by {@scaledamage  4d10|5-9|1d10} for each slot level above 5th."
                     ]
                 }
-            ]
+            ],
+            "foundryData": {
+                "target.value": 12,
+                "target.units": "m",
+                "target.type": "cylinder",
+                "damage.versatile": "8d10",
+                "actionType": "save",
+                "scaling.mode": "level",
+                "scaling.formula": "d10",
+                "damage.parts.0.0": "4d10",
+                "damage.parts.0.1": "force"
+            },
+            "foundryFlags": {
+                "midiProperties.halfdam": true
+            }
         },
         {
             "name": "Howl",
@@ -2249,7 +2483,10 @@
                 ]
             },
             "source": "HelianasGuidetoMonsterHunting",
-            "entriesHigherLevel": []
+            "entriesHigherLevel": [],
+            "foundryData": {
+                "actionType": "util"
+            }
         },
         {
             "name": "Humperdink\u2019s Halitosis",
@@ -2318,7 +2555,20 @@
                         "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@scaledamage  3d4|1-9|1d4} for each slot level above 1st."
                     ]
                 }
-            ]
+            ],
+            "foundryData": {
+                "target.value": 4.5,
+                "target.units": "m",
+                "target.type": "cone",
+                "actionType": "save",
+                "scaling.mode": "level",
+                "scaling.formula": "d4",
+                "damage.parts.0.0": "3d4",
+                "damage.parts.0.1": "acid"
+            },
+            "foundryFlags": {
+                "midiProperties.halfdam": true
+            }
         },
         {
             "name": "Incorporeality",
@@ -2396,7 +2646,10 @@
                         "When you cast this spell using a spell slot level of 7th level or higher, you can choose to increase the spell\u2019s duration, or the number of targets, for each slot level above 6th If you choose duration, the duration increases in increments to 10 minutes (7th level), 1 hour (8th level), or 8 hours (9th level). If you choose to increase the number of targets, the number increases by 1 for each slot level."
                     ]
                 }
-            ]
+            ],
+            "foundryData": {
+                "actionType": "util"
+            }
         },
         {
             "name": "Inequality",
@@ -2475,7 +2728,10 @@
                         "When you cast this spell using a spell slot of 4th level or higher, you can link two other creatures, favouring one, and disfavouring the other, for each two slot levels above 2nd."
                     ]
                 }
-            ]
+            ],
+            "foundryData": {
+                "actionType": "util"
+            }
         },
         {
             "name": "Influenza",
@@ -2545,7 +2801,20 @@
                         "When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@scaledamage  3d6|3-9|1d6} and the value a {@condition poisoned} creature must roll on the {@dice d12} to cause a coughing fit increases by 1 for each slot level above 3rd."
                     ]
                 }
-            ]
+            ],
+            "foundryData": {
+                "target.value": 9,
+                "target.units": "m",
+                "target.type": "cone",
+                "actionType": "save",
+                "scaling.mode": "level",
+                "scaling.formula": "d6",
+                "damage.parts.0.0": "3d6",
+                "damage.parts.0.1": "poison"
+            },
+            "foundryFlags": {
+                "midiProperties.halfdam": true
+            }
         },
         {
             "name": "Initiative",
@@ -2611,7 +2880,10 @@
                         "When you cast this spell using a spell slot of 2nd level or higher you may target one additional creature for each spell slot above 1st."
                     ]
                 }
-            ]
+            ],
+            "foundryData": {
+                "actionType": "util"
+            }
         },
         {
             "name": "Lungburst",
@@ -2676,7 +2948,22 @@
                         "When you cast this spell using a spell slot of 7th level or higher, the thunder and necrotic damage both increase by {@scaledamage  7d6|6-9|1d6} for each slot level above 6th."
                     ]
                 }
-            ]
+            ],
+            "foundryData": {
+                "target.value": 1,
+                "target.units": "",
+                "target.type": "creature",
+                "actionType": "save",
+                "scaling.mode": "level",
+                "scaling.formula": "d6",
+                "damage.parts.0.0": "7d6",
+                "damage.parts.0.1": "thunder",
+                "damage.parts.1.0": "7d6",
+                "damage.parts.1.1": "necrotic"
+            },
+            "foundryFlags": {
+                "midiProperties.halfdam": true
+            }
         },
         {
             "name": "Magnetite Shard",
@@ -2745,7 +3032,22 @@
                         "When you cast this spell using a spell slot of 4th level or higher, the cold damage increases by {@scaledamage  4d6|3-9|1d6} per slot level above 3rd."
                     ]
                 }
-            ]
+            ],
+            "foundryData": {
+                "target.value": 6,
+                "target.units": "m",
+                "target.type": "sphere",
+                "actionType": "save",
+                "scaling.mode": "level",
+                "scaling.formula": "d6",
+                "damage.parts.0.0": "4d6",
+                "damage.parts.0.1": "cold",
+                "damage.parts.1.0": "3d6",
+                "damage.parts.1.1": "piercing"
+            },
+            "foundryFlags": {
+                "midiProperties.halfdam": true
+            }
         },
         {
             "name": "Magnetobolt",
@@ -2808,7 +3110,17 @@
             "spellAttack": [
                 "R"
             ],
-            "entriesHigherLevel": []
+            "entriesHigherLevel": [],
+            "foundryData": {
+                "target.value": 1,
+                "target.units": "",
+                "target.type": "creature",
+                "actionType": "rsak",
+                "scaling.mode": "cantrip",
+                "scaling.formula": "1d6",
+                "damage.parts.0.0": "1d6",
+                "damage.parts.0.1": "force"
+            }
         },
         {
             "name": "Mass Leech",
@@ -2876,7 +3188,20 @@
                         "When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@scaledamage  2d8|3-9|1d8} for each slot level above 3rd."
                     ]
                 }
-            ]
+            ],
+            "foundryData": {
+                "target.value": 6,
+                "target.units": "m",
+                "target.type": "sphere",
+                "actionType": "save",
+                "scaling.mode": "level",
+                "scaling.formula": "d8",
+                "damage.parts.0.0": "2d8",
+                "damage.parts.0.1": "necrotic"
+            },
+            "foundryFlags": {
+                "midiProperties.halfdam": true
+            }
         },
         {
             "name": "Mechamagic",
@@ -2982,7 +3307,10 @@
                         "When you cast this spell using a spell slot of 5th level or higher, you can target one additional item for each slot level above 4th."
                     ]
                 }
-            ]
+            ],
+            "foundryData": {
+                "actionType": "util"
+            }
         },
         {
             "name": "Mireball",
@@ -3056,7 +3384,20 @@
                         "When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@scaledamage  3d10|3-9|1d10} for each slot level above 3rd."
                     ]
                 }
-            ]
+            ],
+            "foundryData": {
+                "target.value": 4.5,
+                "target.units": "m",
+                "target.type": "sphere",
+                "actionType": "save",
+                "scaling.mode": "level",
+                "scaling.formula": "d10",
+                "damage.parts.0.0": "3d10",
+                "damage.parts.0.1": "bludgeoning"
+            },
+            "foundryFlags": {
+                "midiProperties.halfdam": true
+            }
         },
         {
             "name": "Mortiferous Pulse",
@@ -3116,7 +3457,20 @@
                         "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@scaledamage  3d8|2-9|1d8} for each slot level above 2nd."
                     ]
                 }
-            ]
+            ],
+            "foundryData": {
+                "target.value": 15,
+                "target.units": "m",
+                "target.type": "line",
+                "actionType": "save",
+                "scaling.mode": "level",
+                "scaling.formula": "d8",
+                "damage.parts.0.0": "3d8",
+                "damage.parts.0.1": "necrotic"
+            },
+            "foundryFlags": {
+                "midiProperties.halfdam": true
+            }
         },
         {
             "name": "Peppermint Plate",
@@ -3194,7 +3548,14 @@
                         "When you cast this spell using a spell slot of 2nd level or higher, the fire damage increases by {@scaledamage  1d4|1-9|1d4} for each slot level above 1st."
                     ]
                 }
-            ]
+            ],
+            "foundryData": {
+                "actionType": "util",
+                "scaling.mode": "level",
+                "scaling.formula": "d4",
+                "damage.parts.0.0": "1d4",
+                "damage.parts.0.1": "fire"
+            }
         },
         {
             "name": "Primal Scent",
@@ -3243,7 +3604,10 @@
                 ]
             },
             "source": "HelianasGuidetoMonsterHunting",
-            "entriesHigherLevel": []
+            "entriesHigherLevel": [],
+            "foundryData": {
+                "actionType": "util"
+            }
         },
         {
             "name": "Pins & Needles",
@@ -3303,7 +3667,17 @@
             "savingThrow": [
                 "constitution"
             ],
-            "entriesHigherLevel": []
+            "entriesHigherLevel": [],
+            "foundryData": {
+                "target.value": 1,
+                "target.units": "",
+                "target.type": "creature",
+                "actionType": "util",
+                "scaling.mode": "cantrip",
+                "scaling.formula": "1d8",
+                "damage.parts.0.0": "1d8",
+                "damage.parts.0.1": "psychic"
+            }
         },
         {
             "name": "Preserve",
@@ -3381,7 +3755,13 @@
                         "When you cast this spell using a spell slot of 4th level or higher, the strength of the essence possessed by creatures that allows them to automatically succeed on the saving throw increases by one tier for each slot level above 2nd This impacts creatures with potent or more powerful essence (typically CR 12) at 4th level, mythic (typically CR 18) at 6th level, and deific (typically CR 25) at 8th level.."
                     ]
                 }
-            ]
+            ],
+            "foundryData": {
+                "target.value": 3,
+                "target.units": "m",
+                "target.type": "sphere",
+                "actionType": "save"
+            }
         },
         {
             "name": "Protection",
@@ -3456,7 +3836,10 @@
                         "When you cast this spell using a spell slot of 3rd level or higher, you may target one additional creature for each slot level above 2nd."
                     ]
                 }
-            ]
+            ],
+            "foundryData": {
+                "actionType": "util"
+            }
         },
         {
             "name": "Power Word Shield",
@@ -3515,7 +3898,13 @@
                 ]
             },
             "source": "HelianasGuidetoMonsterHunting",
-            "entriesHigherLevel": []
+            "entriesHigherLevel": [],
+            "foundryData": {
+                "target.value": 1,
+                "target.units": "",
+                "target.type": "creature",
+                "actionType": "util"
+            }
         },
         {
             "name": "Riptide",
@@ -3577,7 +3966,13 @@
             "savingThrow": [
                 "strength"
             ],
-            "entriesHigherLevel": []
+            "entriesHigherLevel": [],
+            "foundryData": {
+                "target.value": 1,
+                "target.units": "",
+                "target.type": "creature",
+                "actionType": "util"
+            }
         },
         {
             "name": "Shackles of Pain",
@@ -3639,7 +4034,13 @@
             "savingThrow": [
                 "charisma"
             ],
-            "entriesHigherLevel": []
+            "entriesHigherLevel": [],
+            "foundryData": {
+                "target.value": 1,
+                "target.units": "",
+                "target.type": "creature",
+                "actionType": "util"
+            }
         },
         {
             "name": "Shielding Word",
@@ -3710,7 +4111,10 @@
                         "When you cast this spell using a spell slot of 3rd level or higher, you may choose to either increase the range of the spell by 30 feet or increase the number of temporary hit points gained by 5, for each slot level above 2nd."
                     ]
                 }
-            ]
+            ],
+            "foundryData": {
+                "actionType": "util"
+            }
         },
         {
             "name": "Smokescreen",
@@ -3770,7 +4174,13 @@
                 ]
             },
             "source": "HelianasGuidetoMonsterHunting",
-            "entriesHigherLevel": []
+            "entriesHigherLevel": [],
+            "foundryData": {
+                "target.value": 1.5,
+                "target.units": "m",
+                "target.type": "cylinder",
+                "actionType": "util"
+            }
         },
         {
             "name": "Spark",
@@ -3826,7 +4236,15 @@
             "spellAttack": [
                 "R"
             ],
-            "entriesHigherLevel": []
+            "entriesHigherLevel": [],
+            "foundryData": {
+                "target.value": 1,
+                "target.units": "",
+                "target.type": "creature",
+                "actionType": "rsak",
+                "damage.parts.0.0": "1d8",
+                "damage.parts.0.1": "lightning"
+            }
         },
         {
             "name": "Spore Cloud",
@@ -3883,7 +4301,17 @@
             "savingThrow": [
                 "constitution"
             ],
-            "entriesHigherLevel": []
+            "entriesHigherLevel": [],
+            "foundryData": {
+                "target.value": 1.5,
+                "target.units": "m",
+                "target.type": "sphere",
+                "actionType": "save",
+                "scaling.mode": "cantrip",
+                "scaling.formula": "1d4",
+                "damage.parts.0.0": "1d4",
+                "damage.parts.0.1": "poison"
+            }
         },
         {
             "name": "Stalker\u2019s Eye",
@@ -3939,7 +4367,10 @@
                 ]
             },
             "source": "HelianasGuidetoMonsterHunting",
-            "entriesHigherLevel": []
+            "entriesHigherLevel": [],
+            "foundryData": {
+                "actionType": "util"
+            }
         },
         {
             "name": "Stench",
@@ -4017,7 +4448,20 @@
                         "When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@scaledamage  3d6|3-9|1d6} for each slot level above 3rd."
                     ]
                 }
-            ]
+            ],
+            "foundryData": {
+                "target.value": 6,
+                "target.units": "m",
+                "target.type": "sphere",
+                "actionType": "save",
+                "scaling.mode": "level",
+                "scaling.formula": "d6",
+                "damage.parts.0.0": "3d6",
+                "damage.parts.0.1": "poison"
+            },
+            "foundryFlags": {
+                "midiProperties.halfdam": true
+            }
         },
         {
             "name": "Sugar Rush",
@@ -4089,7 +4533,10 @@
                         "When you cast this spell using a spell slot of 3rd-level or higher, you can target one additional creature for each slot level above 2nd."
                     ]
                 }
-            ]
+            ],
+            "foundryData": {
+                "actionType": "util"
+            }
         },
         {
             "name": "Swarm",
@@ -4151,7 +4598,17 @@
             "savingThrow": [
                 "dexterity"
             ],
-            "entriesHigherLevel": []
+            "entriesHigherLevel": [],
+            "foundryData": {
+                "target.value": 1,
+                "target.units": "",
+                "target.type": "creature",
+                "actionType": "save",
+                "scaling.mode": "cantrip",
+                "scaling.formula": "d10",
+                "damage.parts.0.0": "0d10",
+                "damage.parts.0.1": "poison"
+            }
         },
         {
             "name": "Switcheroo",
@@ -4224,7 +4681,13 @@
                         "When you cast this spell using a spell slot of 4th level or higher, the range of this spell increases by 30 feet for each slot level above 3rd The maximum size of creature you can target increases to Huge when cast at 6th level or higher, and to Gargantuan when cast at 9th level."
                     ]
                 }
-            ]
+            ],
+            "foundryData": {
+                "target.value": 1,
+                "target.units": "",
+                "target.type": "creature",
+                "actionType": "save"
+            }
         },
         {
             "name": "Tentacle Lash",
@@ -4309,7 +4772,17 @@
                         "When you cast this spell using a spell slot of 5th level or higher, the damage increases by {@scaledamage  5d8|4-9|1d8} for each slot level above 4th."
                     ]
                 }
-            ]
+            ],
+            "foundryData": {
+                "target.value": 1,
+                "target.units": "",
+                "target.type": "creature",
+                "actionType": "msak",
+                "scaling.mode": "level",
+                "scaling.formula": "d8",
+                "damage.parts.0.0": "5d8",
+                "damage.parts.0.1": "bludgeoning"
+            }
         },
         {
             "name": "The Bends",
@@ -4377,7 +4850,21 @@
                         "When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@scaledamage  5d8|3-9|1d8} for each slot level above 3rd."
                     ]
                 }
-            ]
+            ],
+            "foundryData": {
+                "target.value": 1,
+                "target.units": "",
+                "target.type": "creature",
+                "damage.versatile": "5d10",
+                "actionType": "save",
+                "scaling.mode": "level",
+                "scaling.formula": "d8",
+                "damage.parts.0.0": "5d8",
+                "damage.parts.0.1": "poison"
+            },
+            "foundryFlags": {
+                "midiProperties.halfdam": true
+            }
         },
         {
             "name": "Totem Arrows",
@@ -4497,7 +4984,10 @@
                         "When you cast this spell using a spell slot of 5th level or higher, the duration of this spell is concentration, up to 8 hours."
                     ]
                 }
-            ]
+            ],
+            "foundryData": {
+                "actionType": "util"
+            }
         },
         {
             "name": "Water Whip",
@@ -4556,7 +5046,17 @@
             "spellAttack": [
                 "M"
             ],
-            "entriesHigherLevel": []
+            "entriesHigherLevel": [],
+            "foundryData": {
+                "target.value": 1,
+                "target.units": "",
+                "target.type": "creature",
+                "actionType": "msak",
+                "scaling.mode": "cantrip",
+                "scaling.formula": "1d6",
+                "damage.parts.0.0": "1d6",
+                "damage.parts.0.1": "slashing"
+            }
         },
         {
             "name": "Weavebend",
@@ -4614,7 +5114,10 @@
                         "When you cast this spell using a spell slot of 5th level or higher, the spell is automatically redirected if its level is less than the level of the spell slot you used."
                     ]
                 }
-            ]
+            ],
+            "foundryData": {
+                "actionType": "util"
+            }
         },
         {
             "name": "Weave Entanglement",
@@ -4753,7 +5256,13 @@
                         "When you cast this spell using a spell slot of 7th level or higher, you increase the radius of the area affected by 10 feet for each slot level above 6th."
                     ]
                 }
-            ]
+            ],
+            "foundryData": {
+                "target.value": 6,
+                "target.units": "m",
+                "target.type": "sphere",
+                "actionType": "util"
+            }
         },
         {
             "name": "Zippit!",
@@ -4831,7 +5340,17 @@
                         "When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@scaledamage  1d8|3-9|1d8} for each slot level above 3rd."
                     ]
                 }
-            ]
+            ],
+            "foundryData": {
+                "target.value": 1,
+                "target.units": "",
+                "target.type": "creature",
+                "actionType": "util",
+                "scaling.mode": "level",
+                "scaling.formula": "d8",
+                "damage.parts.0.0": "1d8",
+                "damage.parts.0.1": "slashing"
+            }
         }
     ],
     "roll20Spell": [
@@ -5240,7 +5759,7 @@
             }
         },
         {
-            "name": "Pins & Needles",
+            "name": "Primal Scent",
             "source": "HelianasGuidetoMonsterHunting",
             "data": {}
         },
