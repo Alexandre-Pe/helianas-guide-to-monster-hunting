@@ -11,7 +11,9 @@ def fuse(sp):
         else:
             content += ' ' + s
     return content
-    
+
+print(fuse(input().split(' ')))
+
 # @spell 
 
 def fuse_table(sp):
