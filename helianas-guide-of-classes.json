@@ -106,6 +106,7 @@
                 "con",
                 "cha"
             ],
+			"spellsKnownProgressionFixedAllowLowerLevel": true,
             "startingProficiencies": {
                 "armor": [
                     "light",
@@ -216,13 +217,40 @@
             ],
             "classTableGroups": [
                 {
+					"colLabels": [
+						"{@filter Cantrips Known|spells|level=0|class=tamer (hgtmh)}"
+					],
+					"rows": [
+                        [0],
+                        [2],
+                        [2],
+                        [2],
+                        [2],
+                        [2],
+                        [2],
+                        [2],
+                        [2],
+                        [3],
+                        [3],
+                        [3],
+                        [3],
+                        [4],
+                        [4],
+                        [4],
+                        [4],
+                        [4],
+                        [4],
+                        [4]
+					]
+				},
+                {
                     "title": "–Spell Slots per Spell Level–",
                     "colLabels": [
-                        "1st",
-                        "2nd", 
-                        "3rd",
-                        "4th",
-                        "5th"
+                        "{@filter 1st|spells|level=1|class=tamer (hgtmh)}",
+                        "{@filter 2nd|spells|level=2|class=tamer (hgtmh)}", 
+                        "{@filter 3rd|spells|level=3|class=tamer (hgtmh)}",
+                        "{@filter 4th|spells|level=4|class=tamer (hgtmh)}",
+                        "{@filter 5th|spells|level=5|class=tamer (hgtmh)}"
                     ],
                     "rows": [
                         [
