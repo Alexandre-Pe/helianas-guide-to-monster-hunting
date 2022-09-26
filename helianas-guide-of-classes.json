@@ -30,6 +30,7 @@
                 "Pocket Familiar|Tamer|HelianasGuidetoMonsterHunting|1",
                 "Monster Trainer|Tamer|HelianasGuidetoMonsterHunting|1",
                 "Soul Bond|Tamer|HelianasGuidetoMonsterHunting|1",
+                "Tamer Companion Summary|Tamer|HelianasGuidetoMonsterHunting|1",
                 "Tame Creature|Tamer|HelianasGuidetoMonsterHunting|1",
                 "Spellcasting|Tamer|HelianasGuidetoMonsterHunting|2",
                 "Bolster|Tamer|HelianasGuidetoMonsterHunting|2",
@@ -367,6 +368,88 @@
                         ]
                     ]
                 }
+            ],
+            "classSpells": [
+                "Guidance",
+                "Light",
+                "Resistance",
+                "Spare the Dying",
+                "Vicious Mockery",
+                "Cure Wounds",
+                "Detect Magic",
+                "Expeditious Retreat",
+                "Faerie Fire",
+                "False Life",
+                "Feather Fall",
+                "Grease",
+                "Healing Word",
+                "Heroism",
+                "Identify",
+                "Jump",
+                "Longstrider",
+                "Protection from Evil and Good",
+                "Purify Food and Drink",
+                "Sanctuary",
+                "Shield of Faith",
+                "Silent Image",
+                "Sleep",
+                "Speak with Animals",
+                "Aid",
+                "Alter Self",
+                "Animal Messenger",
+                "Barkskin",
+                "Blur",
+                "Calm Emotions",
+                "Darkvision",
+                "Detect Thoughts",
+                "Enhance Ability",
+                "Enlarge/Reduce",
+                "Invisibility",
+                "Lesser Restoration",
+                "Levitate",
+                "Locate Animals or Plants",
+                "Locate Object",
+                "Mirror Image",
+                "Pass without Trace",
+                "Protection from Poison",
+                "See Invisibility",
+                "Silence",
+                "Spider Climb",
+                "Warding Bond",
+                "Blink",
+                "Create Food and Water",
+                "Daylight",
+                "Dispel Magic",
+                "Fear",
+                "Fly",
+                "Haste",
+                "Nondetection",
+                "Protection from Energy",
+                "Remove Curse",
+                "Tongues",
+                "Water Breathing",
+                "Water Walk",
+                "Control Water",
+                "Death Ward",
+                "Dimension Door",
+                "Dominate Beast",
+                "Fire Shield",
+                "Freedom of Movement",
+                "Greater Invisibility",
+                "Locate Creature",
+                "Otiluke's Resilient Sphere",
+                "Stoneskin",
+                "Antilife Shell",
+                "Awaken",
+                "Dispel Evil and Good",
+                "Dominate Person",
+                "Geas",
+                "Greater Restoration",
+                "Incorporeality",
+                "Legend Lore",
+                "Mislead",
+                "Rary's Telepathic Bond",
+                "Scrying"
             ]
         }
     ],
@@ -562,7 +645,7 @@
             "classSource": "HelianasGuidetoMonsterHunting",
             "level": 1,
             "entries": [
-                "There’s one way to defeat deadlier foes: have deadlier friends As you explore, you will encounter new creatures which you may wish to make your companions You can tame a Small or smaller creature of CR 1/2 or lower, as described below As you gain levels in this class, the size and challenge rating of creatures you can tame increases, as shown in the {@table Tamer Companion Summary|HelianasGuidetoMonsterHunting} table.",
+                "There’s one way to defeat deadly foes: have deadlier friends As you explore, you will encounter new creatures which you may wish to make your companions You can tame a Small or smaller creature of CR 1/2 or lower, as described below As you gain levels in this class, the size and challenge rating of creatures you can tame increases, as shown in the {@classFeature Tamer Companion Summary|Tamer|HelianasGuidetoMonsterHunting|1} table.",
                 {
                     "type": "entries",
                     "name": "Vessel",
@@ -587,7 +670,7 @@
                             "items": [
                                 "It is a humanoid, giant, or swarm;",
                                 "It is larger than your maximum companion size (use a creature’s unaltered size if it is under the influence of a size-changing magical effect such as {@spell enlarge/reduce});",
-                                "It has a higher CR than your maximum companion CR (see the {@table Tamer Companion Summary|HelianasGuidetoMonsterHunting} table);",
+                                "It has a higher CR than your maximum companion CR (see the {@classFeature Tamer Companion Summary|Tamer|HelianasGuidetoMonsterHunting|1} table);",
                                 "It has a higher CR than the vessel can capture;",
                                 "It has more than half of its hit points."
                             ]
@@ -677,6 +760,371 @@
                                 }
                             ]
                         }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Tamer Companion Summary",
+            "source": "HelianasGuidetoMonsterHunting",
+            "className": "Tamer",
+            "classSource": "HelianasGuidetoMonsterHunting",
+            "level": 1,
+            "entries": [
+                {
+                    "type": "table",
+                    "caption": "Tamer Companion Summary Table",
+                    "colStyles": [
+                        "col-6 text-left",
+                        "col-6 text-left"
+                    ],
+                    "rows": [
+                        [
+                            {
+                                "type": "table",
+                                "colStyles": [
+                                    "col-1-5 text-center",
+                                    "col-3-5 text-left",
+                                    "col-3-5 text-left",
+                                    "col-3-5 text-left"
+                                ],
+                                "colLabels": [
+                                    "Tamer Level",
+                                    "Maximum # of Bonded Companions",
+                                    "Maximum Companion Size",
+                                    "Maximum Companion CR"
+                                ],
+                                "rows": [
+                                    [
+                                        1,
+                                        1,
+                                        "Small",
+                                        "½"
+                                    ],
+                                    [
+                                        2,
+                                        1,
+                                        "Small",
+                                        "½"
+                                    ],
+                                    [
+                                        3,
+                                        2,
+                                        "Small",
+                                        "½"
+                                    ],
+                                    [
+                                        4,
+                                        2,
+                                        "Medium",
+                                        1
+                                    ],
+                                    [
+                                        5,
+                                        2,
+                                        "Medium",
+                                        1
+                                    ],
+                                    [
+                                        6,
+                                        2,
+                                        "Medium",
+                                        1
+                                    ],
+                                    [
+                                        7,
+                                        3,
+                                        "Medium",
+                                        2
+                                    ],
+                                    [
+                                        8,
+                                        3,
+                                        "Medium",
+                                        2
+                                    ],
+                                    [
+                                        9,
+                                        3,
+                                        "Medium",
+                                        2
+                                    ],
+                                    [
+                                        10,
+                                        3,
+                                        "Large",
+                                        3
+                                    ],
+                                    [
+                                        11,
+                                        4,
+                                        "Large",
+                                        3
+                                    ],
+                                    [
+                                        12,
+                                        4,
+                                        "Large",
+                                        3
+                                    ],
+                                    [
+                                        13,
+                                        4,
+                                        "Large",
+                                        4
+                                    ],
+                                    [
+                                        14,
+                                        4,
+                                        "Large",
+                                        4
+                                    ],
+                                    [
+                                        15,
+                                        5,
+                                        "Large",
+                                        4
+                                    ],
+                                    [
+                                        16,
+                                        5,
+                                        "Huge",
+                                        5
+                                    ],
+                                    [
+                                        17,
+                                        5,
+                                        "Huge",
+                                        5
+                                    ],
+                                    [
+                                        18,
+                                        5,
+                                        "Huge",
+                                        5
+                                    ],
+                                    [
+                                        19,
+                                        6,
+                                        "Huge",
+                                        6
+                                    ],
+                                    [
+                                        20,
+                                        6,
+                                        "Huge",
+                                        6
+                                    ]
+                                ]
+                            },
+                            {
+                                "type": "table",
+                                "caption": "Improvements/Hit Dice Gained on Taming*",
+                                "colStyles": [
+                                    "col-1-8 text-center",
+                                    "col-1-7 text-center",
+                                    "col-1-7 text-center",
+                                    "col-1-7 text-center",
+                                    "col-1-7 text-center",
+                                    "col-1-7 text-center",
+                                    "col-1-7 text-center"
+                                ],
+                                "colLabels": [
+                                    "CR ½-",
+                                    "CR 1",
+                                    "CR 2",
+                                    "CR 3",
+                                    "CR 4",
+                                    "CR 5",
+                                    "CR 6"
+                                ],
+                                "rows": [
+                                    [
+                                        "0/0",
+                                        "—",
+                                        "—",
+                                        "—",
+                                        "—",
+                                        "—",
+                                        "—"
+                                    ],
+                                    [
+                                        "1/0",
+                                        "—",
+                                        "—",
+                                        "—",
+                                        "—",
+                                        "—",
+                                        "—"
+                                    ],
+                                    [
+                                        "2/0",
+                                        "—",
+                                        "—",
+                                        "—",
+                                        "—",
+                                        "—",
+                                        "—"
+                                    ],
+                                    [
+                                        "3/1",
+                                        "0/0",
+                                        "—",
+                                        "—",
+                                        "—",
+                                        "—",
+                                        "—"
+                                    ],
+                                    [
+                                        "4/1",
+                                        "1/0",
+                                        "—",
+                                        "—",
+                                        "—",
+                                        "—",
+                                        "—"
+                                    ],
+                                    [
+                                        "5/1",
+                                        "2/0",
+                                        "—",
+                                        "—",
+                                        "—",
+                                        "—",
+                                        "—"
+                                    ],
+                                    [
+                                        "6/1",
+                                        "3/0",
+                                        "0/0",
+                                        "—",
+                                        "—",
+                                        "—",
+                                        "—"
+                                    ],
+                                    [
+                                        "7/2",
+                                        "4/1",
+                                        "1/1",
+                                        "—",
+                                        "—",
+                                        "—",
+                                        "—"
+                                    ],
+                                    [
+                                        "8/2",
+                                        "5/1",
+                                        "2/1",
+                                        "—",
+                                        "—",
+                                        "—",
+                                        "—"
+                                    ],
+                                    [
+                                        "9/2",
+                                        "6/1",
+                                        "3/1",
+                                        "0/0",
+                                        "—",
+                                        "—",
+                                        "—"
+                                    ],
+                                    [
+                                        "10/2",
+                                        "7/1",
+                                        "4/1",
+                                        "1/0",
+                                        "—",
+                                        "—",
+                                        "—"
+                                    ],
+                                    [
+                                        "11/3",
+                                        "8/2",
+                                        "5/2",
+                                        "2/1",
+                                        "—",
+                                        "—",
+                                        "—"
+                                    ],
+                                    [
+                                        "12/3",
+                                        "9/2",
+                                        "6/2",
+                                        "3/1",
+                                        "0/0",
+                                        "—",
+                                        "—"
+                                    ],
+                                    [
+                                        "13/3",
+                                        "10/2",
+                                        "7/2",
+                                        "4/1",
+                                        "1/0",
+                                        "—",
+                                        "—"
+                                    ],
+                                    [
+                                        "14/3",
+                                        "11/2",
+                                        "8/2",
+                                        "5/1",
+                                        "2/0",
+                                        "—",
+                                        "—"
+                                    ],
+                                    [
+                                        "15/4",
+                                        "12/3",
+                                        "9/3",
+                                        "6/2",
+                                        "3/1",
+                                        "0/0",
+                                        "—"
+                                    ],
+                                    [
+                                        "16/4",
+                                        "13/3",
+                                        "10/3",
+                                        "7/2",
+                                        "4/1",
+                                        "1/0",
+                                        "—"
+                                    ],
+                                    [
+                                        "17/4",
+                                        "14/3",
+                                        "11/3",
+                                        "8/2",
+                                        "5/1",
+                                        "2/0",
+                                        "—"
+                                    ],
+                                    [
+                                        "18/5",
+                                        "15/4",
+                                        "12/4",
+                                        "9/3",
+                                        "6/2",
+                                        "3/1",
+                                        "0/0"
+                                    ],
+                                    [
+                                        "19/5",
+                                        "16/4",
+                                        "13/4",
+                                        "10/3",
+                                        "7/2",
+                                        "4/1",
+                                        "1/0"
+                                    ]
+                                ]
+                            }
+                        ]
+                    ],
+                    "footnotes": [
+                        "*For example, if a 10th level tamer trained a CR 1 creature, that creature would immediately gains 6 improvements (see previous page) and 1 Hit Dice. This is indicated by the value ‘6/1’ in the ‘CR 1’ column and the level ‘10’ row."
                     ]
                 }
             ]
@@ -782,7 +1230,7 @@
             "level": 3,
             "entries": [
                 "As you gain levels in this class, the number of companions and maximum size of companion to which you can become bonded increases You can be bonded to two creatures at 3rd level. Your companions can be sized Medium at 5th level. If you are already bonded to your maximum number of companions and become bonded to a new companion, you must choose one existing companion to release from its vessel.",
-                "When you bond with a new companion, the companion gains improvements and Hit Dice based on its CR and your tamer level See the {@table Tamer Companion Summary|HelianasGuidetoMonsterHunting} table on the previous page for details."
+                "When you bond with a new companion, the companion gains improvements and Hit Dice based on its CR and your tamer level See the {@classFeature Tamer Companion Summary|Tamer|HelianasGuidetoMonsterHunting|1} table on the previous page for details."
             ]
         },
         {
@@ -793,7 +1241,7 @@
             "level": 7,
             "entries": [
                 "As you gain levels in this class, the number of companions and maximum size of companion to which you can become bonded increases You can be bonded to three creatures at 7th level. Your companions can be sized Large at 9th level. If you are already bonded to your maximum number of companions and become bonded to a new companion, you must choose one existing companion to release from its vessel.",
-                "When you bond with a new companion, the companion gains improvements and Hit Dice based on its CR and your tamer level See the {@table Tamer Companion Summary|HelianasGuidetoMonsterHunting} table on the previous page for details."
+                "When you bond with a new companion, the companion gains improvements and Hit Dice based on its CR and your tamer level See the {@classFeature Tamer Companion Summary|Tamer|HelianasGuidetoMonsterHunting|1} table on the previous page for details."
             ]
         },
         {
@@ -804,7 +1252,7 @@
             "level": 11,
             "entries": [
                 "As you gain levels in this class, the number of companions and maximum size of companion to which you can become bonded increases You can be bonded to four creatures at 11th level. Your companions can be sized Huge at 13th level. If you are already bonded to your maximum number of companions and become bonded to a new companion, you must choose one existing companion to release from its vessel.",
-                "When you bond with a new companion, the companion gains improvements and Hit Dice based on its CR and your tamer level See the {@table Tamer Companion Summary|HelianasGuidetoMonsterHunting} table on the previous page for details."
+                "When you bond with a new companion, the companion gains improvements and Hit Dice based on its CR and your tamer level See the {@classFeature Tamer Companion Summary|Tamer|HelianasGuidetoMonsterHunting|1} table on the previous page for details."
             ]
         },
         {
@@ -815,7 +1263,7 @@
             "level": 15,
             "entries": [
                 "As you gain levels in this class, the number of companions and maximum size of companion to which you can become bonded increases You can be bonded to five creatures at 15th level. If you are already bonded to your maximum number of companions and become bonded to a new companion, you must choose one existing companion to release from its vessel.",
-                "When you bond with a new companion, the companion gains improvements and Hit Dice based on its CR and your tamer level See the {@table Tamer Companion Summary|HelianasGuidetoMonsterHunting} table on the previous page for details."
+                "When you bond with a new companion, the companion gains improvements and Hit Dice based on its CR and your tamer level See the {@classFeature Tamer Companion Summary|Tamer|HelianasGuidetoMonsterHunting|1} table on the previous page for details."
             ]
         },
         {
@@ -826,7 +1274,7 @@
             "level": 19,
             "entries": [
                 "As you gain levels in this class, the number of companions and maximum size of companion to which you can become bonded increases You can be bonded to six creatures at 19th level. If you are already bonded to your maximum number of companions and become bonded to a new companion, you must choose one existing companion to release from its vessel.",
-                "When you bond with a new companion, the companion gains improvements and Hit Dice based on its CR and your tamer level See the {@table Tamer Companion Summary|HelianasGuidetoMonsterHunting} table on the previous page for details."
+                "When you bond with a new companion, the companion gains improvements and Hit Dice based on its CR and your tamer level See the {@classFeature Tamer Companion Summary|Tamer|HelianasGuidetoMonsterHunting|1} table on the previous page for details."
             ]
         },
         {
@@ -1961,7 +2409,7 @@
                 ],
                 [
                     "Growth Hormone****",
-                    "The creature’s size is increased by one category In addition, the size of its Hit Dice is increased by 1; add 1 to the creature’s maximum hit points for each Hit Dice it has when it gains this augment Note, this augment can be taken multiple times but can’t increase a companion’s size beyond that permitted by your tamer level (see {@table Tamer Companion Summary|HelianasGuidetoMonsterHunting} table).",
+                    "The creature’s size is increased by one category In addition, the size of its Hit Dice is increased by 1; add 1 to the creature’s maximum hit points for each Hit Dice it has when it gains this augment Note, this augment can be taken multiple times but can’t increase a companion’s size beyond that permitted by your tamer level (see {@classFeature Tamer Companion Summary|Tamer|HelianasGuidetoMonsterHunting|1} table).",
                     4
                 ]
             ],
@@ -1969,363 +2417,7 @@
                 "* Each companion can take this augment 4 times.",
                 "** Each companion can take this augment up to 3 times.",
                 "*** A companion can benefit from only 1 of these three ‘touch’ augments, but can take them up to two times (see augment description).",
-                "**** This augment can be taken multiple times, but can never cause a companion’s size category to increase beyond the maximum size dictated by tamer level (see {@table Tamer Companion Summary|HelianasGuidetoMonsterHunting} table)"
-            ]
-        },
-        {
-            "name": "Tamer Companion Summary",
-            "source": "HelianasGuidetoMonsterHunting",
-            "colStyles": [
-                "col-6 text-left",
-                "col-6 text-left"
-            ],
-            "rows": [
-                [
-                    {
-                        "type": "table",
-                        "colStyles": [
-                            "col-1-5 text-center",
-                            "col-3-5 text-left",
-                            "col-3-5 text-left",
-                            "col-3-5 text-left"
-                        ],
-                        "colLabels": [
-                            "Tamer Level",
-                            "Maximum # of Bonded Companions",
-                            "Maximum Companion Size",
-                            "Maximum Companion CR"
-                        ],
-                        "rows": [
-                            [
-                                1,
-                                1,
-                                "Small",
-                                "½"
-                            ],
-                            [
-                                2,
-                                1,
-                                "Small",
-                                "½"
-                            ],
-                            [
-                                3,
-                                2,
-                                "Small",
-                                "½"
-                            ],
-                            [
-                                4,
-                                2,
-                                "Medium",
-                                1
-                            ],
-                            [
-                                5,
-                                2,
-                                "Medium",
-                                1
-                            ],
-                            [
-                                6,
-                                2,
-                                "Medium",
-                                1
-                            ],
-                            [
-                                7,
-                                3,
-                                "Medium",
-                                2
-                            ],
-                            [
-                                8,
-                                3,
-                                "Medium",
-                                2
-                            ],
-                            [
-                                9,
-                                3,
-                                "Medium",
-                                2
-                            ],
-                            [
-                                10,
-                                3,
-                                "Large",
-                                3
-                            ],
-                            [
-                                11,
-                                4,
-                                "Large",
-                                3
-                            ],
-                            [
-                                12,
-                                4,
-                                "Large",
-                                3
-                            ],
-                            [
-                                13,
-                                4,
-                                "Large",
-                                4
-                            ],
-                            [
-                                14,
-                                4,
-                                "Large",
-                                4
-                            ],
-                            [
-                                15,
-                                5,
-                                "Large",
-                                4
-                            ],
-                            [
-                                16,
-                                5,
-                                "Huge",
-                                5
-                            ],
-                            [
-                                17,
-                                5,
-                                "Huge",
-                                5
-                            ],
-                            [
-                                18,
-                                5,
-                                "Huge",
-                                5
-                            ],
-                            [
-                                19,
-                                6,
-                                "Huge",
-                                6
-                            ],
-                            [
-                                20,
-                                6,
-                                "Huge",
-                                6
-                            ]
-                        ]
-                    },
-                    {
-                        "type": "table",
-                        "caption": "Improvements/Hit Dice Gained on Taming*",
-                        "colStyles": [
-                            "col-1-8 text-center",
-                            "col-1-7 text-center",
-                            "col-1-7 text-center",
-                            "col-1-7 text-center",
-                            "col-1-7 text-center",
-                            "col-1-7 text-center",
-                            "col-1-7 text-center"
-                        ],
-                        "colLabels": [
-                            "CR ½-",
-                            "CR 1",
-                            "CR 2",
-                            "CR 3",
-                            "CR 4",
-                            "CR 5",
-                            "CR 6"
-                        ],
-                        "rows": [
-                            [
-                                "0/0",
-                                "—",
-                                "—",
-                                "—",
-                                "—",
-                                "—",
-                                "—"
-                            ],
-                            [
-                                "1/0",
-                                "—",
-                                "—",
-                                "—",
-                                "—",
-                                "—",
-                                "—"
-                            ],
-                            [
-                                "2/0",
-                                "—",
-                                "—",
-                                "—",
-                                "—",
-                                "—",
-                                "—"
-                            ],
-                            [
-                                "3/1",
-                                "0/0",
-                                "—",
-                                "—",
-                                "—",
-                                "—",
-                                "—"
-                            ],
-                            [
-                                "4/1",
-                                "1/0",
-                                "—",
-                                "—",
-                                "—",
-                                "—",
-                                "—"
-                            ],
-                            [
-                                "5/1",
-                                "2/0",
-                                "—",
-                                "—",
-                                "—",
-                                "—",
-                                "—"
-                            ],
-                            [
-                                "6/1",
-                                "3/0",
-                                "0/0",
-                                "—",
-                                "—",
-                                "—",
-                                "—"
-                            ],
-                            [
-                                "7/2",
-                                "4/1",
-                                "1/1",
-                                "—",
-                                "—",
-                                "—",
-                                "—"
-                            ],
-                            [
-                                "8/2",
-                                "5/1",
-                                "2/1",
-                                "—",
-                                "—",
-                                "—",
-                                "—"
-                            ],
-                            [
-                                "9/2",
-                                "6/1",
-                                "3/1",
-                                "0/0",
-                                "—",
-                                "—",
-                                "—"
-                            ],
-                            [
-                                "10/2",
-                                "7/1",
-                                "4/1",
-                                "1/0",
-                                "—",
-                                "—",
-                                "—"
-                            ],
-                            [
-                                "11/3",
-                                "8/2",
-                                "5/2",
-                                "2/1",
-                                "—",
-                                "—",
-                                "—"
-                            ],
-                            [
-                                "12/3",
-                                "9/2",
-                                "6/2",
-                                "3/1",
-                                "0/0",
-                                "—",
-                                "—"
-                            ],
-                            [
-                                "13/3",
-                                "10/2",
-                                "7/2",
-                                "4/1",
-                                "1/0",
-                                "—",
-                                "—"
-                            ],
-                            [
-                                "14/3",
-                                "11/2",
-                                "8/2",
-                                "5/1",
-                                "2/0",
-                                "—",
-                                "—"
-                            ],
-                            [
-                                "15/4",
-                                "12/3",
-                                "9/3",
-                                "6/2",
-                                "3/1",
-                                "0/0",
-                                "—"
-                            ],
-                            [
-                                "16/4",
-                                "13/3",
-                                "10/3",
-                                "7/2",
-                                "4/1",
-                                "1/0",
-                                "—"
-                            ],
-                            [
-                                "17/4",
-                                "14/3",
-                                "11/3",
-                                "8/2",
-                                "5/1",
-                                "2/0",
-                                "—"
-                            ],
-                            [
-                                "18/5",
-                                "15/4",
-                                "12/4",
-                                "9/3",
-                                "6/2",
-                                "3/1",
-                                "0/0"
-                            ],
-                            [
-                                "19/5",
-                                "16/4",
-                                "13/4",
-                                "10/3",
-                                "7/2",
-                                "4/1",
-                                "1/0"
-                            ]
-                        ]
-                    }
-                ]
-            ],
-            "footnotes": [
-                "*For example, if a 10th level tamer trained a CR 1 creature, that creature would immediately gains 6 improvements (see previous page) and 1 Hit Dice. This is indicated by the value ‘6/1’ in the ‘CR 1’ column and the level ‘10’ row."
+                "**** This augment can be taken multiple times, but can never cause a companion’s size category to increase beyond the maximum size dictated by tamer level (see {@classFeature Tamer Companion Summary|Tamer|HelianasGuidetoMonsterHunting|1} table)"
             ]
         }
     ]
