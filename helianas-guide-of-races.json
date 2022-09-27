@@ -120,6 +120,380 @@
                     }
                 ]
             }
+        },
+        {
+            "name": "Cyclopian",
+            "source": "HelianasGuidetoMonsterHunting",
+            "ability": [
+                {
+                    "int": 2,
+                    "dex": 1
+                },
+                {
+                    "int": 2,
+                    "wis": 1
+                }
+            ],
+            "size": [
+                "M"
+            ],
+            "speed": {
+                "walk": 30
+            },
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Ability Score Increase",
+                    "entries": [
+                        ""
+                    ]
+                }
+            ],
+            "languageProficiencies": [
+                {
+                    "any": 1,
+                    "common": true
+                }
+            ],
+			"fluff": {
+				"entries": [
+                    "",
+                    {
+                        "name": "",
+                        "entries": [
+
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "",
+            "source": "HelianasGuidetoMonsterHunting",
+            "ability": [
+                {
+                    "con": 1
+                }
+            ],
+            "size": [
+                "M"
+            ],
+            "speed": {
+                "walk": 30
+            },
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "",
+                    "entries": [
+                        ""
+                    ]
+                }
+            ],
+            "languageProficiencies": [
+                {
+                    "any": 1,
+                    "common": true
+                }
+            ],
+			"fluff": {
+				"entries": [
+                    "",
+                    {
+                        "name": "",
+                        "entries": [
+                            
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "",
+            "source": "HelianasGuidetoMonsterHunting",
+            "ability": [
+                {
+                    "con": 1
+                }
+            ],
+            "size": [
+                "M"
+            ],
+            "speed": {
+                "walk": 30
+            },
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "",
+                    "entries": [
+                        ""
+                    ]
+                }
+            ],
+            "languageProficiencies": [
+                {
+                    "any": 1,
+                    "common": true
+                }
+            ],
+			"fluff": {
+				"entries": [
+                    "",
+                    {
+                        "name": "",
+                        "entries": [
+                            
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "",
+            "source": "HelianasGuidetoMonsterHunting",
+            "ability": [
+                {
+                    "con": 1
+                }
+            ],
+            "size": [
+                "M"
+            ],
+            "speed": {
+                "walk": 30
+            },
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "",
+                    "entries": [
+                        ""
+                    ]
+                }
+            ],
+            "languageProficiencies": [
+                {
+                    "any": 1,
+                    "common": true
+                }
+            ],
+			"fluff": {
+				"entries": [
+                    "",
+                    {
+                        "name": "",
+                        "entries": [
+                            
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "",
+            "source": "HelianasGuidetoMonsterHunting",
+            "ability": [
+                {
+                    "con": 1
+                }
+            ],
+            "size": [
+                "M"
+            ],
+            "speed": {
+                "walk": 30
+            },
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "",
+                    "entries": [
+                        ""
+                    ]
+                }
+            ],
+            "languageProficiencies": [
+                {
+                    "any": 1,
+                    "common": true
+                }
+            ],
+			"fluff": {
+				"entries": [
+                    "",
+                    {
+                        "name": "",
+                        "entries": [
+                            
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "",
+            "source": "HelianasGuidetoMonsterHunting",
+            "ability": [
+                {
+                    "con": 1
+                }
+            ],
+            "size": [
+                "M"
+            ],
+            "speed": {
+                "walk": 30
+            },
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "",
+                    "entries": [
+                        ""
+                    ]
+                }
+            ],
+            "languageProficiencies": [
+                {
+                    "any": 1,
+                    "common": true
+                }
+            ],
+			"fluff": {
+				"entries": [
+                    "",
+                    {
+                        "name": "",
+                        "entries": [
+                            
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "",
+            "source": "HelianasGuidetoMonsterHunting",
+            "ability": [
+                {
+                    "con": 1
+                }
+            ],
+            "size": [
+                "M"
+            ],
+            "speed": {
+                "walk": 30
+            },
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "",
+                    "entries": [
+                        ""
+                    ]
+                }
+            ],
+            "languageProficiencies": [
+                {
+                    "any": 1,
+                    "common": true
+                }
+            ],
+			"fluff": {
+				"entries": [
+                    "",
+                    {
+                        "name": "",
+                        "entries": [
+                            
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "",
+            "source": "HelianasGuidetoMonsterHunting",
+            "ability": [
+                {
+                    "con": 1
+                }
+            ],
+            "size": [
+                "M"
+            ],
+            "speed": {
+                "walk": 30
+            },
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "",
+                    "entries": [
+                        ""
+                    ]
+                }
+            ],
+            "languageProficiencies": [
+                {
+                    "any": 1,
+                    "common": true
+                }
+            ],
+			"fluff": {
+				"entries": [
+                    "",
+                    {
+                        "name": "",
+                        "entries": [
+                            
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "",
+            "source": "HelianasGuidetoMonsterHunting",
+            "ability": [
+                {
+                    "con": 1
+                }
+            ],
+            "size": [
+                "M"
+            ],
+            "speed": {
+                "walk": 30
+            },
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "",
+                    "entries": [
+                        ""
+                    ]
+                }
+            ],
+            "languageProficiencies": [
+                {
+                    "any": 1,
+                    "common": true
+                }
+            ],
+			"fluff": {
+				"entries": [
+                    "",
+                    {
+                        "name": "",
+                        "entries": [
+                            
+                        ]
+                    }
+                ]
+            }
         }
     ],
     "subrace": [

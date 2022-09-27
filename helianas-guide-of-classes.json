@@ -148,13 +148,11 @@
 			},
             "multiclassing": {
                 "requirements": {
-                    "int": 13,
                     "or": [
                         {
-                            "cha": 13
-                        },
-                        {
-                            "wis": 13
+                            "cha": 13,
+                            "wis": 13,
+                            "int": 13
                         }
                     ]
                 },
