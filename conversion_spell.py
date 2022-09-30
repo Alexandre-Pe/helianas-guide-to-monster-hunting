@@ -12,7 +12,19 @@ def fuse(sp):
             content += ' ' + s
     return content
 
-print(fuse(input().split(' ')))
+a = """Gobbocs worship other birds The bigger the bird,
+the more holy it is In fact, similarly to kobolds,
+gobboc belief is innately magical It is so potent
+that gobboc belief causes birds to become more
+intelligent. In times of war, gobboc hosts are often
+accompanied by flocks of birds, including mounted
+divisions of razor-clawed and quick-witted casso-
+waries and flying contingents of super-intelligent
+hippogriffs. It is widely posited that the famous gob-
+boc playwright Owlfred Hatchcluck based his play,
+{@i The Birds}, on this uniquely gobboc occurrence."""
+
+print(fuse(a.split('\n')))
 
 # @spell 
 

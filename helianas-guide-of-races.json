@@ -266,18 +266,22 @@
             "source": "HelianasGuidetoMonsterHunting",
             "ability": [
                 {
-                    "con": 1
+                    "dex": 2,
+                    "cha": 1
+                },
+                {
+                    "dex": 2,
+                    "wis": 1
                 }
             ],
             "size": [
-                "M"
+                "S"
             ],
             "speed": {
-                "walk": 30
+                "walk": 25
             },
             "entries": [
                 {
-                    "type": "entries",
                     "name": "",
                     "entries": [
                         ""
@@ -299,11 +303,24 @@
                         ],
                         "by": "Ur-Gahl, orc adventurer"
                     },
-                    "",
+                    "Nestled in secluded clearings in the woods, on hilltops with extraordinary vantages, or in easily collapsible canyons, gobbocs seek safety above all else Survival is a gobboc’s watchword; their own survival is their number one goal on expedition— treasure, glory, and saving the world be damned.",
                     {
-                        "name": "",
+                        "name": "Brave Cowards",
                         "entries": [
-                            
+                            "You’ll likely recognise the back of a gobboc’s head more than the front, given their propensity to run away at the first sign of danger. While this is the epitome of cowardice, it is a specifically brave kind of cowardice; life is scary and living another day is the bravest thing you can do At least, this is what is taught to gobboc from the moment they can walk, a few hours after they’re born.",
+                            "A typical gobboc is never the first to enter a room nor the last in a line of dungeon delvers They aim to keep bodies firmly before and behind them, a tactical meat shield to ward off harm. Indeed, gobbocs are the ultimate hit-and-run fighters, retreating from a foe before it can retaliate against their precise and lightning-quick attacks. This method of fighting, taught to all gobbocs, is known as the Klucking Fighting Creed."
+                        ]
+                    },
+                    {
+                        "name": "Fit and Sit",
+                        "entries": [
+                            "Gobbocs have a peculiar tendency to sit on things The pinnacle of this innate desire is the Festival of Brooding, sometimes known as the Eggstravaganza. This annual event finds all the gobbocs in a town creating the most comfortable thrones, bean bag chairs, and bundles of straw possible before sitting on them around a huge bonfire. There are no fireworks; sudden, loud noises are frowned upon in gobboc society."
+                        ]
+                    },
+                    {
+                        "name": "Avian Ascendency",
+                        "entries": [
+                            "Gobbocs worship other birds The bigger the bird, the more holy it is In fact, similarly to kobolds, gobboc belief is innately magical It is so potent that gobboc belief causes birds to become more intelligent. In times of war, gobboc hosts are often accompanied by flocks of birds, including mounted divisions of razor-clawed and quick-witted cassowaries and flying contingents of super-intelligent hippogriffs. It is widely posited that the famous gobboc playwright Owlfred Hatchcluck based his play, {@i The Birds}, on this uniquely gobboc occurrence."
                         ]
                     }
                 ]
