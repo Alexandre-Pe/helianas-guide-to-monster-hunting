@@ -1177,7 +1177,7 @@
                 {
                     "name": "Size",
                     "entries": [
-                        "Your size can be Medium or Small If you are Small, you grow to Medium size over {@d 2d4} days When you are Medium, you can use an action to discard a piece of yourself to become Small."
+                        "Your size can be Medium or Small If you are Small, you grow to Medium size over {@dice 2d4} days When you are Medium, you can use an action to discard a piece of yourself to become Small."
                     ]
                 },
                 {
@@ -1204,7 +1204,6 @@
                         "Starting at 3rd level you can, as an action, alter your body to assume the form of a cube or a puddle for up to 1 hour. After you do so, you can’t do so again until you finish a long rest. While in either of these forms, you can’t talk; manipulate objects; make attacks; or cast spells. You can end this effect early as an action. The form you assume has the following effects:",
                         {
                             "type": "list",
-                            "style": "list-hang-notitle",
                             "items": [
                                 {
                                     "type": "item",
