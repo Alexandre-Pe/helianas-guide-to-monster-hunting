@@ -12,16 +12,6 @@ def fuse(sp):
             content += ' ' + s
     return content
 
-a = """After you have absorbed a psyche, you can
-perfectly mimic the creature’s voice, cadence, and
-speech patterns indefinitely. You can hold a number
-of pieces of psyche (and mimic a number of voices)
-equal to your proficiency bonus. If absorbing a new
-piece of psyche would put you over this limit, you
-must choose one psyche to be replaced."""
-
-print(fuse(a.split('\n')))
-
 # @spell 
 
 def fuse_table(sp):
@@ -314,3 +304,17 @@ for s in data["spell"]:
         
 with open(name, 'w') as f:
     json.dump(data, f, indent=4)
+
+
+a = """Your walking speed is halved as
+you collapse into a 5-foot-diameter pool You
+can’t hold or carry items and any objects you are
+holding, carrying, or wearing when you trans-
+form fall to the ground in your space While in
+this form, attack rolls by creatures further than
+5 feet away from you have disadvantage to hit
+you, you non-magically gain the benefits of the
+{@spell spider climb} spell, and you can travel through
+spaces as small as 1 inch wide without squeezing."""
+
+print(add_fancy(fuse(a.split('\n'))))
