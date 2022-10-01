@@ -1389,25 +1389,68 @@
             }
         },
         {
-            "name": "",
+            "name": "Rakin",
             "source": "HelianasGuidetoMonsterHunting",
             "ability": [
                 {
-                    "con": 1
+                    "dex": 2
                 }
             ],
             "size": [
-                "M"
+                "S"
             ],
             "speed": {
-                "walk": 30
+                "walk": 30,
+                "climb": 30
             },
+            "darkvision": 60,
             "entries": [
                 {
-                    "type": "entries",
-                    "name": "",
+                    "name": "Ability Score Increase",
                     "entries": [
-                        ""
+                        "Your Dexterity score increases by 2."
+                    ]
+                },
+                {
+                    "name": "Age",
+                    "entries": [
+                        "Rakin age slightly quicker than humans, reaching adulthood by 14 They live to be around 70 years old."
+                    ]
+                },
+                {
+                    "name": "Size",
+                    "entries": [
+                        "Rakin are between 3 and a half to 4 feet tall They have light gaits but sturdy frames, weighing between 50 and 90 pounds Your size is Small."
+                    ]
+                },
+                {
+                    "name": "Speed",
+                    "entries": [
+                        "Your base walking speed is 30 feet"
+                    ]
+                },
+                {
+                    "name": "Darkvision",
+                    "entries": [
+                        "You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light You can’t discern colour in darkness, only shades of grey."
+                    ]
+                },
+                {
+                    "name": "Deft Climber",
+                    "entries": [
+                        "You have a climbing speed equal to your walking speed."
+                    ]
+                },
+                {
+                    "name": "Languages",
+                    "entries": [
+                        "You can speak, read, and write Common and one other language of your choice."
+                    ]
+                },
+                {
+                    "name": "Subraces",
+                    "entries": [
+                        "The physical and cultural differences that arose after the rakin’s schism produced three subraces: the urkin, the posskin, and the tanukin Choose one of these subraces."
                     ]
                 }
             ],
@@ -1419,11 +1462,37 @@
             ],
 			"fluff": {
 				"entries": [
-                    "",
                     {
-                        "name": "",
+                        "type": "quote",
                         "entries": [
-                            
+                            "Stole this!? You think I STOLE this? No no no... it was on discount. The five finger discount. Look! A distraction!"
+                        ],
+                        "by": "Harried Houdinky, voleur extraordinaire"
+                    },
+                    "Yells and chuckles are common sounds around the home of any rakin thanks to their shared love language: pranks From sewer-side burrows to palatial penthouses, wattle-and-daub huts to intricate treetop villages, rakin can be found at all levels of society, a product of their ingeniousness and habit of getting into trouble One is rarely bored around a rakin.",
+                    {
+                        "name": "Deific Origins",
+                        "entries": [
+                            "The mistaken spawn of a passionate tryst between deities of trickery and nature, rakin hold a deep affinity for both domains. Since their creation, they have had little contact with either god, learning to rely on their own wits to survive.",
+                            {
+                                "name": "Trickery",
+                                "entries": [
+                                    "As rakin society progressed, their culture grew to value trickery and subterfuge. Good-natured pranks sprang from their paws as instinctively as breathing Honed against the fearsome beasts of the forest, this innate talent to deceive helped the rakin bloom as a civilisation Tales are still told of how Mack Gyver fought off a rampaging owlboar with nought but a goodberry, a silver needle, and a pig’s bladder."
+                                ]
+                            },
+                            {
+                                "name": "Pranks",
+                                "entries": [
+                                    "Rakin politics, religion, and interpersonal relationships revolve around the idea of practical jokes. An atmosphere of one-up-manship and lighthearted merriment suffuses all of their wheelings and dealings Even when faced with the most horrid of circumstances, a rakin’s first instinct is to crack a joke."
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Ideological Chasm",
+                        "entries": [
+                            "After centuries of living in chaotic mirth, an ideological battle split rakin culture in two when they first made contact with other humanoids. Many of the rakin were intrigued by cities—forests of stone and steel, organized, yet unpredictable, and full of opportunity The elders forbade them to interact, alleging such civilization to be directly counter to the chaos that nature intended, the principle upon which rakin culture was built.",
+                            "The debacle spiralled into a full-on feud between the opposing rakin factions, sundering the once united race The urkin broke with tradition and followed their ambition into the cities, whilst the tanukin remained in their indigenous forests, adhering to their ancestral ways."
                         ]
                     }
                 ]
@@ -1609,6 +1678,357 @@
             "raceName": "Cnidaran",
             "raceSource": "HelianasGuidetoMonsterHunting",
             "hasFluff": true
+        },
+        {
+            "name": "Urkin",
+            "source": "HelianasGuidetoMonsterHunting",
+            "ability": [
+                {
+                    "dex": 2,
+                    "choose": {
+                        "from": [
+                            "int",
+                            "wis"
+                        ],
+                        "count": 1
+                    }
+                }
+            ],
+            "size": [
+                "S"
+            ],
+            "speed": {
+                "walk": 30,
+                "climb": 30
+            },
+            "skillProficiencies": [
+                {
+                    "choose": {
+                        "from": [
+                            "sleight of hand",
+                            "stealth"
+                        ]
+                    }
+                }
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Ability Score Increase",
+                    "entries": [
+                        "Your Intelligence or Charisma score increases by 1 (your choice)."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Streetwise",
+                    "entries": [
+                        "You gain proficiency in your choice of the Stealth or Sleight of Hand skills Additionally, you know {@classFeature Thieves' Cant|Rogue||1}."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Nimble Dodge",
+                    "entries": [
+                        "When you are forced to make a Dexterity saving throw against an effect you can see, you can use your reaction to gain advantage on the saving throw Success or failure, immediately after the effect occurs, you can move up to your speed without provoking opportunity attacks Once you use this trait, you must finish a short or long rest before you can use it again."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Urkin Names",
+                    "entries": [
+                        "Eager to fit in, urkin have adopted the first and last name format of other humanoid races Typically, an urkin will name themselves, taking the name of a well-known figure and wringing from it the most humorous pun imaginable Urkin pride themselves on having the cleverest name they know and will go through dozens in their lifetime."
+                    ]
+                }
+            ],
+			"fluff": {
+				"entries": [
+                    {
+                        "type": "quote",
+                        "entries": [
+                            "Stole this!? You think I STOLE this? No no no... it was on discount. The five finger discount. Look! A distraction!"
+                        ],
+                        "by": "Harried Houdinky, voleur extraordinaire"
+                    },
+                    "Yells and chuckles are common sounds around the home of any rakin thanks to their shared love language: pranks From sewer-side burrows to palatial penthouses, wattle-and-daub huts to intricate treetop villages, rakin can be found at all levels of society, a product of their ingeniousness and habit of getting into trouble One is rarely bored around a rakin.",
+                    {
+                        "name": "Deific Origins",
+                        "entries": [
+                            "The mistaken spawn of a passionate tryst between deities of trickery and nature, rakin hold a deep affinity for both domains. Since their creation, they have had little contact with either god, learning to rely on their own wits to survive.",
+                            {
+                                "name": "Trickery",
+                                "entries": [
+                                    "As rakin society progressed, their culture grew to value trickery and subterfuge. Good-natured pranks sprang from their paws as instinctively as breathing Honed against the fearsome beasts of the forest, this innate talent to deceive helped the rakin bloom as a civilisation Tales are still told of how Mack Gyver fought off a rampaging owlboar with nought but a goodberry, a silver needle, and a pig’s bladder."
+                                ]
+                            },
+                            {
+                                "name": "Pranks",
+                                "entries": [
+                                    "Rakin politics, religion, and interpersonal relationships revolve around the idea of practical jokes. An atmosphere of one-up-manship and lighthearted merriment suffuses all of their wheelings and dealings Even when faced with the most horrid of circumstances, a rakin’s first instinct is to crack a joke."
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Ideological Chasm",
+                        "entries": [
+                            "After centuries of living in chaotic mirth, an ideological battle split rakin culture in two when they first made contact with other humanoids. Many of the rakin were intrigued by cities—forests of stone and steel, organized, yet unpredictable, and full of opportunity The elders forbade them to interact, alleging such civilization to be directly counter to the chaos that nature intended, the principle upon which rakin culture was built.",
+                            "The debacle spiralled into a full-on feud between the opposing rakin factions, sundering the once united race The urkin broke with tradition and followed their ambition into the cities, whilst the tanukin remained in their indigenous forests, adhering to their ancestral ways."
+                        ]
+                    },
+                    {
+                        "name": "Urkin",
+                        "entries": [
+                            "Urkin society values cunning, savvy, and— above all—the thrill of the heist This leaves the urkin with a bit of a nasty reputation, a fact that utterly fails to curb their ambitions Adaptable and resourceful, urkin excel as confidence tricksters and pickpockets."
+                        ]
+                    }
+                ]
+            },
+            "raceName": "Rakin",
+            "raceSource": "HelianasGuidetoMonsterHunting",
+            "hasFluff": true
+        },
+        {
+            "name": "Posskin",
+            "source": "HelianasGuidetoMonsterHunting",
+            "ability": [
+                {
+                    "dex": 2,
+                    "con": 1
+                }
+            ],
+            "size": [
+                "S"
+            ],
+            "speed": {
+                "walk": 30,
+                "climb": 30
+            },
+            "resist": [
+                "poison"
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Ability Score Increase",
+                    "entries": [
+                        "Your Consitution score increases by 1."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Bite",
+                    "entries": [
+                        "You have a maw of sharp teeth that you can use to make unarmed strikes When you hit with it, the strike deals {@damage 1d6} + your Strength modifier slashing damage, instead of the bludgeoning damage normal for an unarmed strike."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Scavenger",
+                    "entries": [
+                        "You have advantage on saving throws against disease and poison, and you have resistance to poison damage."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Play Dead",
+                    "entries": [
+                        "When you take damage that reduces you to half your hit point maximum or lower, you can use your reaction to play dead, lowering your heart rate and relaxing your muscles as you fall {@condition prone} This lasts for 1 hour or until you use your bonus action to end it early A creature that uses its action to make an Intelligence (Investigation) check contested by your Constitution (Deception) sees through the trick on a success.",
+                        "After you use this feature, you can’t do so again until you finish a short or long rest."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Posskin Names",
+                    "entries": [
+                        "The words used to name a posskin are more than just sounds; they are a story. A posskin’s name recounts its journey so far, a litany of major life events since birth. The more adventurous the life, the longer the name The name Leo Charrburned Halfleg might specify a young (and unfortunate) posskin born under the sign of the lion, who was burned in a forest fire, and later lost their lower leg to a bear."
+                    ]
+                }
+            ],
+			"fluff": {
+				"entries": [
+                    {
+                        "type": "quote",
+                        "entries": [
+                            "Stole this!? You think I STOLE this? No no no... it was on discount. The five finger discount. Look! A distraction!"
+                        ],
+                        "by": "Harried Houdinky, voleur extraordinaire"
+                    },
+                    "Yells and chuckles are common sounds around the home of any rakin thanks to their shared love language: pranks From sewer-side burrows to palatial penthouses, wattle-and-daub huts to intricate treetop villages, rakin can be found at all levels of society, a product of their ingeniousness and habit of getting into trouble One is rarely bored around a rakin.",
+                    {
+                        "name": "Deific Origins",
+                        "entries": [
+                            "The mistaken spawn of a passionate tryst between deities of trickery and nature, rakin hold a deep affinity for both domains. Since their creation, they have had little contact with either god, learning to rely on their own wits to survive.",
+                            {
+                                "name": "Trickery",
+                                "entries": [
+                                    "As rakin society progressed, their culture grew to value trickery and subterfuge. Good-natured pranks sprang from their paws as instinctively as breathing Honed against the fearsome beasts of the forest, this innate talent to deceive helped the rakin bloom as a civilisation Tales are still told of how Mack Gyver fought off a rampaging owlboar with nought but a goodberry, a silver needle, and a pig’s bladder."
+                                ]
+                            },
+                            {
+                                "name": "Pranks",
+                                "entries": [
+                                    "Rakin politics, religion, and interpersonal relationships revolve around the idea of practical jokes. An atmosphere of one-up-manship and lighthearted merriment suffuses all of their wheelings and dealings Even when faced with the most horrid of circumstances, a rakin’s first instinct is to crack a joke."
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Ideological Chasm",
+                        "entries": [
+                            "After centuries of living in chaotic mirth, an ideological battle split rakin culture in two when they first made contact with other humanoids. Many of the rakin were intrigued by cities—forests of stone and steel, organized, yet unpredictable, and full of opportunity The elders forbade them to interact, alleging such civilization to be directly counter to the chaos that nature intended, the principle upon which rakin culture was built.",
+                            "The debacle spiralled into a full-on feud between the opposing rakin factions, sundering the once united race The urkin broke with tradition and followed their ambition into the cities, whilst the tanukin remained in their indigenous forests, adhering to their ancestral ways."
+                        ]
+                    },
+                    {
+                        "name": "Posskin",
+                        "entries": [
+                            "While the tanukin and urkin found homes in forests and cities, a third, smaller contingent embraced their wanderlust and a life of vagabondry With the road as their home, posskin never settle in one place for long and are well adapted to the harsh conditions associated with constantly sleeping outdoors Their ability to withstand disease enables them to act as scavengers, feasting on the left-to-rot remains of other carnivores. Should they ever find themselves the target of a territorial creature, their innate ability to play dead can often trick such aggressors into believing they are no longer a threat and leaving them alone, if a little bloodied.",
+                            "Posskin might find employ in a variety of walks of life From hedge knights to circus performers, travelling snake oil salesmen to chronic dumpster divers, so long as the job keeps moving, a posskin stays happy."
+                        ]
+                    }
+                ]
+            },
+            "raceName": "Rakin",
+            "raceSource": "HelianasGuidetoMonsterHunting",
+            "hasFluff": true
+        },
+        {
+            "name": "Tanukin",
+            "source": "HelianasGuidetoMonsterHunting",
+            "ability": [
+                {
+                    "dex": 2,
+                    "choose": {
+                        "from": [
+                            "wis",
+                            "cha"
+                        ],
+                        "count": 1
+                    }
+                }
+            ],
+            "size": [
+                "S"
+            ],
+            "speed": {
+                "walk": 30,
+                "climb": 30
+            },
+            "skillProficiencies": [
+                {
+                    "choose": {
+                        "from": [
+                            "deception",
+                            "persuasion"
+                        ]
+                    }
+                }
+            ],
+            "entries": [
+                {
+                    "name": "Ability Score Increase",
+                    "entries": [
+                        "Your Dexterity score increases by 1."
+                    ]
+                },
+                {
+                    "name": "Adept Trickster",
+                    "entries": [
+                        "You gain proficiency in your choice of the Deception or Persuasion skills."
+                    ]
+                },
+                {
+                    "name": "Wild Speech",
+                    "entries": [
+                        "You have the ability to communicate in a limited manner with beasts They can understand the meaning of your words, though you have no special ability to understand them in return."
+                    ]
+                },
+                {
+                    "name": "Tanukin Magic",
+                    "entries": [
+                        "You know the {@spell minor illusion} cantrip When you reach 3rd level, you can cast the {@spell disguise} self spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell alter self} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma or Wisdom is your spellcasting ability for these spells (your choice when you gain this trait). You can also cast either of those spells using any spell slots you have of the appropriate level."
+                    ]
+                },
+                {
+                    "name": "Tanukin Names",
+                    "entries": [
+                        "With deeper ties to their ancestry, tanukin stick to one name over the course of their lifetime Tanukin regard family with uncharacteristic solemnity; their names are a portmanteau of their caregivers’ Because of this, gender plays little to no role in their naming conventions."
+                    ]
+                }
+            ],
+            "additionalSpells": [
+                {
+                    "ability": "wis",
+                    "known": {
+                        "1": [
+                            "minor illusion"
+                        ]
+                    },
+                    "innate": {
+                        "3": {
+                            "daily": {
+                                "1": [
+                                    "disguise self"
+                                ]
+                            }
+                        },
+                        "5": {
+                            "daily": {
+                                "1": [
+                                    "alter self"
+                                ]
+                            }
+                        }
+                    }
+                }
+            ],
+			"fluff": {
+				"entries": [
+                    {
+                        "type": "quote",
+                        "entries": [
+                            "Stole this!? You think I STOLE this? No no no... it was on discount. The five finger discount. Look! A distraction!"
+                        ],
+                        "by": "Harried Houdinky, voleur extraordinaire"
+                    },
+                    "Yells and chuckles are common sounds around the home of any rakin thanks to their shared love language: pranks From sewer-side burrows to palatial penthouses, wattle-and-daub huts to intricate treetop villages, rakin can be found at all levels of society, a product of their ingeniousness and habit of getting into trouble One is rarely bored around a rakin.",
+                    {
+                        "name": "Deific Origins",
+                        "entries": [
+                            "The mistaken spawn of a passionate tryst between deities of trickery and nature, rakin hold a deep affinity for both domains. Since their creation, they have had little contact with either god, learning to rely on their own wits to survive.",
+                            {
+                                "name": "Trickery",
+                                "entries": [
+                                    "As rakin society progressed, their culture grew to value trickery and subterfuge. Good-natured pranks sprang from their paws as instinctively as breathing Honed against the fearsome beasts of the forest, this innate talent to deceive helped the rakin bloom as a civilisation Tales are still told of how Mack Gyver fought off a rampaging owlboar with nought but a goodberry, a silver needle, and a pig’s bladder."
+                                ]
+                            },
+                            {
+                                "name": "Pranks",
+                                "entries": [
+                                    "Rakin politics, religion, and interpersonal relationships revolve around the idea of practical jokes. An atmosphere of one-up-manship and lighthearted merriment suffuses all of their wheelings and dealings Even when faced with the most horrid of circumstances, a rakin’s first instinct is to crack a joke."
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Ideological Chasm",
+                        "entries": [
+                            "After centuries of living in chaotic mirth, an ideological battle split rakin culture in two when they first made contact with other humanoids. Many of the rakin were intrigued by cities—forests of stone and steel, organized, yet unpredictable, and full of opportunity The elders forbade them to interact, alleging such civilization to be directly counter to the chaos that nature intended, the principle upon which rakin culture was built.",
+                            "The debacle spiralled into a full-on feud between the opposing rakin factions, sundering the once united race The urkin broke with tradition and followed their ambition into the cities, whilst the tanukin remained in their indigenous forests, adhering to their ancestral ways."
+                        ]
+                    },
+                    {
+                        "name": "Tanukin",
+                        "entries": [
+                            "Tanukin believe that civilization is a sacrilegious destruction of the beautiful chaos of nature So rarely do tanukin venture into humanoid settlements that they are often mistaken for racoons, or worse, urkin The times they do deign to enter the ‘stone forests’, it is to use their illusion magic to evoke the divine chaos and confusion that they associate with the natural world."
+                        ]
+                    }
+                ]
+            },
+            "raceName": "Rakin",
+            "raceSource": "HelianasGuidetoMonsterHunting",
+            "hasFluff": true
         }
     ],
     "monster": [
@@ -1619,7 +2039,6 @@
             ],
             "type": "beast",
             "source": "HelianasGuidetoMonsterHunting",
-            "alignment": null,
             "ac": [
                 12
             ],
