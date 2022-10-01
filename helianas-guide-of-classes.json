@@ -242,6 +242,33 @@
 					]
 				},
                 {
+					"colLabels": [
+						"{@filter Spell Known|spells|class=tamer (hgtmh)}"
+					],
+					"rows": [
+                        [0],
+                        [2],
+                        [3],
+                        [3],
+                        [4],
+                        [4],
+                        [5],
+                        [5],
+                        [6],
+                        [6],
+                        [7],
+                        [7],
+                        [8],
+                        [8],
+                        [9],
+                        [9],
+                        [10],
+                        [10],
+                        [11],
+                        [11]
+                    ]
+                },
+                {
                     "title": "–Spell Slots per Spell Level–",
                     "colLabels": [
                         "{@filter 1st|spells|level=1|class=tamer (hgtmh)}",
