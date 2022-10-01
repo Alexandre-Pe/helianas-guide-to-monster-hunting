@@ -14,12 +14,12 @@
                 "convertedBy": [
                     "Riften"
                 ],
-                "version": "1.0",
+                "version": "0.99",
                 "targetSchema": "1.0"
             }
         ],
         "dateAdded": 1661798750,
-        "dateLastModified": 1664624834
+        "dateLastModified": 1664660427
     },
     "race": [
         {
