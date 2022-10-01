@@ -12,17 +12,13 @@ def fuse(sp):
             content += ' ' + s
     return content
 
-a = """Gobbocs worship other birds The bigger the bird,
-the more holy it is In fact, similarly to kobolds,
-gobboc belief is innately magical It is so potent
-that gobboc belief causes birds to become more
-intelligent. In times of war, gobboc hosts are often
-accompanied by flocks of birds, including mounted
-divisions of razor-clawed and quick-witted casso-
-waries and flying contingents of super-intelligent
-hippogriffs. It is widely posited that the famous gob-
-boc playwright Owlfred Hatchcluck based his play,
-{@i The Birds}, on this uniquely gobboc occurrence."""
+a = """After you have absorbed a psyche, you can
+perfectly mimic the creature’s voice, cadence, and
+speech patterns indefinitely. You can hold a number
+of pieces of psyche (and mimic a number of voices)
+equal to your proficiency bonus. If absorbing a new
+piece of psyche would put you over this limit, you
+must choose one psyche to be replaced."""
 
 print(fuse(a.split('\n')))
 
