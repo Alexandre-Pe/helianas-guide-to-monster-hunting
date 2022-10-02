@@ -1575,6 +1575,18 @@
                 "Leader’s Fortitude|Tamer|HelianasGuidetoMonsterHunting|Leader|HelianasGuidetoMonsterHunting|10",
                 "Combo|Tamer|HelianasGuidetoMonsterHunting|Leader|HelianasGuidetoMonsterHunting|14",
                 "Companion Surge II|Tamer|HelianasGuidetoMonsterHunting|Leader|HelianasGuidetoMonsterHunting|18"
+            ],
+            "subclassSpells": [
+                "divine favor",
+                "protection from evil and good",
+                "inequality|HelianasGuidetoMonsterHunting",
+                "warding bond",
+                "beacon of hope",
+                "haste",
+                "death ward",
+                "freedom of movement",
+                "dispel of evil and good",
+                "endure|HelianasGuidetoMonsterHunting"
             ]
         },
         {
@@ -1589,6 +1601,18 @@
                 "Primordial Shield|Tamer|HelianasGuidetoMonsterHunting|Infuser|HelianasGuidetoMonsterHunting|10",
                 "Unstable Fusion|Tamer|HelianasGuidetoMonsterHunting|Infuser|HelianasGuidetoMonsterHunting|14",
                 "Elemental Discharge II|Tamer|HelianasGuidetoMonsterHunting|Infuser|HelianasGuidetoMonsterHunting|18"
+            ],
+            "subclassSpells": [
+                "hellish rebuke",
+                "peppermint plate|HelianasGuidetoMonsterHunting",
+                "eelskin|HelianasGuidetoMonsterHunting",
+                "riptide|HelianasGuidetoMonsterHunting",
+                "protection from energy",
+                "wind wall",
+                "control water",
+                "fire shield",
+                "feverskin|HelianasGuidetoMonsterHunting",
+                "wall of stone"
             ]
         },
         {
@@ -1603,6 +1627,18 @@
                 "Enervate|Tamer|HelianasGuidetoMonsterHunting|Necromancer|HelianasGuidetoMonsterHunting|10",
                 "Aura of Undeath|Tamer|HelianasGuidetoMonsterHunting|Necromancer|HelianasGuidetoMonsterHunting|14",
                 "Animate Dead II|Tamer|HelianasGuidetoMonsterHunting|Necromancer|HelianasGuidetoMonsterHunting|18"
+            ],
+            "subclassSpells": [
+                "false life",
+                "inflict wounds",
+                "blindness/deafness",
+                "ray of enfeeblement",
+                "influenza|HelianasGuidetoMonsterHunting",
+                "vampiric touch",
+                "confusion",
+                "death ward",
+                "bone cage|HelianasGuidetoMonsterHunting",
+                "endure|HelianasGuidetoMonsterHunting"
             ]
         },
         {
@@ -1617,6 +1653,32 @@
                 "Battlefield Harvester|Tamer|HelianasGuidetoMonsterHunting|Splicer|HelianasGuidetoMonsterHunting|10",
                 "Adrenal Overload|Tamer|HelianasGuidetoMonsterHunting|Splicer|HelianasGuidetoMonsterHunting|14",
                 "Modular Upgrades II|Tamer|HelianasGuidetoMonsterHunting|Splicer|HelianasGuidetoMonsterHunting|18"
+            ],
+            "subclassSpells": [
+                "chameleon skin|HelianasGuidetoMonsterHunting",
+                "disguise self",
+                "barkskin",
+                "eelskin|HelianasGuidetoMonsterHunting",
+                "mass leech|HelianasGuidetoMonsterHunting",
+                "zippit!|HelianasGuidetoMonsterHunting",
+                "frogskin|HelianasGuidetoMonsterHunting",
+                "stoneskin",
+                "contagion",
+                "feverskin|HelianasGuidetoMonsterHunting"
+            ]
+        },
+        {
+            "name": "",
+            "source": "HelianasGuidetoMonsterHunting",
+            "className": "",
+            "classSource": "PHB",
+            "shortName": "",
+			"subclassFeatures": [
+                "",
+                "",
+                "",
+                "",
+                ""
             ]
         }
     ],
