@@ -48,20 +48,28 @@ def add_fancy(string):
     conditions = ['blinded', 'charmed', 'deafened', 'exhaustion', 'frightened', 'grappled', 'incapicitated',
         'invisible', 'paralyzed', 'petrified', 'poisoned', 'prone', 'restrained', 'stunned', 'unconscious']
     dice = ["d4", "d6", "d8", "d10", "d12", "d20", "d100"]
+    skills = ["Athletics", "Acrobatics", "Sleight of Hand", "Stealth", "Arcana", "History", "Investigation",
+        "Nature", "Religion", "Animal Handling", "Insight", "Medicine", "Perception", "Survival", "Deception",
+        "Intimidation", "Performance", "Persuasion"]
+    
+    for c in conditions:
+        string = string.replace('{@condition ' + c + '}', c)
+        string = string.replace(c, '{@condition ' + c + '}')
+    for s in skills:
+        string = string.replace(s, '{@skill ' + s + '}')
 
-    L  = string.split(" ")
-    for i, w in enumerate(L):
-        w = strip(ponct, w)
-        if w in conditions:
-            L[i] = '{@condition ' + w + '}'
-        elif w in dice:
-            L[i] = '{@dice ' + w + '}'
-        else:
-            for d in dice:
-                if d in w:
-                    L[i] = '{@damage ' + w + '}'
-                    break
-    return ' '.join(L)
+    # L  = string.split(" ")
+    # for i, w in enumerate(L):
+    #     w = strip(ponct, w)
+    #     if w in dice:
+    #         L[i] = '{@dice ' + w + '}'
+    #     else:
+    #         for d in dice:
+    #             if d in w:
+    #                 L[i] = '{@damage ' + w + '}'
+    #                 break
+    # string = ' '.join(L)
+    return string
 
 def add_fancy_higher(string, level, damage):
     conditions = ['blinded', 'charmed', 'deafened', 'exhaustion', 'frightened', 'grappled', 'incapicitated',
@@ -306,15 +314,30 @@ with open(name, 'w') as f:
     json.dump(data, f, indent=4)
 
 
-a = """Your walking speed is halved as
-you collapse into a 5-foot-diameter pool You
-can’t hold or carry items and any objects you are
-holding, carrying, or wearing when you trans-
-form fall to the ground in your space While in
-this form, attack rolls by creatures further than
-5 feet away from you have disadvantage to hit
-you, you non-magically gain the benefits of the
-{@spell spider climb} spell, and you can travel through
-spaces as small as 1 inch wide without squeezing."""
+a = """Learning is an almost irresistible compulsion amongst cyclopians and often leads them to dangerous locations. You have proficiency in your choice of two of the following skills: Arcana, History, Insight, Investigation, Medicine, Perception, Religion, and Stealth."""
 
 print(add_fancy(fuse(a.split('\n'))))
+
+with open("../Loot Tavern; Heliana's Guide To Monster Hunting.json", 'r', encoding="utf8") as f:
+    data = json.load(f)
+
+def recursive_fancy(d):
+    if type(d) == dict:
+        l = {}
+        for k in d.keys():
+            l[k] = recursive_fancy(d[k])
+        return l
+    elif type(d) == list:
+        l = []
+        for k in d:
+            l.append(recursive_fancy(k))
+        return l
+    elif type(d) == str:
+        return add_fancy(d)
+    else:
+        return d
+
+data = recursive_fancy(data)
+
+with open("../Loot Tavern; Heliana's Guide To Monster Hunting.json", 'w', encoding="utf8") as f:
+    json.dump(data, f, indent=4)
