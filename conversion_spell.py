@@ -58,17 +58,17 @@ def add_fancy(string):
     for s in skills:
         string = string.replace(s, '{@skill ' + s + '}')
 
-    # L  = string.split(" ")
-    # for i, w in enumerate(L):
-    #     w = strip(ponct, w)
-    #     if w in dice:
-    #         L[i] = '{@dice ' + w + '}'
-    #     else:
-    #         for d in dice:
-    #             if d in w:
-    #                 L[i] = '{@damage ' + w + '}'
-    #                 break
-    # string = ' '.join(L)
+    L  = string.split(" ")
+    for i, w in enumerate(L):
+        w = strip(ponct, w)
+        if w in dice:
+            L[i] = '{@dice ' + w + '}'
+        else:
+            for d in dice:
+                if d in w:
+                    L[i] = '{@damage ' + w + '}'
+                    break
+    string = ' '.join(L)
     return string
 
 def add_fancy_higher(string, level, damage):
@@ -314,7 +314,10 @@ with open(name, 'w') as f:
     json.dump(data, f, indent=4)
 
 
-a = """Learning is an almost irresistible compulsion amongst cyclopians and often leads them to dangerous locations. You have proficiency in your choice of two of the following skills: Arcana, History, Insight, Investigation, Medicine, Perception, Religion, and Stealth."""
+a = """You also learn different ways to use this spiritual
+weapon. You gain the Suture benefit below, and
+you gain an additional benefit below when you
+reach 5th level and 10th level in this class."""
 
 print(add_fancy(fuse(a.split('\n'))))
 

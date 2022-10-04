@@ -1668,6 +1668,114 @@
             ]
         },
         {
+            "name": "College of Cuisine",
+            "source": "HelianasGuidetoMonsterHunting",
+            "className": "Bard",
+            "classSource": "PHB",
+            "shortName": "Cuisine",
+			"subclassFeatures": [
+                "College of Cuisine|Bard|HelianasGuidetoMonsterHunting|Cuisine|HelianasGuidetoMonsterHunting|3",
+                "Culinary Specialisation|Bard|HelianasGuidetoMonsterHunting|Cuisine|HelianasGuidetoMonsterHunting|6",
+                "Executive Chef|Bard|HelianasGuidetoMonsterHunting|Cuisine|HelianasGuidetoMonsterHunting|14"
+            ]
+        },
+        {
+            "name": "College of Fleshweaving",
+            "source": "HelianasGuidetoMonsterHunting",
+            "className": "Bard",
+            "classSource": "PHB",
+            "shortName": "Fleshweaving",
+			"subclassFeatures": [
+                "College of Fleshweaving|Bard|HelianasGuidetoMonsterHunting|Fleshweaving|HelianasGuidetoMonsterHunting|3",
+                "Ritual Reskin|Bard|HelianasGuidetoMonsterHunting|Fleshweaving|HelianasGuidetoMonsterHunting|6",
+                "Soulsew|Bard|HelianasGuidetoMonsterHunting|Fleshweaving|HelianasGuidetoMonsterHunting|14"
+            ]
+        },
+        {
+            "name": "",
+            "source": "HelianasGuidetoMonsterHunting",
+            "className": "",
+            "classSource": "PHB",
+            "shortName": "",
+			"subclassFeatures": [
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "",
+            "source": "HelianasGuidetoMonsterHunting",
+            "className": "",
+            "classSource": "PHB",
+            "shortName": "",
+			"subclassFeatures": [
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "",
+            "source": "HelianasGuidetoMonsterHunting",
+            "className": "",
+            "classSource": "PHB",
+            "shortName": "",
+			"subclassFeatures": [
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "",
+            "source": "HelianasGuidetoMonsterHunting",
+            "className": "",
+            "classSource": "PHB",
+            "shortName": "",
+			"subclassFeatures": [
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "",
+            "source": "HelianasGuidetoMonsterHunting",
+            "className": "",
+            "classSource": "PHB",
+            "shortName": "",
+			"subclassFeatures": [
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "",
+            "source": "HelianasGuidetoMonsterHunting",
+            "className": "",
+            "classSource": "PHB",
+            "shortName": "",
+			"subclassFeatures": [
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
             "name": "",
             "source": "HelianasGuidetoMonsterHunting",
             "className": "",
@@ -2344,6 +2452,228 @@
             "level": 18,
             "entries": [
                 "Starting at 18th level, a companion can use the {@subclassFeature Modular Upgrades I|Tamer|HelianasGuidetoMonsterHunting|Splicer|HelianasGuidetoMonsterHunting|7} action twice before a rest."
+            ]
+        },
+        {
+            "name": "College of Cuisine",
+            "source": "HelianasGuidetoMonsterHunting",
+            "className": "Bard",
+            "classSource": "PHB",
+            "subclassShortName": "Cuisine",
+            "subclassSource": "HelianasGuidetoMonsterHunting",
+            "level": 3,
+            "entries": [
+                "Food: it fuels thought, builds bones, and delights the senses. But more than that, breaking bread with a foe can be the beginning of a lasting peace, sculptures of sugar glass can inspire architects to design soaring cities, and the fusion of disparate culinary traditions can tie cultures together. Though we see food every day, it is truly the epitome of inspiration.",
+                "Bards from the College of Cuisine are as prized in the kitchens of nobles as in the mess halls of the rank and file. While peace treaties might be signed over hoisin-glazed duck with sides of spiced jackfruit and crispy shallots, it is the well-fed army that will win the war on a hearty oat and raisin porridge. Such bards never struggle to find employment; they travel where their work is appreciated, be their diners highborn or down-to-earth.",
+                {
+                    "type": "refSubclassFeature",
+					"subclassFeature": "Culinary Exploration|Bard|HelianasGuidetoMonsterHunting|Cuisine|HelianasGuidetoMonsterHunting|3"
+                    },
+                {
+                    "type": "refSubclassFeature",
+					"subclassFeature": "Petit Fours|Bard|HelianasGuidetoMonsterHunting|Cuisine|HelianasGuidetoMonsterHunting|3"
+                }
+            ]
+        },
+        {
+            "name": "Culinary Exploration",
+            "source": "HelianasGuidetoMonsterHunting",
+            "className": "Bard",
+            "classSource": "PHB",
+            "subclassShortName": "Cuisine",
+            "subclassSource": "HelianasGuidetoMonsterHunting",
+            "level": 3,
+            "entries": [
+                "Years spent adapting recipes allows you to try unheard-of combinations of ingredients. You gain proficiency with cook’s utensils, which you can use as a spellcasting focus, and your proficiency bonus is doubled for any ability checks you make that uses these utensils to prepare food. In addition, whenever you craft a food, you can add one additional ingredient to the recipe, conferring the benefits of that ingredient to the dish on a successful Cooking check."
+            ],
+            "toolProficiencies": [
+                {
+                    "cook's utensils": true
+                }
+            ]
+        },
+        {
+            "name": "Petit Fours",
+            "source": "HelianasGuidetoMonsterHunting",
+            "className": "Bard",
+            "classSource": "PHB",
+            "subclassShortName": "Cuisine",
+            "subclassSource": "HelianasGuidetoMonsterHunting",
+            "level": 3,
+            "entries": [
+                "During a short or long rest, you can create a number of magical treats equal to your Charisma modifier (minimum one). Choose one of the flavours from the list below with which to imbue these treats, which remain magical until you finish a short or long rest.",
+                "A creature can use an action or bonus action to eat a treat, gaining a benefit based on the treat’s flavour which, unless otherwise stated, lasts until the end of its next turn.",
+                "As a bonus action, you can expend one use of your Bardic Inspiration, teleporting any number of treats on your person next to creatures you can see within 60 feet of you, where they remain, hovering near the creature’s mouth. Such a creature can use its reaction to eat the treat, or it can do so on its next turn as normal. Otherwise, the treat falls to the ground.",
+                {
+                    "type": "list",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Bitter",
+                            "entry": "The creature gains resistance to poison damage and has advantage on saving throws made to resist the {@condition poisoned} condition."
+                        },
+                        {
+                            "type": "item",
+                            "name": "Salty",
+                            "entry": "The creature gains advantage on Wisdom saving throws and is immune to the {@condition charmed} condition."
+                        },
+                        {
+                            "type": "item",
+                            "name": "Sour",
+                            "entry": "The creature’s weapon attacks deal bonus acid damage equal to one roll of your Bardic Inspiration die."
+                        },
+                        {
+                            "type": "item",
+                            "name": "Sweet",
+                            "entry": "The creature gains temporary hit points equal to one roll of your Bardic Inspiration dice plus your Charisma modifier (minimum 1) that last for 1 hour."
+                        },
+                        {
+                            "type": "item",
+                            "name": "Umami",
+                            "entry": "The creature gains a +2 bonus to its AC."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Culinary Specialisation",
+            "source": "HelianasGuidetoMonsterHunting",
+            "className": "Bard",
+            "classSource": "PHB",
+            "subclassShortName": "Cuisine",
+            "subclassSource": "HelianasGuidetoMonsterHunting",
+            "level": 6,
+            "entries": [
+                "You pursue a particular style of cuisine, choosing from the list below and gaining its feature.",
+                {
+                    "type": "list",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Slow Cooking",
+                            "entry": "You gain proficiency with {@filter medium armour|items|type=medium armor}, {@filter heavy armour|items|type=heavy armor}, {@item shield|phb|shields}, and {@filter martial weapons|items|type=martial weapon}. At the start of each of your turns, you gain temporary hit points equal to your proficiency bonus."
+                        },
+                        {
+                            "type": "item",
+                            "name": "Fast Food",
+                            "entry": "You gain proficiency with {@filter medium armour|items|type=medium armor} and you can attack twice, instead of once, whenever you take the Attack action on your turn."
+                        },
+                        {
+                            "type": "item",
+                            "name": "Patissier",
+                            "entries": [
+                                "You learn two spells of your choice from any spell list. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip. These don’t count against the number of bard spells you know.",
+                                "In addition, when you finish a short rest, you can expend one use of your Bardic Inspiration, rolling the die and recovering a number of levels of spell slots with a combined value equal to or less than the value rolled, and none of the spell slots can be 6th level or higher. Once you use this feature, you can’t do so again until you finish a long rest."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Executive Chef",
+            "source": "HelianasGuidetoMonsterHunting",
+            "className": "Bard",
+            "classSource": "PHB",
+            "subclassShortName": "Cuisine",
+            "subclassSource": "HelianasGuidetoMonsterHunting",
+            "level": 14,
+            "entries": [
+                "Your confidence and authority in the kitchen translates to battlefield command. When a creature that can hear you rolls one of your Bardic Inspiration dice or eats one of your Petit Fours, you can shout authoritative, verbal encouragement (no action required). The creature can immediately use its reaction to either make one weapon attack or move up to its speed without provoking opportunity attacks. A creature that eats a Petit Fours can attack or move as described as part of the same action or reaction used to eat the Petit Fours."
+            ]
+        },
+        {
+            "name": "College of Fleshweaving",
+            "source": "HelianasGuidetoMonsterHunting",
+            "className": "Bard",
+            "classSource": "PHB",
+            "subclassShortName": "Fleshweaving",
+            "subclassSource": "HelianasGuidetoMonsterHunting",
+            "level": 3,
+            "entries": [
+                "If leather is a material, then why not skin itself? Students of the College of Fleshweaving make works of art out of weeping wounds, transform disfigurement into displays of transcendent beauty, and mould flesh into innovative adaptations inspired by the flora and fauna around them. A fleshweaver bard down on their luck might find employment as a battlefield surgeon, while the epitome of a fleshweaver’s career is to be the chief facemaker to royalty, altering their visage and physiology through biomantic rituals and deft needlework.",
+                {
+                    "type": "refSubclassFeature",
+					"subclassFeature": "Malleable Visage|Bard|HelianasGuidetoMonsterHunting|Fleshweaving|HelianasGuidetoMonsterHunting|3"
+                    },
+                {
+                    "type": "refSubclassFeature",
+					"subclassFeature": "Suturer|Bard|HelianasGuidetoMonsterHunting|Fleshweaving|HelianasGuidetoMonsterHunting|3"
+                }
+            ]
+        },
+        {
+            "name": "Malleable Visage",
+            "source": "HelianasGuidetoMonsterHunting",
+            "className": "Bard",
+            "classSource": "PHB",
+            "subclassShortName": "Fleshweaving",
+            "subclassSource": "HelianasGuidetoMonsterHunting",
+            "level": 3,
+            "entries": [
+                "Years spent mending, shaping, and adapting flesh have given you a preternatural ability to modify your own body. You are proficient with surgeon’s tools, which you can use as a spellcasting focus, and you know the alter self spell, which counts as a bard spell for you, but it doesn’t count against the number of bard spells you know. Over the course of 1 minute, you can cast the spell without expending a spell slot, choosing only the Change Appearance option. When you cast the spell in this way, it doesn’t require concentration.",
+                "In addition, over the course of 10 minutes, you can use your surgeon’s tools to change the appearance of a willing creature. It magically gains the benefits of the Change Appearance effect of the {@spell alter self} spell, which lasts until it finishes a long rest. After you use your surgeon’s tools in this way, you can’t do so again until you finish a long rest."
+            ]
+        },
+        {
+            "name": "Suturer",
+            "source": "HelianasGuidetoMonsterHunting",
+            "className": "Bard",
+            "classSource": "PHB",
+            "subclassShortName": "Fleshweaving",
+            "subclassSource": "HelianasGuidetoMonsterHunting",
+            "level": 3,
+            "entries": [
+                "You know the {@spell spiritual weapon} spell, which is a bard spell for you, but doesn’t count against the number of spells you know. You can cast this spell once without expending a spell slot, and you regain the ability to cast it in this way when you finish a long rest. When you cast it as a bard spell, the weapon takes the form of a giant needle and thread, and deals piercing damage instead of force damage.",
+                "You also learn different ways to use this spiritual weapon. You gain the Suture benefit below, and you gain an additional benefit below when you reach 5th level and 10th level in this class.",
+                {
+                    
+                }
+            ]
+        },
+        {
+            "name": "",
+            "source": "HelianasGuidetoMonsterHunting",
+            "className": "Bard",
+            "classSource": "PHB",
+            "subclassShortName": "Fleshweaving",
+            "subclassSource": "HelianasGuidetoMonsterHunting",
+            "level": 3,
+            "entries": [
+                ""
+            ]
+        },
+        {
+            "name": "",
+            "source": "HelianasGuidetoMonsterHunting",
+            "className": "Bard",
+            "classSource": "PHB",
+            "subclassShortName": "Fleshweaving",
+            "subclassSource": "HelianasGuidetoMonsterHunting",
+            "level": 3,
+            "entries": [
+                ""
+            ]
+        },
+        {
+            "name": "",
+            "source": "HelianasGuidetoMonsterHunting",
+            "className": "",
+            "classSource": "PHB",
+            "subclassShortName": "",
+            "subclassSource": "HelianasGuidetoMonsterHunting",
+            "level": 3,
+            "entries": [
+                "",
+                {
+                    "type": "refSubclassFeature",
+					"subclassFeature": ""
+                    },
+                {
+                    "type": "refSubclassFeature",
+					"subclassFeature": ""
+                }
             ]
         }
     ],
