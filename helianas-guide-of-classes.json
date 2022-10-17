@@ -1587,6 +1587,32 @@
                 "freedom of movement",
                 "dispel of evil and good",
                 "endure|HelianasGuidetoMonsterHunting"
+            ],
+            "additionalSpells": [
+                {
+                    "prepared": {
+                        "3": [
+                            "divine favor",
+                            "protection from evil and good"
+                        ],
+                        "5": [
+                            "inequality|HelianasGuidetoMonsterHunting",
+                            "warding bond"
+                        ],
+                        "9": [
+                            "beacon of hope",
+                            "haste"
+                        ],
+                        "13": [
+                            "death ward",
+                            "freedom of movement"
+                        ],
+                        "17": [
+                            "dispel of evil and good",
+                            "endure|HelianasGuidetoMonsterHunting"
+                        ]
+                    }
+                }
             ]
         },
         {
@@ -1613,6 +1639,32 @@
                 "fire shield",
                 "feverskin|HelianasGuidetoMonsterHunting",
                 "wall of stone"
+            ],
+            "additionalSpells": [
+                {
+                    "prepared": {
+                        "3": [
+                            "hellish rebuke",
+                            "peppermint plate|HelianasGuidetoMonsterHunting"
+                        ],
+                        "5": [
+                            "eelskin|HelianasGuidetoMonsterHunting",
+                            "riptide|HelianasGuidetoMonsterHunting"
+                        ],
+                        "9": [
+                            "protection from energy",
+                            "wind wall"
+                        ],
+                        "13": [
+                            "control water",
+                            "fire shield"
+                        ],
+                        "17": [
+                            "feverskin|HelianasGuidetoMonsterHunting",
+                            "wall of stone"
+                        ]
+                    }
+                }
             ]
         },
         {
@@ -1639,6 +1691,32 @@
                 "death ward",
                 "bone cage|HelianasGuidetoMonsterHunting",
                 "endure|HelianasGuidetoMonsterHunting"
+            ],
+            "additionalSpells": [
+                {
+                    "prepared": {
+                        "3": [
+                            "false life",
+                            "inflict wounds"
+                        ],
+                        "5": [
+                            "blindness/deafness",
+                            "ray of enfeeblement"
+                        ],
+                        "9": [
+                            "influenza|HelianasGuidetoMonsterHunting",
+                            "vampiric touch"
+                        ],
+                        "13": [
+                            "confusion",
+                            "death ward"
+                        ],
+                        "17": [
+                            "bone cage|HelianasGuidetoMonsterHunting",
+                            "endure|HelianasGuidetoMonsterHunting"
+                        ]
+                    }
+                }
             ]
         },
         {
@@ -1665,6 +1743,32 @@
                 "stoneskin",
                 "contagion",
                 "feverskin|HelianasGuidetoMonsterHunting"
+            ],
+            "additionalSpells": [
+                {
+                    "prepared": {
+                        "3": [
+                            "chameleon skin|HelianasGuidetoMonsterHunting",
+                            "disguise self"
+                        ],
+                        "5": [
+                            "barkskin",
+                            "eelskin|HelianasGuidetoMonsterHunting"
+                        ],
+                        "9": [
+                            "mass leech|HelianasGuidetoMonsterHunting",
+                            "zippit!|HelianasGuidetoMonsterHunting"
+                        ],
+                        "13": [
+                            "frogskin|HelianasGuidetoMonsterHunting",
+                            "stoneskin"
+                        ],
+                        "17": [
+                            "contagion",
+                            "feverskin|HelianasGuidetoMonsterHunting"
+                        ]
+                    }
+                }
             ]
         },
         {
@@ -1687,7 +1791,9 @@
             "shortName": "Fleshweaving",
 			"subclassFeatures": [
                 "College of Fleshweaving|Bard|HelianasGuidetoMonsterHunting|Fleshweaving|HelianasGuidetoMonsterHunting|3",
+                "Suturer II|Bard|HelianasGuidetoMonsterHunting|Fleshweaving|HelianasGuidetoMonsterHunting|5",
                 "Ritual Reskin|Bard|HelianasGuidetoMonsterHunting|Fleshweaving|HelianasGuidetoMonsterHunting|6",
+                "Suturer III|Bard|HelianasGuidetoMonsterHunting|Fleshweaving|HelianasGuidetoMonsterHunting|10",
                 "Soulsew|Bard|HelianasGuidetoMonsterHunting|Fleshweaving|HelianasGuidetoMonsterHunting|14"
             ]
         },
@@ -2628,32 +2734,104 @@
                 "You know the {@spell spiritual weapon} spell, which is a bard spell for you, but doesn’t count against the number of spells you know. You can cast this spell once without expending a spell slot, and you regain the ability to cast it in this way when you finish a long rest. When you cast it as a bard spell, the weapon takes the form of a giant needle and thread, and deals piercing damage instead of force damage.",
                 "You also learn different ways to use this spiritual weapon. You gain the Suture benefit below, and you gain an additional benefit below when you reach 5th level and 10th level in this class.",
                 {
-                    
+                    "name": "Suture (3rd Level)",
+                    "entry": "As a bonus action or an action, you can expend one use of your Bardic Inspiration to move the weapon up to 20 feet and grant temporary hit points equal to one roll of your Bardic Inspiration die to one creature within 5 feet of the weapon. If the creature has 0 hit points, you can stabilise it, instead."
                 }
             ]
         },
         {
-            "name": "",
+            "name": "Suturer II",
             "source": "HelianasGuidetoMonsterHunting",
             "className": "Bard",
             "classSource": "PHB",
             "subclassShortName": "Fleshweaving",
             "subclassSource": "HelianasGuidetoMonsterHunting",
-            "level": 3,
+            "level": 5,
             "entries": [
-                ""
+                "You know the {@spell spiritual weapon} spell, which is a bard spell for you, but doesn’t count against the number of spells you know. You can cast this spell once without expending a spell slot, and you regain the ability to cast it in this way when you finish a long rest. When you cast it as a bard spell, the weapon takes the form of a giant needle and thread, and deals piercing damage instead of force damage.",
+                "You also learn different ways to use this spiritual weapon. You gain the Suture benefit below, and you gain an additional benefit below when you reach 5th level and 10th level in this class.",
+                {
+                    "name": "Unspool (5th Level)",
+                    "entry": "As an action, you can expend one use of your Bardic Inspiration to move the weapon up to 20 feet and force one creature within 5 feet of the weapon to make a Strength saving throw against your bard spell save DC. On a failure, magical threads wrap around the creature, which is {@condition restrained} for 1 minute. The target can use its action to repeat the saving throw, ending the effect on a success."
+                }
             ]
         },
         {
-            "name": "",
+            "name": "Suturer III",
             "source": "HelianasGuidetoMonsterHunting",
             "className": "Bard",
             "classSource": "PHB",
             "subclassShortName": "Fleshweaving",
             "subclassSource": "HelianasGuidetoMonsterHunting",
-            "level": 3,
+            "level": 10,
             "entries": [
-                ""
+                "You know the {@spell spiritual weapon} spell, which is a bard spell for you, but doesn’t count against the number of spells you know. You can cast this spell once without expending a spell slot, and you regain the ability to cast it in this way when you finish a long rest. When you cast it as a bard spell, the weapon takes the form of a giant needle and thread, and deals piercing damage instead of force damage.",
+                "You also learn different ways to use this spiritual weapon. You gain the Suture benefit below, and you gain an additional benefit below when you reach 5th level and 10th level in this class.",
+                {
+                    "name": "Acupuncture (10th Level)",
+                    "entry": "As an action, you can expend one use of your Bardic Inspiration to move the weapon up to 20 feet and make a melee spell attack against one creature within 5 feet of it. On a hit, the creature takes piercing damage equal to one roll of your Bardic Inspiration die plus your Charisma modifier, and must make a Constitution saving throw against your bard spell save DC. On a failure, the creature is paralysed until the end of its next turn."
+                }
+            ]
+        },
+        {
+            "name": "Ritual Reskin",
+            "source": "HelianasGuidetoMonsterHunting",
+            "className": "Bard",
+            "classSource": "PHB",
+            "subclassShortName": "Fleshweaving",
+            "subclassSource": "HelianasGuidetoMonsterHunting",
+            "level": 6,
+            "entries": [
+                "Over the course of 10 minutes, you can perform a surgical ritual on creatures that you can see within 60 feet of you (including yourself), up to a number equal to your Charisma modifier (minimum of one creature). The creatures gain one of the following adaptations for the next hour. You choose one adaptation to affect all creatures:",
+                {
+                    "type": "list",
+                    "items": [
+                        {
+                            "name": "Bull’s Buns",
+                            "entry": "The target has advantage on Strength checks, and counts as one size larger when determining its carrying capacity and the weight it can push, drag, or lift."
+                        },
+                        {
+                            "name": "Cactus Skin",
+                            "entry": "The target is covered in razor-sharp spikes. At the end of each of the target’s turns, each creature grappling it must make a Constitution saving throw against your bard spell save DC. On a failure, a creature takes piercing damage equal to your Bardic Inspiration die and releases the target from its grapple. On a success, a creature takes half as much damage and doesn’t have to release the target."
+                        },
+                        {
+                            "name": "Cat’s Paws",
+                            "entry": "The target has advantage on Dexterity checks. It also doesn’t take damage from falling 20 feet or less if it isn’t incapacitated."
+                        },
+                        {
+                            "name": "Fish Form",
+                            "entry": "The target can breathe underwater and gains a swimming speed equal to its walking speed."
+                        },
+                        {
+                            "name": "Owl's Sight",
+                            "entry": "The target has advantage on Wisdom checks and initiative rolls."
+                        },
+                        {
+                            "name": "Rhino’s Hide",
+                            "entry": "The target has advantage on Constitution checks and gains temporary hit points equal to one roll of your Bardic Inspiration die plus you Charisma modifier (minimum 1), which are lost when the effect ends."
+                        }
+                    ]
+                },
+                "After you use this feature, you can’t do so again until you finish a long rest, unless you expend a spell slot of 3rd level or higher to use this feature again."
+            ]
+        },
+        {
+            "name": "Soulsew",
+            "source": "HelianasGuidetoMonsterHunting",
+            "className": "Bard",
+            "classSource": "PHB",
+            "subclassShortName": "Fleshweaving",
+            "subclassSource": "HelianasGuidetoMonsterHunting",
+            "level": 14,
+            "entries": [
+                "When a creature uses one of your Bardic Inspiration dice, or fails a saving throw against your Suturer feature’s Unspool or Acupuncture effect, it becomes ‘soulsewn’ to you for the next minute. While soulsewn, an ethereal thread connects you to this creature via a straight line that only you and creatures with truesight can see. This thread breaks if the creature is ever more than 100 feet away from you.",
+                {
+                    "name": "Spool",
+                    "entries": [
+                        "You can use a bonus action to teleport to the nearest unoccupied space of a soulsewn creature of your choice, or attempt to switch places with a soulsewn creature. If the creature is unwilling to switch places, you must succeed on a contested Charisma check against the creature. On a success, or if the creature is willing, you and the target teleport, switching places with one another. If there is not enough space for either of you to switch places, you automatically lose the contest.",
+                        "You can teleport using this feature a number of times equal to your Charisma modifier (minimum 1), and you regain all expended uses when you finish a long rest."
+                    ]
+                }
             ]
         },
         {
