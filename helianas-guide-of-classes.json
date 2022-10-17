@@ -1778,9 +1778,9 @@
             "classSource": "PHB",
             "shortName": "Cuisine",
 			"subclassFeatures": [
-                "College of Cuisine|Bard|HelianasGuidetoMonsterHunting|Cuisine|HelianasGuidetoMonsterHunting|3",
-                "Culinary Specialisation|Bard|HelianasGuidetoMonsterHunting|Cuisine|HelianasGuidetoMonsterHunting|6",
-                "Executive Chef|Bard|HelianasGuidetoMonsterHunting|Cuisine|HelianasGuidetoMonsterHunting|14"
+                "College of Cuisine|Bard||Cuisine|HelianasGuidetoMonsterHunting|3",
+                "Culinary Specialisation|Bard||Cuisine|HelianasGuidetoMonsterHunting|6",
+                "Executive Chef|Bard||Cuisine|HelianasGuidetoMonsterHunting|14"
             ]
         },
         {
@@ -1790,25 +1790,64 @@
             "classSource": "PHB",
             "shortName": "Fleshweaving",
 			"subclassFeatures": [
-                "College of Fleshweaving|Bard|HelianasGuidetoMonsterHunting|Fleshweaving|HelianasGuidetoMonsterHunting|3",
-                "Suturer II|Bard|HelianasGuidetoMonsterHunting|Fleshweaving|HelianasGuidetoMonsterHunting|5",
-                "Ritual Reskin|Bard|HelianasGuidetoMonsterHunting|Fleshweaving|HelianasGuidetoMonsterHunting|6",
-                "Suturer III|Bard|HelianasGuidetoMonsterHunting|Fleshweaving|HelianasGuidetoMonsterHunting|10",
-                "Soulsew|Bard|HelianasGuidetoMonsterHunting|Fleshweaving|HelianasGuidetoMonsterHunting|14"
+                "College of Fleshweaving|Bard||Fleshweaving|HelianasGuidetoMonsterHunting|3",
+                "Suturer II|Bard||Fleshweaving|HelianasGuidetoMonsterHunting|5",
+                "Ritual Reskin|Bard||Fleshweaving|HelianasGuidetoMonsterHunting|6",
+                "Suturer III|Bard||Fleshweaving|HelianasGuidetoMonsterHunting|10",
+                "Soulsew|Bard||Fleshweaving|HelianasGuidetoMonsterHunting|14"
             ]
         },
         {
-            "name": "",
+            "name": "Hunt Domain",
             "source": "HelianasGuidetoMonsterHunting",
-            "className": "",
+            "className": "Cleric",
             "classSource": "PHB",
-            "shortName": "",
+            "shortName": "Hunt",
 			"subclassFeatures": [
-                "",
-                "",
-                "",
-                "",
-                ""
+                "Hunt Domain|Cleric||Hunt|HelianasGuidetoMonsterHunting|1",
+                "Channel Divinity: Honed Instincts|Cleric||Hunt|HelianasGuidetoMonsterHunting|2",
+                "Pack Hunter|Cleric||Hunt|HelianasGuidetoMonsterHunting|6",
+                "Unflinching Mark|Cleric||Hunt|HelianasGuidetoMonsterHunting|8",
+                "Unflinching Mark II|Cleric||Hunt|HelianasGuidetoMonsterHunting|14",
+                "Rite of the Hunt|Cleric||Hunt|HelianasGuidetoMonsterHunting|17"
+            ],
+            "subclassSpells": [
+                "entangle",
+                "longstrider",
+                "locate animals or plants",
+                "pass without trace",
+                "conjure animals",
+                "haste",
+                "freedom of movement",
+                "locate creature",
+                "commune with nature",
+                "hold monster"
+            ],
+            "additionalSpells": [
+                {
+                    "prepared": {
+                        "1": [
+                            "entangle",
+                            "longstrider"
+                        ],
+                        "3": [
+                            "locate animals or plants",
+                            "pass without trace"
+                        ],
+                        "5": [
+                            "conjure animals",
+                            "haste"
+                        ],
+                        "7": [
+                            "freedom of movement",
+                            "locate creature"
+                        ],
+                        "9": [
+                            "commune with nature",
+                            "hold monster"
+                        ]
+                    }
+                }
             ]
         },
         {
@@ -1942,6 +1981,7 @@
                 "You learn additional spells when you reach certain levels in this class, as shown in the Leader Spells table Each spell counts as a tamer spell for you, but it doesn’t count against the number of tamer spells you know.",
                 {
                     "type": "table",
+                    "name": "Leader Spells",
                     "colLabels": [
                         "Tamer Level",
                         "Spells"
@@ -2071,6 +2111,7 @@
                 "You learn additional spells when you reach certain levels in this class, as shown in the Infuser Spells table Each spell counts as a tamer spell for you, but it doesn’t count against the number of tamer spells you know.",
                 {
                     "type": "table",
+                    "name": "Infuser Spells",
                     "colLabels": [
                         "Tamer Level",
                         "Spells"
@@ -2275,6 +2316,7 @@
                 "You learn additional spells when you reach certain levels in this class, as shown in the Necromancer Spells table Each spell counts as a tamer spell for you, but it doesn’t count against the number of tamer spells you know.",
                 {
                     "type": "table",
+                    "name": "Necromancer Spells",
                     "colLabels": [
                         "Tamer Level",
                         "Spells"
@@ -2410,6 +2452,7 @@
                 "You learn additional spells when you reach certain levels in this class, as shown in the Splicer Spells table Each spell counts as a tamer spell for you, but it doesn’t count against the number of tamer spells you know.",
                 {
                     "type": "table",
+                    "name": "Splicer Spells",
                     "colLabels": [
                         "Tamer Level",
                         "Spells"
@@ -2573,11 +2616,11 @@
                 "Bards from the College of Cuisine are as prized in the kitchens of nobles as in the mess halls of the rank and file. While peace treaties might be signed over hoisin-glazed duck with sides of spiced jackfruit and crispy shallots, it is the well-fed army that will win the war on a hearty oat and raisin porridge. Such bards never struggle to find employment; they travel where their work is appreciated, be their diners highborn or down-to-earth.",
                 {
                     "type": "refSubclassFeature",
-					"subclassFeature": "Culinary Exploration|Bard|HelianasGuidetoMonsterHunting|Cuisine|HelianasGuidetoMonsterHunting|3"
+					"subclassFeature": "Culinary Exploration|Bard||Cuisine|HelianasGuidetoMonsterHunting|3"
                     },
                 {
                     "type": "refSubclassFeature",
-					"subclassFeature": "Petit Fours|Bard|HelianasGuidetoMonsterHunting|Cuisine|HelianasGuidetoMonsterHunting|3"
+					"subclassFeature": "Petit Fours|Bard||Cuisine|HelianasGuidetoMonsterHunting|3"
                 }
             ]
         },
@@ -2701,11 +2744,11 @@
                 "If leather is a material, then why not skin itself? Students of the College of Fleshweaving make works of art out of weeping wounds, transform disfigurement into displays of transcendent beauty, and mould flesh into innovative adaptations inspired by the flora and fauna around them. A fleshweaver bard down on their luck might find employment as a battlefield surgeon, while the epitome of a fleshweaver’s career is to be the chief facemaker to royalty, altering their visage and physiology through biomantic rituals and deft needlework.",
                 {
                     "type": "refSubclassFeature",
-					"subclassFeature": "Malleable Visage|Bard|HelianasGuidetoMonsterHunting|Fleshweaving|HelianasGuidetoMonsterHunting|3"
+					"subclassFeature": "Malleable Visage|Bard||Fleshweaving|HelianasGuidetoMonsterHunting|3"
                     },
                 {
                     "type": "refSubclassFeature",
-					"subclassFeature": "Suturer|Bard|HelianasGuidetoMonsterHunting|Fleshweaving|HelianasGuidetoMonsterHunting|3"
+					"subclassFeature": "Suturer|Bard||Fleshweaving|HelianasGuidetoMonsterHunting|3"
                 }
             ]
         },
@@ -2735,7 +2778,9 @@
                 "You also learn different ways to use this spiritual weapon. You gain the Suture benefit below, and you gain an additional benefit below when you reach 5th level and 10th level in this class.",
                 {
                     "name": "Suture (3rd Level)",
-                    "entry": "As a bonus action or an action, you can expend one use of your Bardic Inspiration to move the weapon up to 20 feet and grant temporary hit points equal to one roll of your Bardic Inspiration die to one creature within 5 feet of the weapon. If the creature has 0 hit points, you can stabilise it, instead."
+                    "entries": [
+                        "As a bonus action or an action, you can expend one use of your Bardic Inspiration to move the weapon up to 20 feet and grant temporary hit points equal to one roll of your Bardic Inspiration die to one creature within 5 feet of the weapon. If the creature has 0 hit points, you can stabilise it, instead."
+                    ]
                 }
             ]
         },
@@ -2748,11 +2793,12 @@
             "subclassSource": "HelianasGuidetoMonsterHunting",
             "level": 5,
             "entries": [
-                "You know the {@spell spiritual weapon} spell, which is a bard spell for you, but doesn’t count against the number of spells you know. You can cast this spell once without expending a spell slot, and you regain the ability to cast it in this way when you finish a long rest. When you cast it as a bard spell, the weapon takes the form of a giant needle and thread, and deals piercing damage instead of force damage.",
-                "You also learn different ways to use this spiritual weapon. You gain the Suture benefit below, and you gain an additional benefit below when you reach 5th level and 10th level in this class.",
+                "You learn different ways to use your spiritual weapon. You gain the Unspool benefit below.",
                 {
-                    "name": "Unspool (5th Level)",
-                    "entry": "As an action, you can expend one use of your Bardic Inspiration to move the weapon up to 20 feet and force one creature within 5 feet of the weapon to make a Strength saving throw against your bard spell save DC. On a failure, magical threads wrap around the creature, which is {@condition restrained} for 1 minute. The target can use its action to repeat the saving throw, ending the effect on a success."
+                    "name": "Unspool",
+                    "entries": [
+                        "As an action, you can expend one use of your Bardic Inspiration to move the weapon up to 20 feet and force one creature within 5 feet of the weapon to make a Strength saving throw against your bard spell save DC. On a failure, magical threads wrap around the creature, which is {@condition restrained} for 1 minute. The target can use its action to repeat the saving throw, ending the effect on a success."
+                    ]
                 }
             ]
         },
@@ -2765,11 +2811,12 @@
             "subclassSource": "HelianasGuidetoMonsterHunting",
             "level": 10,
             "entries": [
-                "You know the {@spell spiritual weapon} spell, which is a bard spell for you, but doesn’t count against the number of spells you know. You can cast this spell once without expending a spell slot, and you regain the ability to cast it in this way when you finish a long rest. When you cast it as a bard spell, the weapon takes the form of a giant needle and thread, and deals piercing damage instead of force damage.",
-                "You also learn different ways to use this spiritual weapon. You gain the Suture benefit below, and you gain an additional benefit below when you reach 5th level and 10th level in this class.",
+                "You learn different ways to use this spiritual weapon. You gain the Acupuncture benefit below.",
                 {
-                    "name": "Acupuncture (10th Level)",
-                    "entry": "As an action, you can expend one use of your Bardic Inspiration to move the weapon up to 20 feet and make a melee spell attack against one creature within 5 feet of it. On a hit, the creature takes piercing damage equal to one roll of your Bardic Inspiration die plus your Charisma modifier, and must make a Constitution saving throw against your bard spell save DC. On a failure, the creature is paralysed until the end of its next turn."
+                    "name": "Acupuncture",
+                    "entries": [
+                        "As an action, you can expend one use of your Bardic Inspiration to move the weapon up to 20 feet and make a melee spell attack against one creature within 5 feet of it. On a hit, the creature takes piercing damage equal to one roll of your Bardic Inspiration die plus your Charisma modifier, and must make a Constitution saving throw against your bard spell save DC. On a failure, the creature is paralysed until the end of its next turn."
+                    ]
                 }
             ]
         },
@@ -2788,26 +2835,32 @@
                     "items": [
                         {
                             "name": "Bull’s Buns",
+                            "type": "item",
                             "entry": "The target has advantage on Strength checks, and counts as one size larger when determining its carrying capacity and the weight it can push, drag, or lift."
                         },
                         {
                             "name": "Cactus Skin",
+                            "type": "item",
                             "entry": "The target is covered in razor-sharp spikes. At the end of each of the target’s turns, each creature grappling it must make a Constitution saving throw against your bard spell save DC. On a failure, a creature takes piercing damage equal to your Bardic Inspiration die and releases the target from its grapple. On a success, a creature takes half as much damage and doesn’t have to release the target."
                         },
                         {
                             "name": "Cat’s Paws",
+                            "type": "item",
                             "entry": "The target has advantage on Dexterity checks. It also doesn’t take damage from falling 20 feet or less if it isn’t incapacitated."
                         },
                         {
                             "name": "Fish Form",
+                            "type": "item",
                             "entry": "The target can breathe underwater and gains a swimming speed equal to its walking speed."
                         },
                         {
                             "name": "Owl's Sight",
+                            "type": "item",
                             "entry": "The target has advantage on Wisdom checks and initiative rolls."
                         },
                         {
                             "name": "Rhino’s Hide",
+                            "type": "item",
                             "entry": "The target has advantage on Constitution checks and gains temporary hit points equal to one roll of your Bardic Inspiration die plus you Charisma modifier (minimum 1), which are lost when the effect ends."
                         }
                     ]
@@ -2835,6 +2888,206 @@
             ]
         },
         {
+            "name": "Hunt Domain",
+            "source": "HelianasGuidetoMonsterHunting",
+            "className": "Cleric",
+            "classSource": "PHB",
+            "subclassShortName": "Hunt",
+            "subclassSource": "HelianasGuidetoMonsterHunting",
+            "level": 1,
+            "entries": [
+                "From Artemis to Diana, Skadi, and Wōden - all gods of the hunt relish the chase. They promote the ideals of a journey: finding a quarry, learning its habits, and finishing it with a swift, precise blow. Clerics of these gods might bless nobles before a hunt, work as mercenaries tracking dangerous monsters through the wilderness, or be employed as scouts within armies. They are adept at finding their prey and, once located, use their magic to ensure they are never outrun. Such priests teach that all useful materials must be harvested and consumed to properly honour a quarry, and to ensure the gods’ blessing during the next foray into the wilds.",
+                {
+                    "type": "refSubclassFeature",
+					"subclassFeature": "Domain Spells|Cleric||Hunt|HelianasGuidetoMonsterHunting|1"
+                },
+                {
+                    "type": "refSubclassFeature",
+					"subclassFeature": "Bonus Proficiencies|Cleric||Hunt|HelianasGuidetoMonsterHunting|1"
+                },
+                {
+                    "type": "refSubclassFeature",
+					"subclassFeature": "Mark Prey|Cleric||Hunt|HelianasGuidetoMonsterHunting|1"
+                }
+            ]
+        },
+        {
+            "name": "Domain Spells",
+            "source": "HelianasGuidetoMonsterHunting",
+            "className": "Cleric",
+            "classSource": "PHB",
+            "subclassShortName": "Hunt",
+            "subclassSource": "HelianasGuidetoMonsterHunting",
+            "level": 1,
+            "entries": [
+                "You gain domain spells at the cleric levels listed in the Hunt Domain Spells table. See the Divine Domain class feature for how domain spells work.",
+                {
+                    "type": "table",
+                    "name": "Hunt Domain Spells",
+                    "colLabels": [
+                        "Cleric Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-4 text-center",
+                        "col-8 text-left"
+                    ],
+                    "rows": [
+                        [
+                            "1st",
+                            "{@spell entangle}, {@spell longstrider}"
+                        ],
+                        [
+                            "3rd",
+                            "{@spell locate animals or plants}, {@spell pass without trace}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell conjure animals}, {@spell haste}"
+                        ],
+                        [
+                            "7th",
+                            "{@spell freedom of movement}, {@spell locate creature}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell commune with nature}, {@spell hold monster}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bonus Proficiencies",
+            "source": "HelianasGuidetoMonsterHunting",
+            "className": "Cleric",
+            "classSource": "PHB",
+            "subclassShortName": "Hunt",
+            "subclassSource": "HelianasGuidetoMonsterHunting",
+            "level": 1,
+            "entries": [
+                "You gain proficiency with two martial weapons of your choice. You also gain proficiency in one of the following skills of your choice: {@skill Animal Handling}, {@skill Nature}, or {@skill Survival}."
+            ]
+        },
+        {
+            "name": "Mark Prey",
+            "source": "HelianasGuidetoMonsterHunting",
+            "className": "Cleric",
+            "classSource": "PHB",
+            "subclassShortName": "Hunt",
+            "subclassSource": "HelianasGuidetoMonsterHunting",
+            "level": 1,
+            "entries": [
+                "As a bonus action, you choose a creature you can see within 90 feet and mystically mark it as your quarry for the next hour. For the duration, you deal an extra {@damage 1d6} damage to the target whenever you hit it with a weapon attack, and you have advantage on any Wisdom ({@skill Perception}) or Wisdom ({@skill Survival}) check you make to find it. If you use this feature to mark a new creature, any previous marks disappear."
+            ]
+        },
+        {
+            "name": "Channel Divinity: Honed Instincts",
+            "source": "HelianasGuidetoMonsterHunting",
+            "className": "Cleric",
+            "classSource": "PHB",
+            "subclassShortName": "Hunt",
+            "subclassSource": "HelianasGuidetoMonsterHunting",
+            "level": 2,
+            "entries": [
+                "You can use your Channel Divinity to gain preternatural insights into one creature you can see within 120 feet of you (no action required). You can choose one of the following lists of information to learn about the target when you use this Channel Divinity:",
+                {
+                    "type": "list",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Proficiencies",
+                            "entry": "You learn the saving throws and skills with which the creature is proficient."
+                        },
+                        {
+                            "type": "item",
+                            "name": "Physiologiy",
+                            "entry": "You learn the creature’s damage resistances, immunities, and vulnerabilities, as well as its condition immunities."
+                        }
+                    ]
+                },
+                "In addition, the next time you hit the target with a weapon attack within the next minute, you deal the attack’s maximum damage instead of rolling."
+            ]
+        },
+        {
+            "name": "Pack Hunter",
+            "source": "HelianasGuidetoMonsterHunting",
+            "className": "Cleric",
+            "classSource": "PHB",
+            "subclassShortName": "Hunt",
+            "subclassSource": "HelianasGuidetoMonsterHunting",
+            "level": 6,
+            "entries": [
+                "You learn to work with other hunters, helping them avoid your quarry’s blows, or to strike with greater ferocity. As a reaction, you can embolden creatures friendly to you with your hunters’ instincts, issuing either the Kill or Retreat command. You have a number of uses of this feature equal to your Wisdom modifier (minimum of once), and regain all expended uses when you finish a short or long rest.",
+                {
+                    "type": "list",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Kill",
+                            "entry": "When a creature other than you hits a target which is currently affected by your Mark Prey feature, you can use your reaction to deal the feature’s extra damage to the creature."
+                        },
+                        {
+                            "type": "item",
+                            "name": "Retreat",
+                            "entry": "When the target of your Mark Prey feature targets a creature that you can see within 60 feet of you with a melee attack, you can use your reaction to embolden the creature being attacked. If the attacked creature is willing, it can use its reaction to move up to half its speed without provoking opportunity attacks immediately before the attack occurs, imposing disadvantage on the attack."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Unflinching Mark",
+            "source": "HelianasGuidetoMonsterHunting",
+            "className": "Cleric",
+            "classSource": "PHB",
+            "subclassShortName": "Hunt",
+            "subclassSource": "HelianasGuidetoMonsterHunting",
+            "level": 8,
+            "entries": [
+                "The bonus damage of your Mark Prey feature increases to {@damage 2d6}"
+            ]
+        },
+        {
+            "name": "Unflinching Mark II",
+            "source": "HelianasGuidetoMonsterHunting",
+            "className": "Cleric",
+            "classSource": "PHB",
+            "subclassShortName": "Hunt",
+            "subclassSource": "HelianasGuidetoMonsterHunting",
+            "level": 14,
+            "entries": [
+                "The bonus damage of your Mark Prey feature increases to {@damage 3d6}"
+            ]
+        },
+        {
+            "name": "Rite of the Hunt",
+            "source": "HelianasGuidetoMonsterHunting",
+            "className": "Cleric",
+            "classSource": "PHB",
+            "subclassShortName": "Hunt",
+            "subclassSource": "HelianasGuidetoMonsterHunting",
+            "level": 17,
+            "entries": [
+                "At 17th level, you can compel a creature to chase or avoid you. As a bonus action while you can see the target of your Mark Prey feature and it is within 120 feet of you, you can force the creature to make a Wisdom saving throw against your cleric spell save DC. On a failure, you choose whether the creature is afflicted by Chase or Avoid for the next minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on a success. These effects are suppressed while you can’t see the creature, and the effects end early if the creature is no longer affected by your Mark Prey feature. A creature that succeeds on a saving throw against this ability is immune to its effects for the next 24 hours.",
+                {
+                    "type": "list",
+                    "items": [
+                        {
+                            "name": "Chase",
+                            "type": "item",
+                            "entry": "The creature is drawn to you. For the duration, it has disadvantage on attack rolls against creatures other than you, and must make a Wisdom saving throw the first time it attempts to move to a space that is more than 30 feet away from you on its turn. On a failed save, it can’t move more than 30 feet away from you that turn. On a success, this effect doesn’t restrict the target’s movement for that turn."
+                        },
+                        {
+                            "name": "Avoid",
+                            "type": "item",
+                            "entry": "The creature is repelled by you. For the duration, it has disadvantage on attack rolls against you, and must make a Wisdom saving throw the first time it attempts to move to a space within 30 feet of you on its turn. On a failed save, it can’t willingly move closer to you that turn. On a success, this effect doesn’t restrict the target’s movement for that turn."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "name": "",
             "source": "HelianasGuidetoMonsterHunting",
             "className": "",
@@ -2853,6 +3106,17 @@
 					"subclassFeature": ""
                 }
             ]
+        },
+        {
+            "name": "",
+            "source": "HelianasGuidetoMonsterHunting",
+            "className": "",
+            "classSource": "PHB",
+            "subclassShortName": "",
+            "subclassSource": "HelianasGuidetoMonsterHunting",
+            "level": 3,
+            "entries": [
+                ""]
         }
     ],
     "table": [
