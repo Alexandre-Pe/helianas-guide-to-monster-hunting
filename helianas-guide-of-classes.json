@@ -1851,17 +1851,48 @@
             ]
         },
         {
-            "name": "",
+            "name": "Circle of the Hive",
             "source": "HelianasGuidetoMonsterHunting",
-            "className": "",
+            "className": "Druid",
             "classSource": "PHB",
-            "shortName": "",
+            "shortName": "Hive",
 			"subclassFeatures": [
-                "",
-                "",
-                "",
-                "",
-                ""
+                "Circle of the Hive|Druid||Hive|HelianasGuidetoMonsterHunting|2",
+                "Protect the Monarch|Druid||Hive|HelianasGuidetoMonsterHunting|6",
+                "Honeydrenaline|Druid||Hive|HelianasGuidetoMonsterHunting|10",
+                "Swarmsense|Druid||Hive|HelianasGuidetoMonsterHunting|14"
+            ],
+            "subclassSpells": [
+                "blur",
+                "web",
+                "fly",
+                "hypnotic pattern",
+                "arcane eye",
+                "giant insect",
+                "insect plague", 
+                "mislead"
+            ],
+            "additionalSpells": [
+                {
+                    "prepared": {
+                        "3": [
+                            "blur",
+                            "web"
+                        ],
+                        "5": [
+                            "fly",
+                            "hypnotic pattern"
+                        ],
+                        "7": [
+                            "arcane eye",
+                            "giant insect"
+                        ],
+                        "9": [
+                            "insect plague", 
+                            "mislead"
+                        ]
+                    }
+                }
             ]
         },
         {

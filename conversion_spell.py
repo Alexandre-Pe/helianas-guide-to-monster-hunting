@@ -314,10 +314,14 @@ with open(name, 'w') as f:
     json.dump(data, f, indent=4)
 
 
-a = """You also learn different ways to use this spiritual
-weapon. You gain the Suture benefit below, and
-you gain an additional benefit below when you
-reach 5th level and 10th level in this class."""
+a = """The creature is repelled by you. For the
+duration, it has disadvantage on attack rolls
+against you, and must make a Wisdom sav-
+ing throw the first time it attempts to move to
+a space within 30 feet of you on its turn. On
+a failed save, it can’t willingly move closer to
+you that turn. On a success, this effect doesn’t
+restrict the target’s movement for that turn."""
 
 print(add_fancy(fuse(a.split('\n'))))
 
