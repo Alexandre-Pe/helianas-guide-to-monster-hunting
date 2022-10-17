@@ -2966,7 +2966,7 @@
             "subclassSource": "HelianasGuidetoMonsterHunting",
             "level": 1,
             "entries": [
-                "You gain proficiency with two martial weapons of your choice. You also gain proficiency in one of the following skills of your choice: {@skill Animal Handling}, {@skill Nature}, or {@skill Survival}."
+                "You gain proficiency with two {@filter martial weapons|items|type=martial weapon} of your choice. You also gain proficiency in one of the following skills of your choice: {@skill Animal Handling}, {@skill Nature}, or {@skill Survival}."
             ]
         },
         {
