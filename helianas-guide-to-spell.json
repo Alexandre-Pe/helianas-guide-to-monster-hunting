@@ -682,7 +682,7 @@
             ],
             "entries": [
                 "You imbue a creature you touch with pigment so that its skin, and anything it wears or carries, slowly shifts hues to match its surroundings For the duration, the target can take the Hide action as a bonus action on each of its turns, even when only lightly obscured",
-                "If the target did not move during its last turn, creatures have disadvantage on any Wisdom (Perception) checks made to see the target Creatures who do not rely on sight, such as those with tremorsense, are immune to this effect."
+                "If the target did not move during its last turn, creatures have disadvantage on any Wisdom ({@skill Perception}) checks made to see the target Creatures who do not rely on sight, such as those with tremorsense, are immune to this effect."
             ],
             "entriesHigherLevel": [
                 {
@@ -968,7 +968,7 @@
                 }
             ],
             "entries": [
-                "You float some mildly distracting thoughts into the mind of a humanoid you can see within range The target must succeed on a Wisdom saving throw or have disadvantage on Wisdom (Perception) checks (taking a -5 penalty to its passive Perception as a result of this disadvantage) until the spell ends. A creature immune to being charmed is unaffected by this spell.",
+                "You float some mildly distracting thoughts into the mind of a humanoid you can see within range The target must succeed on a Wisdom saving throw or have disadvantage on Wisdom ({@skill Perception}) checks (taking a -5 penalty to its passive {@skill Perception} as a result of this disadvantage) until the spell ends. A creature immune to being charmed is unaffected by this spell.",
                 "A creature that succeeds on the saving throw by 5 or more is aware that an attempt was made to influence it with magic Otherwise, the creature remains unaware of the magic that affected it."
             ],
             "entriesHigherLevel": [
@@ -2603,7 +2603,7 @@
                 }
             ],
             "entries": [
-                "You touch a willing creature, causing it, and everything it is wearing and carrying, to become translucent At the start of each of the target\u2019s turns for the duration, it can choose to become incorporeal (no action required). When it does so, it has advantage on Stealth checks; it gains resistance to nonmagical bludgeoning, piercing, and slashing damage; and it can move through other creatures and objects as if they were difficult terrain until the end of its turn. If the target ends its turn inside an object, it is shunted to the nearest unoccupied space, taking {@damage 1d10} force damage for every 5 feet it is shunted"
+                "You touch a willing creature, causing it, and everything it is wearing and carrying, to become translucent At the start of each of the target\u2019s turns for the duration, it can choose to become incorporeal (no action required). When it does so, it has advantage on {@skill Stealth} checks; it gains resistance to nonmagical bludgeoning, piercing, and slashing damage; and it can move through other creatures and objects as if they were difficult terrain until the end of its turn. If the target ends its turn inside an object, it is shunted to the nearest unoccupied space, taking {@damage 1d10} force damage for every 5 feet it is shunted"
             ],
             "classes": {
                 "fromClassList": [
@@ -3266,7 +3266,7 @@
                             "type": "entries",
                             "name": "Cloak",
                             "entries": [
-                                "A creature wearing this cloak has advantage on Stealth checks it makes to hide and can hide while only lightly obscured"
+                                "A creature wearing this cloak has advantage on {@skill Stealth} checks it makes to hide and can hide while only lightly obscured"
                             ]
                         },
                         {
@@ -4957,7 +4957,7 @@
                             "type": "entries",
                             "name": "Spider",
                             "entries": [
-                                "The target must succeed on a Dexterity saving throw or become {@condition restrained} until the end of its next turn The target can use its action to make a Strength (Athletics) or Dexterity (Acrobatics) check against your spell save DC, ending the effect on itself on a success"
+                                "The target must succeed on a Dexterity saving throw or become {@condition restrained} until the end of its next turn The target can use its action to make a Strength ({@skill Athletics}) or Dexterity ({@skill Acrobatics}) check against your spell save DC, ending the effect on itself on a success"
                             ]
                         }
                     ]

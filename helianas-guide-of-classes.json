@@ -2540,7 +2540,7 @@
                         "Its weight increases by a factor of 8 per size category increased.",
                         "It gains temporary hit points equal to ten times your tamer level.",
                         "Its Strength score increases to 22 (if it isn’t already higher).",
-                        "It gains proficiency in the Athletics skill.",
+                        "It gains proficiency in the {@skill Athletics} skill.",
                         "It sprouts an appendage with which it can make melee weapon attacks with a reach of 5 feet that deal bludgeoning, piercing, or slashing damage (your choice when you take the action), equal to {@damage 3d6} plus its Strength modifier ({@hit +6}) on a hit.",
                         "It gains the Multiattack action option: The companion makes three attacks with its appendage."
                     ]
@@ -2912,17 +2912,17 @@
                 ],
                 [
                     "Keen Hearing",
-                    "The creature has advantage on Wisdom (Perception) checks that rely on hearing.",
+                    "The creature has advantage on Wisdom ({@skill Perception}) checks that rely on hearing.",
                     1
                 ],
                 [
                     "Keen Sight",
-                    "The creature has advantage on Wisdom (Perception) checks that rely on sight",
+                    "The creature has advantage on Wisdom ({@skill Perception}) checks that rely on sight",
                     1
                 ],
                 [
                     "Keen Smell",
-                    "The creature has advantage on Wisdom (Perception) checks that rely on smell",
+                    "The creature has advantage on Wisdom ({@skill Perception}) checks that rely on smell",
                     1
                 ],
                 [
@@ -2967,7 +2967,7 @@
                 ],
                 [
                     "Mimicry",
-                    "The creature can mimic simple sounds it has heard, such as a person whispering, a baby crying, or an animal chittering A creature that hears the sounds can tell they are imitations with a successful Wisdom (Insight) check The DC equals 8 plus your proficiency bonus.",
+                    "The creature can mimic simple sounds it has heard, such as a person whispering, a baby crying, or an animal chittering A creature that hears the sounds can tell they are imitations with a successful Wisdom ({@skill Insight}) check The DC equals 8 plus your proficiency bonus.",
                     2
                 ],
                 [
@@ -2992,7 +2992,7 @@
                 ],
                 [
                     "Camouflage",
-                    "The creature has advantage on Dexterity (Stealth) checks made while not moving.",
+                    "The creature has advantage on Dexterity ({@skill Stealth}) checks made while not moving.",
                     3
                 ],
                 [

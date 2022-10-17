@@ -187,13 +187,13 @@
                 {
                     "name": "Knowledge Seeker",
                     "entries": [
-                        "Learning is an almost irresistible compulsion amongst cyclopians and often leads them to dangerous locations. You have proficiency in your choice of two of the following skills: Arcana, History, Insight, Investigation, Medicine, Perception, Religion, and Stealth."
+                        "Learning is an almost irresistible compulsion amongst cyclopians and often leads them to dangerous locations. You have proficiency in your choice of two of the following skills: {@skill Arcana}, {@skill History}, {@skill Insight}, {@skill Investigation}, {@skill Medicine}, {@skill Perception}, {@skill Religion}, and {@skill Stealth}."
                     ]
                 },
                 {
                     "name": "Savant of Secrets",
                     "entries": [
-                        "You can tap into your ancestral ability to spot the telltale signs of hidden traps, passages, and secrets As an action, you can enter a cyclotrance for 1 minute For the duration, you have advantage on Perception, Investigation, and Insight checks Once you activate this trait, you can’t do so again until you finish a long rest."
+                        "You can tap into your ancestral ability to spot the telltale signs of hidden traps, passages, and secrets As an action, you can enter a cyclotrance for 1 minute For the duration, you have advantage on {@skill Perception}, {@skill Investigation}, and {@skill Insight} checks Once you activate this trait, you can’t do so again until you finish a long rest."
                     ]
                 },
                 {
@@ -1012,7 +1012,7 @@
                 {
                     "name": "TracklessTrackless",
                     "entries": [
-                        "The Shadow Plane is a dangerous place and ombrasks quickly learn to move in the shadows, leaving scarce tracks in their wake You have proficiency in the Stealth skill."
+                        "The Shadow Plane is a dangerous place and ombrasks quickly learn to move in the shadows, leaving scarce tracks in their wake You have proficiency in the {@skill Stealth} skill."
                     ]
                 },
                 {
@@ -1647,7 +1647,7 @@
                     "type": "entries",
                     "name": "Streetwise",
                     "entries": [
-                        "You gain proficiency in your choice of the Stealth or Sleight of Hand skills Additionally, you know {@classFeature Thieves' Cant|Rogue||1}."
+                        "You gain proficiency in your choice of the {@skill Stealth} or {@skill Sleight of Hand} skills Additionally, you know {@classFeature Thieves' Cant|Rogue||1}."
                     ]
                 },
                 {
@@ -1750,7 +1750,7 @@
                     "type": "entries",
                     "name": "Play Dead",
                     "entries": [
-                        "When you take damage that reduces you to half your hit point maximum or lower, you can use your reaction to play dead, lowering your heart rate and relaxing your muscles as you fall {@condition prone} This lasts for 1 hour or until you use your bonus action to end it early A creature that uses its action to make an Intelligence (Investigation) check contested by your Constitution (Deception) sees through the trick on a success.",
+                        "When you take damage that reduces you to half your hit point maximum or lower, you can use your reaction to play dead, lowering your heart rate and relaxing your muscles as you fall {@condition prone} This lasts for 1 hour or until you use your bonus action to end it early A creature that uses its action to make an Intelligence ({@skill Investigation}) check contested by your Constitution ({@skill Deception}) sees through the trick on a success.",
                         "After you use this feature, you can’t do so again until you finish a short or long rest."
                     ]
                 },
@@ -1846,7 +1846,7 @@
                 {
                     "name": "Adept Trickster",
                     "entries": [
-                        "You gain proficiency in your choice of the Deception or Persuasion skills."
+                        "You gain proficiency in your choice of the {@skill Deception} or {@skill Persuasion} skills."
                     ]
                 },
                 {
