@@ -314,14 +314,9 @@ with open(name, 'w') as f:
     json.dump(data, f, indent=4)
 
 
-a = """The creature is repelled by you. For the
-duration, it has disadvantage on attack rolls
-against you, and must make a Wisdom sav-
-ing throw the first time it attempts to move to
-a space within 30 feet of you on its turn. On
-a failed save, it can’t willingly move closer to
-you that turn. On a success, this effect doesn’t
-restrict the target’s movement for that turn."""
+a = """Hosting such a variety of tiny beings has perma-
+nently altered your personal biosphere. You gain the
+following benefits:"""
 
 print(add_fancy(fuse(a.split('\n'))))
 

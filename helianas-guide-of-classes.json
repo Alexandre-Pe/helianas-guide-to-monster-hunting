@@ -1863,6 +1863,7 @@
                 "Swarmsense|Druid||Hive|HelianasGuidetoMonsterHunting|14"
             ],
             "subclassSpells": [
+                "swarm|HelianasGuidetoMonsterHunting",
                 "blur",
                 "web",
                 "fly",
@@ -1875,6 +1876,9 @@
             "additionalSpells": [
                 {
                     "prepared": {
+                        "2": [
+                            "swarm|HelianasGuidetoMonsterHunting"
+                        ],
                         "3": [
                             "blur",
                             "web"
@@ -2012,7 +2016,7 @@
                 "You learn additional spells when you reach certain levels in this class, as shown in the Leader Spells table Each spell counts as a tamer spell for you, but it doesn’t count against the number of tamer spells you know.",
                 {
                     "type": "table",
-                    "name": "Leader Spells",
+                    "caption": "Leader Spells",
                     "colLabels": [
                         "Tamer Level",
                         "Spells"
@@ -2142,7 +2146,7 @@
                 "You learn additional spells when you reach certain levels in this class, as shown in the Infuser Spells table Each spell counts as a tamer spell for you, but it doesn’t count against the number of tamer spells you know.",
                 {
                     "type": "table",
-                    "name": "Infuser Spells",
+                    "caption": "Infuser Spells",
                     "colLabels": [
                         "Tamer Level",
                         "Spells"
@@ -2347,7 +2351,7 @@
                 "You learn additional spells when you reach certain levels in this class, as shown in the Necromancer Spells table Each spell counts as a tamer spell for you, but it doesn’t count against the number of tamer spells you know.",
                 {
                     "type": "table",
-                    "name": "Necromancer Spells",
+                    "caption": "Necromancer Spells",
                     "colLabels": [
                         "Tamer Level",
                         "Spells"
@@ -2483,7 +2487,7 @@
                 "You learn additional spells when you reach certain levels in this class, as shown in the Splicer Spells table Each spell counts as a tamer spell for you, but it doesn’t count against the number of tamer spells you know.",
                 {
                     "type": "table",
-                    "name": "Splicer Spells",
+                    "caption": "Splicer Spells",
                     "colLabels": [
                         "Tamer Level",
                         "Spells"
@@ -2954,7 +2958,7 @@
                 "You gain domain spells at the cleric levels listed in the Hunt Domain Spells table. See the Divine Domain class feature for how domain spells work.",
                 {
                     "type": "table",
-                    "name": "Hunt Domain Spells",
+                    "caption": "Hunt Domain Spells",
                     "colLabels": [
                         "Cleric Level",
                         "Spells"
@@ -3119,6 +3123,163 @@
             ]
         },
         {
+            "name": "Circle of the Hive",
+            "source": "HelianasGuidetoMonsterHunting",
+            "className": "Druid",
+            "classSource": "PHB",
+            "subclassShortName": "Hive",
+            "subclassSource": "HelianasGuidetoMonsterHunting",
+            "level": 2,
+            "entries": [
+                "Druids of the Circle of the Hive share their body with a plethora of tiny arthropods—insects, arachnids, or even crustaceans. These symbiotes call such druids home, living within their skin, clothes, and hair. This habitation might manifest as a honeycomb-like hive, a silky subcutaneous trapdoor (below which lurks a spider), or butterfly chrysalids hanging from their hair.",
+                "Druids of this circle relish creating a moving biosphere that sustains a variety of organisms, often seeking out new and exotic species as symbiotic lodgers. These creatures are a part of the druid, nourishing and protecting the druid as the druid nourishes and protects its tenants.",
+                {
+                    "type": "refSubclassFeature",
+					"subclassFeature": "Circle Spells|Druid||Hive|HelianasGuidetoMonsterHunting|2"
+                },
+                {
+                    "type": "refSubclassFeature",
+					"subclassFeature": "Swarm Shape|Druid||Hive|HelianasGuidetoMonsterHunting|2"
+                },
+                {
+                    "type": "refSubclassFeature",
+					"subclassFeature": "Symbiotic Biosphere|Druid||Hive|HelianasGuidetoMonsterHunting|2"
+                }
+            ]
+        },
+        {
+            "name": "Circle Spells",
+            "source": "HelianasGuidetoMonsterHunting",
+            "className": "Druid",
+            "classSource": "PHB",
+            "subclassShortName": "Hive",
+            "subclassSource": "HelianasGuidetoMonsterHunting",
+            "level": 2,
+            "entries": [
+                "Your symbiotic link to arthropods and their versatility grants you access to certain spells. At 2nd level, you learn the {@spell swarm|HelianasGuidetoMonsterHunting} cantrip.",
+                "At 3rd, 5th, 7th, and 9th level, you gain access to the spells listed for that level in the Circle of the Hive Spells table. Once you gain access to one of these spells, you always have it prepared, and it doesn’t count against the number of spells you can prepare each day. If you gain access to a spell that doesn’t appear on the druid spell list, the spell is nonetheless a druid spell for you.",
+                "All these spells use arthropods in their manifestation; for example, {@spell arcane eye} or {@spell mislead} could be a swarm of flies you conjure and imbue with different properties.",
+                {
+                    "type": "table",
+                    "caption": "Circle of the Hive Spells",
+                    "colLabels": [
+                        "Druid Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-4 text-center",
+                        "col-8 text-left"
+                    ],
+                    "rows": [
+                        [
+                            "3rd",
+                            "{@spell blur}, {@spell web}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell fly}, {@spell hypnotic pattern}"
+                        ],
+                        [
+                            "7th",
+                            "{@spell arcane eye}, {@spell giant insect}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell insect plague}, {@spell mislead}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Swarm Shape",
+            "source": "HelianasGuidetoMonsterHunting",
+            "className": "Druid",
+            "classSource": "PHB",
+            "subclassShortName": "Hive",
+            "subclassSource": "HelianasGuidetoMonsterHunting",
+            "level": 2,
+            "entries": [
+                "When you use your Wild Shape feature, you can turn into a swarm of creatures, adhering to the normal limitations on CR and speed."
+            ]
+        },
+        {
+            "name": "Symbiotic Biosphere",
+            "source": "HelianasGuidetoMonsterHunting",
+            "className": "Druid",
+            "classSource": "PHB",
+            "subclassShortName": "Hive",
+            "subclassSource": "HelianasGuidetoMonsterHunting",
+            "level": 2,
+            "entries": [
+                "The symbiotes that inhabit your body flit in and around you, harmless until threatened. As a bonus action, you can release pheromones, stimulating hyper-aggression in your symbiotes for the next minute. The first time you are hit by a melee attack by a creature within 15 feet of you on its turn, the swarm retaliates, forcing the attacker to make a Constitution saving throw against your druid spell save DC. On a failure, the attacker takes {@damage 1d4} poison damage. The poison damage increases to {@damage 1d6} at 6th level, {@damage 1d8} at 10th level, and {@damage 1d10} at 14th level.",
+                "After you activate this feature, you can’t do so again until you finish a short or long rest.",
+                "In addition, you can communicate with arthropods using pheromones, conveying basic emotions and ideas."
+            ]
+        },
+        {
+            "name": "Protect the Monarch",
+            "source": "HelianasGuidetoMonsterHunting",
+            "className": "Druid",
+            "classSource": "PHB",
+            "subclassShortName": "Hive",
+            "subclassSource": "HelianasGuidetoMonsterHunting",
+            "level": 6,
+            "entries": [
+                "Your connection to the arthropods you host becomes deeper; they regard you as a worker bee would its queen, and they gladly sacrifice themselves to protect you. As a reaction when you take damage from a source you can see, you can command your insect symbiotes to swarm in front of you, deflecting some of the incoming energy. You gain a number of temporary hit points equal to your druid level, which take as much of the triggering damage as possible.",
+                "You lose any remaining temporary hit points at the end of the current turn. You can use this feature a number of times equal to your Wisdom modifier (minimum once) regaining all expended uses when you finish a short or long rest.",
+                "Additionally, the poison damage of {@subclassFeature Symbiotic Biosphere|Druid||Hive|HelianasGuidetoMonsterHunting|2} increases to 1d6."
+            ]
+        },
+        {
+            "name": "Honeydrenaline",
+            "source": "HelianasGuidetoMonsterHunting",
+            "className": "Druid",
+            "classSource": "PHB",
+            "subclassShortName": "Hive",
+            "subclassSource": "HelianasGuidetoMonsterHunting",
+            "level": 10,
+            "entries": [
+                "You have attracted a species of flying arthropod that produces a mixture of sugar and adrenaline with amazing, stimulating properties. As a bonus action, you can send these creatures to invigorate a willing creature you can see within 30 feet of you. The creature regains hit points equal to your druid level and can immediately use its reaction to move up to its speed. This movement doesn’t provoke opportunity attacks.",
+                "You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses of it when you finish a long rest.",
+                "Additionally, the poison damage of {@subclassFeature Symbiotic Biosphere|Druid||Hive|HelianasGuidetoMonsterHunting|2} increases to 1d8"
+            ]
+        },
+        {
+            "name": "Swarmsense",
+            "source": "HelianasGuidetoMonsterHunting",
+            "className": "Druid",
+            "classSource": "PHB",
+            "subclassShortName": "Hive",
+            "subclassSource": "HelianasGuidetoMonsterHunting",
+            "level": 14,
+            "entries": [
+                "Hosting such a variety of tiny beings has permanently altered your personal biosphere. You gain the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "Blindsight and tremorsense out to a range of 10 feet.",
+                        "Resistance to poison damage.",
+                        "Immunity to the poisoned condition.",
+                        "Advantage on initiative rolls."
+                    ]
+                },
+                "Additionally, the poison damage of {@subclassFeature Symbiotic Biosphere|Druid||Hive|HelianasGuidetoMonsterHunting|2} increases to 1d10"
+            ]
+        },
+        {
+            "name": "",
+            "source": "HelianasGuidetoMonsterHunting",
+            "className": "Druid",
+            "classSource": "PHB",
+            "subclassShortName": "Hive",
+            "subclassSource": "HelianasGuidetoMonsterHunting",
+            "level": 2,
+            "entries": [
+                ""
+            ]
+        },
+        {
             "name": "",
             "source": "HelianasGuidetoMonsterHunting",
             "className": "",
@@ -3131,7 +3292,7 @@
                 {
                     "type": "refSubclassFeature",
 					"subclassFeature": ""
-                    },
+                },
                 {
                     "type": "refSubclassFeature",
 					"subclassFeature": ""
@@ -3147,7 +3308,8 @@
             "subclassSource": "HelianasGuidetoMonsterHunting",
             "level": 3,
             "entries": [
-                ""]
+                ""
+            ]
         }
     ],
     "table": [
