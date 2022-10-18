@@ -544,7 +544,7 @@
                     "type": "entries",
                     "name": "Combat",
                     "entries": [
-                        "In combat, your companion shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the Dodge action, unless you take a bonus action or action on your turn to command it to take a different action That action can be one in its statistics or some other action If you are incapacitated, the companion can take any action of its choice, not just Dodge. Your companion can’t take the Multiattack action until you reach 5th level in this class, even if it would otherwise be able to."
+                        "In combat, your companion shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the Dodge action, unless you take a bonus action or action on your turn to command it to take a different action That action can be one in its statistics or some other action If you are {@condition incapacitated}, the companion can take any action of its choice, not just Dodge. Your companion can’t take the Multiattack action until you reach 5th level in this class, even if it would otherwise be able to."
                     ]
                 },
                 {
@@ -2541,7 +2541,7 @@
                                     "type": "entries",
                                     "name": "Compelling Plumage",
                                     "entries": [
-                                        "Each creature in a 25foot cone that can see your companion must succeed on a Wisdom saving throw or be {@condition charmed} by your companion’s dazzling display of colour for the next minute While {@condition charmed} in this way, the creature is incapacitated and has a speed of 0. The effect ends for an affected creature if it takes any damage, if someone else uses an action to shake the creature out of its stupor, or if the companion moves out of the creature’s line of sight or is ever more than 25 feet away from the creature."
+                                        "Each creature in a 25foot cone that can see your companion must succeed on a Wisdom saving throw or be {@condition charmed} by your companion’s dazzling display of colour for the next minute While {@condition charmed} in this way, the creature is {@condition incapacitated} and has a speed of 0. The effect ends for an affected creature if it takes any damage, if someone else uses an action to shake the creature out of its stupor, or if the companion moves out of the creature’s line of sight or is ever more than 25 feet away from the creature."
                                     ]
                                 }
                             ]
@@ -2850,7 +2850,7 @@
                 {
                     "name": "Acupuncture",
                     "entries": [
-                        "As an action, you can expend one use of your Bardic Inspiration to move the weapon up to 20 feet and make a melee spell attack against one creature within 5 feet of it. On a hit, the creature takes piercing damage equal to one roll of your Bardic Inspiration die plus your Charisma modifier, and must make a Constitution saving throw against your bard spell save DC. On a failure, the creature is paralysed until the end of its next turn."
+                        "As an action, you can expend one use of your Bardic Inspiration to move the weapon up to 20 feet and make a melee spell attack against one creature within 5 feet of it. On a hit, the creature takes piercing damage equal to one roll of your Bardic Inspiration die plus your Charisma modifier, and must make a Constitution saving throw against your bard spell save DC. On a failure, the creature is {@condition paralysed} until the end of its next turn."
                     ]
                 }
             ]
@@ -2881,7 +2881,7 @@
                         {
                             "name": "Cat’s Paws",
                             "type": "item",
-                            "entry": "The target has advantage on Dexterity checks. It also doesn’t take damage from falling 20 feet or less if it isn’t incapacitated."
+                            "entry": "The target has advantage on Dexterity checks. It also doesn’t take damage from falling 20 feet or less if it isn’t {@condition incapacitated}."
                         },
                         {
                             "name": "Fish Form",
@@ -3260,7 +3260,7 @@
                     "items": [
                         "Blindsight and tremorsense out to a range of 10 feet.",
                         "Resistance to poison damage.",
-                        "Immunity to the poisoned condition.",
+                        "Immunity to the {@condition poisoned} condition.",
                         "Advantage on initiative rolls."
                     ]
                 },

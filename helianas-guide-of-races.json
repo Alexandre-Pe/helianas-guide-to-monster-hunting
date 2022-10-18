@@ -350,7 +350,7 @@
                 {
                     "name": "Headless Chicken",
                     "entries": [
-                        "When you are reduced to 0 hit points, but not killed outright, you don’t immediately fall unconscious Instead, you can immediately move up to your speed without provoking opportunity attacks You then fall unconscious as if you had been reduced to 0 hit points in the space where you finish this movement."
+                        "When you are reduced to 0 hit points, but not killed outright, you don’t immediately fall {@condition unconscious} Instead, you can immediately move up to your speed without provoking opportunity attacks You then fall {@condition unconscious} as if you had been reduced to 0 hit points in the space where you finish this movement."
                     ]
                 }
             ],
@@ -468,7 +468,7 @@
                 {
                     "name": "Drill Dervish",
                     "entries": [
-                        "While burrowing underground, you can shift the ground under a creature’s feet, potentially causing it to fall over If you burrow directly under a Large or smaller creature that is standing on the ground, the creature must succeed on a Strength saving throw or be knocked prone The DC for this saving throw equals 8 + your Strength modifier + your proficiency bonus."
+                        "While burrowing underground, you can shift the ground under a creature’s feet, potentially causing it to fall over If you burrow directly under a Large or smaller creature that is standing on the ground, the creature must succeed on a Strength saving throw or be knocked {@condition prone} The DC for this saving throw equals 8 + your Strength modifier + your proficiency bonus."
                     ]
                 },
                 {
@@ -576,7 +576,7 @@
                 {
                     "name": "Slippery Skin",
                     "entries": [
-                        "You have advantage on ability checks and saving throws made to avoid or end the grappled or restrained conditions on yourself."
+                        "You have advantage on ability checks and saving throws made to avoid or end the grappled or {@condition restrained} conditions on yourself."
                     ]
                 },
                 {
@@ -838,7 +838,7 @@
                 {
                     "name": "Spore Spray",
                     "entries": [
-                        "As a reaction when a creature within 10 feet of you hits you with a melee attack, you can attempt to poison it with a burst of spores The target must succeed on a Constitution saving throw (DC = 8 + your Constitution modifier + your proficiency bonus) or take 1d8 poison damage and become poisoned until the end of its next turn You can use it a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest. This damage increases to 2d8 at 5th level."
+                        "As a reaction when a creature within 10 feet of you hits you with a melee attack, you can attempt to poison it with a burst of spores The target must succeed on a Constitution saving throw (DC = 8 + your Constitution modifier + your proficiency bonus) or take 1d8 poison damage and become {@condition poisoned} until the end of its next turn You can use it a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest. This damage increases to 2d8 at 5th level."
                     ]
                 },
                 {
@@ -1006,7 +1006,7 @@
                 {
                     "name": "Lightbender",
                     "entries": [
-                        "Light naturally sculpts around your skin You have advantage on saving throws against being blinded, and you have resistance to radiant damage."
+                        "Light naturally sculpts around your skin You have advantage on saving throws against being {@condition blinded}, and you have resistance to radiant damage."
                     ]
                 },
                 {
@@ -1152,7 +1152,7 @@
                 {
                     "name": "Acidic Flesh",
                     "entries": [
-                        "You have resistance to acid damage, and you know the {@spell acid splash} cantrip If you cast the spell targeting a creature you’re currently grappling or grappled by, the target automatically fails its saving throw Constitution is your spellcasting ability for this spell."
+                        "You have resistance to acid damage, and you know the {@spell acid splash} cantrip If you cast the spell targeting a creature you’re currently grappling or {@condition grappled} by, the target automatically fails its saving throw Constitution is your spellcasting ability for this spell."
                     ]
                 },
                 {
