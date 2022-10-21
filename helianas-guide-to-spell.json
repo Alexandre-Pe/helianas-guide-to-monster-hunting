@@ -360,6 +360,70 @@
             }
         },
         {
+            "name": "Bone Cage",
+            "level": 5,
+            "school": "BM",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "sphere",
+                "distance": {
+                    "type": "feet",
+                    "amount": 20
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "The bones of at least one non-animated corpse, which the spell consumes"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You draw the bones from all corpses within range, forming a carapace of ribcages and femurs You gain temporary hit points for each Small or larger corpse wholly or partly within range, according to its size, that last for the duration:",
+                {
+                    "type": "table",
+                    "colLabels": [
+                        "Size",
+                        "Temporary Hit Points Gained"
+                    ],
+                    "rows": [
+                        [
+                            "Small",
+                            "{@d 1d6+1}"
+                        ],
+                        [
+                            "Medium",
+                            "{@d 1d8+2}"
+                        ],
+                        [
+                            "Large",
+                            "{@d 1d10+5}"
+                        ],
+                        [
+                            "Huge",
+                            "{@d 1d12+12}"
+                        ],
+                        [
+                            "Gargantuan",
+                            "{@d 1d20+25}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
             "name": "Blinding Radiance",
             "level": 4,
             "school": "V",
