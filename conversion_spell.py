@@ -314,9 +314,11 @@ with open(name, 'w') as f:
     json.dump(data, f, indent=4)
 
 
-a = """Hosting such a variety of tiny beings has perma-
-nently altered your personal biosphere. You gain the
-following benefits:"""
+a = """When the minute elapses, you gain one
+level of exhaustion, and you can’t move or take ac-
+tions until after your next turn, as a wave of lethar-
+gy sweeps over you. You must craft another capsule
+before you can use this feature again."""
 
 print(add_fancy(fuse(a.split('\n'))))
 
